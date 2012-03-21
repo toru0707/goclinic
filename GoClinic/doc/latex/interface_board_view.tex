@@ -1,0 +1,156 @@
+\hypertarget{interface_board_view}{
+\section{クラス BoardView}
+\label{interface_board_view}\index{BoardView@{BoardView}}
+}
+BoardViewに対する継承グラフ\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_board_view}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_board_view_a9b296c50f680b6066749d13efda2d665}{
+(id) -\/ {\bfseries initWithXY:y:}}
+\label{interface_board_view_a9b296c50f680b6066749d13efda2d665}
+
+\item 
+\hypertarget{interface_board_view_a7602d30020b9a5761ad15f66f303e589}{
+(CGRect) -\/ {\bfseries rectFromOrigin:inset:}}
+\label{interface_board_view_a7602d30020b9a5761ad15f66f303e589}
+
+\item 
+\hypertarget{interface_board_view_a01b2a8d349437ef4c068f46c940fd27a}{
+(CGRect) -\/ {\bfseries rectFromXY:y:}}
+\label{interface_board_view_a01b2a8d349437ef4c068f46c940fd27a}
+
+\item 
+\hypertarget{interface_board_view_a42c6b9837b229497508de761898b2ab6}{
+(void) -\/ {\bfseries resetBoard}}
+\label{interface_board_view_a42c6b9837b229497508de761898b2ab6}
+
+\item 
+\hypertarget{interface_board_view_ab81dda5b6781c4ff20bd43496456ce4c}{
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ {\bfseries createGameRecords:y:}}
+\label{interface_board_view_ab81dda5b6781c4ff20bd43496456ce4c}
+
+\item 
+\hypertarget{interface_board_view_a479d3f7b658a5003b26316a5f40fb490}{
+(void) -\/ {\bfseries animateView:toPosition:}}
+\label{interface_board_view_a479d3f7b658a5003b26316a5f40fb490}
+
+\item 
+\hypertarget{interface_board_view_ac124cbbf405c711685621df3ea0466f5}{
+(void) -\/ {\bfseries animateFirstTouchAtPoint:forView:}}
+\label{interface_board_view_ac124cbbf405c711685621df3ea0466f5}
+
+\item 
+(void) -\/ \hyperlink{interface_board_view_a4314849127b847c86e832aa56c602af8}{animateStones:orientation:duration:}
+\item 
+\hypertarget{interface_board_view_a36070d4bfe580afaeb9ba4aee34f186e}{
+(CGPoint) -\/ {\bfseries calcGoPoint:}}
+\label{interface_board_view_a36070d4bfe580afaeb9ba4aee34f186e}
+
+\item 
+\hypertarget{interface_board_view_aceb17ba7e02ae18f2349466c55598919}{
+(CGRect) -\/ {\bfseries calcNormalizedRect:}}
+\label{interface_board_view_aceb17ba7e02ae18f2349466c55598919}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 変数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_board_view_afbb741010571202a5b270c4521c52c03}{
+id$<$ \hyperlink{protocol_board_view_delegate-p}{BoardViewDelegate} $>$ {\bfseries \_\-delegate}}
+\label{interface_board_view_afbb741010571202a5b270c4521c52c03}
+
+\item 
+\hypertarget{interface_board_view_a190d16ef976d1b061da3d24ec25bad84}{
+Boolean {\bfseries \_\-redrawBoard}}
+\label{interface_board_view_a190d16ef976d1b061da3d24ec25bad84}
+
+\item 
+\hypertarget{interface_board_view_ad4989ff0737c80e88b737b48f0ab7c89}{
+BOOL {\bfseries \_\-isStarDrawn}}
+\label{interface_board_view_ad4989ff0737c80e88b737b48f0ab7c89}
+
+\item 
+\hypertarget{interface_board_view_ad4f563bf4e7fd5a54953dbb85c1b4ba3}{
+BOOL {\bfseries \_\-isXYScaleDrawn}}
+\label{interface_board_view_ad4f563bf4e7fd5a54953dbb85c1b4ba3}
+
+\item 
+\hypertarget{interface_board_view_a4fc8faf205467309abd8af760d9e9e86}{
+BOOL {\bfseries \_\-isStoneMobed}}
+\label{interface_board_view_a4fc8faf205467309abd8af760d9e9e86}
+
+\item 
+\hypertarget{interface_board_view_ac02174b90d76f01f5641563c9a6675c2}{
+int {\bfseries \_\-xSize}}
+\label{interface_board_view_ac02174b90d76f01f5641563c9a6675c2}
+
+\item 
+\hypertarget{interface_board_view_a56becca2fd671b02acf25bc838c20bbb}{
+int {\bfseries \_\-ySize}}
+\label{interface_board_view_a56becca2fd671b02acf25bc838c20bbb}
+
+\item 
+\hypertarget{interface_board_view_a67d40f51a96e539f814a361c35e63c30}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries \_\-currentSelection}}
+\label{interface_board_view_a67d40f51a96e539f814a361c35e63c30}
+
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_board_view_a711b8a7299dda4e88cc8024da31ab976}{
+id$<$ \hyperlink{protocol_board_view_delegate-p}{BoardViewDelegate} $>$ {\bfseries delegate}}
+\label{interface_board_view_a711b8a7299dda4e88cc8024da31ab976}
+
+\item 
+\hypertarget{interface_board_view_a5ad1876cb123df583595fc3c2ef2bd59}{
+BOOL {\bfseries isStarDrawn}}
+\label{interface_board_view_a5ad1876cb123df583595fc3c2ef2bd59}
+
+\item 
+\hypertarget{interface_board_view_ab64409d176ead5675462296b0d9b3481}{
+BOOL {\bfseries isXYScaleDrawn}}
+\label{interface_board_view_ab64409d176ead5675462296b0d9b3481}
+
+\item 
+\hypertarget{interface_board_view_ae7e836788d82a05b05a3f8d90ce360b2}{
+int {\bfseries xSize}}
+\label{interface_board_view_ae7e836788d82a05b05a3f8d90ce360b2}
+
+\item 
+\hypertarget{interface_board_view_ac83f921533e57a4df21a7a7fb671bfe9}{
+int {\bfseries ySize}}
+\label{interface_board_view_ac83f921533e57a4df21a7a7fb671bfe9}
+
+\item 
+\hypertarget{interface_board_view_a7cb31e0f64bad49e0782aef0048920cc}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries stones}}
+\label{interface_board_view_a7cb31e0f64bad49e0782aef0048920cc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{関数}
+\hypertarget{interface_board_view_a4314849127b847c86e832aa56c602af8}{
+\index{BoardView@{BoardView}!animateStones:orientation:duration:@{animateStones:orientation:duration:}}
+\index{animateStones:orientation:duration:@{animateStones:orientation:duration:}!BoardView@{BoardView}}
+\subsubsection[{animateStones:orientation:duration:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) animateStones: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSMutableSet$\ast$)}]{recordArray}
+\item[{orientation:(UIDeviceOrientation)}]{orientation}
+\item[{duration:(float)}]{duration}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a4314849127b847c86e832aa56c602af8}
+指定された石を指定された方向にアニメーションさせる 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/BoardView.h\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/BoardView.m\end{DoxyCompactItemize}

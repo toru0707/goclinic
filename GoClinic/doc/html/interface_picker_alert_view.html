@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>GoClinic: クラス PickerAlertView</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GoClinic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('interface_picker_alert_view.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pro-attribs">Protected 変数</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス PickerAlertView</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="PickerAlertView" -->
+<p><a href="class_picker_alert_view-members.html">すべてのメンバ一覧</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeab9bea3a278c79473d39f3629cb2086"></a><!-- doxytag: member="PickerAlertView::initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:" ref="aeab9bea3a278c79473d39f3629cb2086" args="(NSString *title,[message] NSString *message,[delegate] id delegate,[dataSource] id dataSource,[cancelButtonTitle] NSString *cancelButtonTitle,[okButtonTitle] NSString *okayButtonTitle)" -->
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6ab5a8efa26a138210a589cf97cb100"></a><!-- doxytag: member="PickerAlertView::_pickerView" ref="ac6ab5a8efa26a138210a589cf97cb100" args="" -->
+UIPickerView *&#160;</td><td class="memItemRight" valign="bottom"><b>_pickerView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2caafc519c0336de1ac6de573d423de"></a><!-- doxytag: member="PickerAlertView::tableHeight" ref="af2caafc519c0336de1ac6de573d423de" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tableHeight</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0845fa121c597e715efb4e12f453ebf4"></a><!-- doxytag: member="PickerAlertView::tableExtHeight" ref="a0845fa121c597e715efb4e12f453ebf4" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tableExtHeight</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab39face826d7df8983d9aac6536902b"></a><!-- doxytag: member="PickerAlertView::_selectedGame" ref="aab39face826d7df8983d9aac6536902b" args="" -->
+<a class="el" href="interface_games.html">Games</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_selectedGame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5d635bc54b01c1d367c228b43f644c7"></a><!-- doxytag: member="PickerAlertView::_selectedIndex" ref="ad5d635bc54b01c1d367c228b43f644c7" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_selectedIndex</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9d7283bd9c6374ee63ac8017032c40d"></a><!-- doxytag: member="PickerAlertView::_games" ref="aa9d7283bd9c6374ee63ac8017032c40d" args="" -->
+NSArray *&#160;</td><td class="memItemRight" valign="bottom"><b>_games</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cb1c29a88dded150a2bdc5fb2a19553"></a><!-- doxytag: member="PickerAlertView::selectedGame" ref="a2cb1c29a88dded150a2bdc5fb2a19553" args="" -->
+<a class="el" href="interface_games.html">Games</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selectedGame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a766d2add07dbe438f43f8ca360ee91cc"></a><!-- doxytag: member="PickerAlertView::selectedIndex" ref="a766d2add07dbe438f43f8ca360ee91cc" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>selectedIndex</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96544b6ce55302d60a52388dd1b040bc"></a><!-- doxytag: member="PickerAlertView::games" ref="a96544b6ce55302d60a52388dd1b040bc" args="" -->
+NSArray *&#160;</td><td class="memItemRight" valign="bottom"><b>games</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6097903071c8ebbd99c1735305f08c9"></a><!-- doxytag: member="PickerAlertView::pickerView" ref="aa6097903071c8ebbd99c1735305f08c9" args="" -->
+UIPickerView *&#160;</td><td class="memItemRight" valign="bottom"><b>pickerView</b></td></tr>
+</table>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>/Users/inoko/iPhoneProject/GoClinic_no_GoStone/GoClinic/Classes/<a class="el" href="_picker_alert_view_8h_source.html">PickerAlertView.h</a></li>
+<li>/Users/inoko/iPhoneProject/GoClinic_no_GoStone/GoClinic/Classes/PickerAlertView.m</li>
+</ul>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="interface_picker_alert_view.html">PickerAlertView</a>      </li>
+      <li class="footer">GoClinicに対してSun May 15 2011 18:10:26に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+//画面要素エレメント一覧を表示(表示画面)
+UIALogger.logStart("Starting Test");
+var target = UIATarget.localTarget();
+var app = target.frontMostApp();
+var view = app.mainWindow();
+var navbar = view.navigationBar();
+
+//登録画面に移動
+var rightButton = navbar.rightButton();
+rightButton.tap();
+
+//碁盤の(0,0)となる点
+var side = 38;
+var board_y_offset = 130;
+var sx = side;
+var sy = board_y_offset + side;
+
+function setStones(stones){
+	for(var i = 0;i<stones.length;i++){
+		target.delay(0.5);
+		UIALogger.logDebug("x : " + stones[i][0] + ", y : " + stones[i][1]);
+		target.tapWithOptions({x:sx + side*stones[i][0], y:sy + side*stones[i][1]}, {touchCount:1, tapCount:1});	
+	}
+}
+
+
+//1.最初の置き石
+var stones1 = [[16,4], [4,4], [16,16], [4,17], [4,15], [3,13], [5,14], [7, 17], [4,12], [3,16], 
+			  [3,15], [14,3],[17,6], [10,4], [3,10], [17,14], [14,17], [3,6], [17,15], [16,14]];
+target.delay(0.5);
+setStones(stones1);
+target.delay(0.5);
+
+//2.データを保存
+rightButton = navbar.rightButton();
+rightButton.tap();
+
+//登録ボタンの押下
+UIALogger.logDebug("ファイルを保存しました.");
+
+//3.登録画面への移動
+rightButton = navbar.rightButton();

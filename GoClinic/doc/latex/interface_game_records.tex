@@ -1,0 +1,242 @@
+\hypertarget{interface_game_records}{
+\section{クラス GameRecords}
+\label{interface_game_records}\index{GameRecords@{GameRecords}}
+}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_game_records_a2dab8b4b0b68c5cbb28cf4374cc82c8e}{
+(BOOL) -\/ {\bfseries isSameUserId:}}
+\label{interface_game_records_a2dab8b4b0b68c5cbb28cf4374cc82c8e}
+
+\item 
+\hypertarget{interface_game_records_a4c007751279d28c5ef9a555185af647b}{
+(id) -\/ {\bfseries initWithFrame:}}
+\label{interface_game_records_a4c007751279d28c5ef9a555185af647b}
+
+\item 
+\hypertarget{interface_game_records_ac3933518fde18be29721aadd915dd419}{
+(id) -\/ {\bfseries initTmpRecord}}
+\label{interface_game_records_ac3933518fde18be29721aadd915dd419}
+
+\item 
+\hypertarget{interface_game_records_a9175f5a52d0e12f805adacda7d3b14de}{
+(id) -\/ {\bfseries initNewRecord:move:prev:next:}}
+\label{interface_game_records_a9175f5a52d0e12f805adacda7d3b14de}
+
+\item 
+\hypertarget{interface_game_records_a827169d0d5899335d7f6239c9c9c4643}{
+(BOOL) -\/ {\bfseries delete}}
+\label{interface_game_records_a827169d0d5899335d7f6239c9c9c4643}
+
+\item 
+\hypertarget{interface_game_records_a8f9590c7a25b418a975081c8975d45be}{
+(void) -\/ {\bfseries addCommentsObject:}}
+\label{interface_game_records_a8f9590c7a25b418a975081c8975d45be}
+
+\item 
+\hypertarget{interface_game_records_ade7d4e93ddf1c6bcebd60690cfc5b77a}{
+(void) -\/ {\bfseries removeCommentsObject:}}
+\label{interface_game_records_ade7d4e93ddf1c6bcebd60690cfc5b77a}
+
+\item 
+\hypertarget{interface_game_records_a7fd8675a4d513ec0e665a045178c86d7}{
+(void) -\/ {\bfseries addComments:}}
+\label{interface_game_records_a7fd8675a4d513ec0e665a045178c86d7}
+
+\item 
+\hypertarget{interface_game_records_aa9ff8413bf66729084a91f9ee7847f2e}{
+(void) -\/ {\bfseries removeComments:}}
+\label{interface_game_records_aa9ff8413bf66729084a91f9ee7847f2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_game_records_accb605b564e94df4b5dcb75c31fc9efe}{
+(int) + {\bfseries getMaxExistingGameRecordId}}
+\label{interface_game_records_accb605b564e94df4b5dcb75c31fc9efe}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 変数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_game_records_a56a4096420569594b9b97b32d9b97eb6}{
+\hyperlink{interface_go_stone_view}{GoStoneView} $\ast$ {\bfseries \_\-view}}
+\label{interface_game_records_a56a4096420569594b9b97b32d9b97eb6}
+
+\item 
+\hypertarget{interface_game_records_ae44b9e95b767f8f37856f2a9850d3230}{
+NSNumber $\ast$ {\bfseries \_\-prevX}}
+\label{interface_game_records_ae44b9e95b767f8f37856f2a9850d3230}
+
+\item 
+\hypertarget{interface_game_records_a6e69938ce77ef8fef142559749b57a69}{
+NSNumber $\ast$ {\bfseries \_\-prevY}}
+\label{interface_game_records_a6e69938ce77ef8fef142559749b57a69}
+
+\item 
+\hypertarget{interface_game_records_ac4e5d6a5f8b55b2f64f4deba9a3d43ea}{
+BOOL {\bfseries \_\-isRemoved}}
+\label{interface_game_records_ac4e5d6a5f8b55b2f64f4deba9a3d43ea}
+
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_game_records_aa306f522e388440cd8776d346fc546b7}{
+BOOL {\bfseries isRemoved}}
+\label{interface_game_records_aa306f522e388440cd8776d346fc546b7}
+
+\item 
+\hypertarget{interface_game_records_ae57b36aa60b76e3ad4c864501b0da345}{
+\hyperlink{interface_go_stone_view}{GoStoneView} $\ast$ {\bfseries view}}
+\label{interface_game_records_ae57b36aa60b76e3ad4c864501b0da345}
+
+\item 
+\hypertarget{interface_game_records_acc15484391d50c3aebb6e5ab2e7a64f6}{
+NSNumber $\ast$ {\bfseries prevX}}
+\label{interface_game_records_acc15484391d50c3aebb6e5ab2e7a64f6}
+
+\item 
+\hypertarget{interface_game_records_aacc8e59124a69fc91e5ed2833f06ef97}{
+NSNumber $\ast$ {\bfseries prevY}}
+\label{interface_game_records_aacc8e59124a69fc91e5ed2833f06ef97}
+
+\item 
+\hypertarget{interface_game_records_a78a34dae79b23e61a4fea03fa1c728c0}{
+NSNumber $\ast$ {\bfseries depth}}
+\label{interface_game_records_a78a34dae79b23e61a4fea03fa1c728c0}
+
+\item 
+\hypertarget{interface_game_records_a64b9936c3a7e789023374f7d15b74193}{
+NSNumber $\ast$ {\bfseries is\_\-bad}}
+\label{interface_game_records_a64b9936c3a7e789023374f7d15b74193}
+
+\item 
+\hypertarget{interface_game_records_a891c9d314f5165785d7bdbb3a7f71b2c}{
+NSNumber $\ast$ {\bfseries game\_\-record\_\-id}}
+\label{interface_game_records_a891c9d314f5165785d7bdbb3a7f71b2c}
+
+\item 
+\hypertarget{interface_game_records_a8237a6addc08dad8bc91cad19563a5e5}{
+NSNumber $\ast$ {\bfseries face\_\-id}}
+\label{interface_game_records_a8237a6addc08dad8bc91cad19563a5e5}
+
+\item 
+\hypertarget{interface_game_records_aa5f8ce478532bc8b8e830536dbd16d1b}{
+NSNumber $\ast$ {\bfseries point}}
+\label{interface_game_records_aa5f8ce478532bc8b8e830536dbd16d1b}
+
+\item 
+\hypertarget{interface_game_records_ae50451bd19e25389aaa11b7b62eea995}{
+NSNumber $\ast$ {\bfseries is\_\-good}}
+\label{interface_game_records_ae50451bd19e25389aaa11b7b62eea995}
+
+\item 
+\hypertarget{interface_game_records_a9c655b3370357997e9f5fc60a9bd3a7c}{
+NSNumber $\ast$ {\bfseries move}}
+\label{interface_game_records_a9c655b3370357997e9f5fc60a9bd3a7c}
+
+\item 
+\hypertarget{interface_game_records_a1891a621b8d3addee60eaa57cc97669b}{
+NSNumber $\ast$ {\bfseries removed\_\-move}}
+\label{interface_game_records_a1891a621b8d3addee60eaa57cc97669b}
+
+\item 
+\hypertarget{interface_game_records_aa8c3d63ac5ffc94c6e609611077d05e6}{
+NSNumber $\ast$ {\bfseries answer\_\-move}}
+\label{interface_game_records_aa8c3d63ac5ffc94c6e609611077d05e6}
+
+\item 
+\hypertarget{interface_game_records_aee248296724ff88c12d0a634f44ba1c7}{
+NSNumber $\ast$ {\bfseries move\_\-on\_\-face\_\-registered}}
+\label{interface_game_records_aee248296724ff88c12d0a634f44ba1c7}
+
+\item 
+\hypertarget{interface_game_records_ac772364449252fb44da4c0e5f3103c18}{
+NSNumber $\ast$ {\bfseries user\_\-id}}
+\label{interface_game_records_ac772364449252fb44da4c0e5f3103c18}
+
+\item 
+\hypertarget{interface_game_records_a12340123ee4e82efcf132843ed5b9665}{
+NSSet $\ast$ {\bfseries comments}}
+\label{interface_game_records_a12340123ee4e82efcf132843ed5b9665}
+
+\item 
+\hypertarget{interface_game_records_ade53f94ec88e460f25619f62496205a8}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries next\_\-game\_\-records}}
+\label{interface_game_records_ade53f94ec88e460f25619f62496205a8}
+
+\item 
+\hypertarget{interface_game_records_a6edcd011b4bfa37e39be4af12e413fde}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries branch\_\-records}}
+\label{interface_game_records_a6edcd011b4bfa37e39be4af12e413fde}
+
+\item 
+\hypertarget{interface_game_records_ac6ac532e3c728095f9b339f303f0c81e}{
+\hyperlink{interface_games}{Games} $\ast$ {\bfseries games}}
+\label{interface_game_records_ac6ac532e3c728095f9b339f303f0c81e}
+
+\item 
+\hypertarget{interface_game_records_adc4b5f3b05e165444d6fe0f8990a2a20}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries root\_\-record}}
+\label{interface_game_records_adc4b5f3b05e165444d6fe0f8990a2a20}
+
+\item 
+\hypertarget{interface_game_records_adc059fcab08c2098368b7ed9899fc3ba}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries prev\_\-game\_\-records}}
+\label{interface_game_records_adc059fcab08c2098368b7ed9899fc3ba}
+
+\item 
+\hypertarget{interface_game_records_af6b124bd715d3a78d93421a5a6a279a3}{
+NSNumber $\ast$ {\bfseries is\_\-answer}}
+\label{interface_game_records_af6b124bd715d3a78d93421a5a6a279a3}
+
+\item 
+\hypertarget{interface_game_records_a411adb0aa72ba8164b4818b7330a3584}{
+NSNumber $\ast$ {\bfseries is\_\-okiishi}}
+\label{interface_game_records_a411adb0aa72ba8164b4818b7330a3584}
+
+\item 
+\hypertarget{interface_game_records_aaa51d10929ed1036b17733a784829225}{
+NSMutableSet $\ast$ {\bfseries removed\_\-by}}
+\label{interface_game_records_aaa51d10929ed1036b17733a784829225}
+
+\item 
+\hypertarget{interface_game_records_aa02e21f2edd9f68f7e04cd2977cb95bc}{
+NSNumber $\ast$ {\bfseries x}}
+\label{interface_game_records_aa02e21f2edd9f68f7e04cd2977cb95bc}
+
+\item 
+\hypertarget{interface_game_records_a45fd4561f02e032dad6e80d864b7bfc1}{
+NSNumber $\ast$ {\bfseries y}}
+\label{interface_game_records_a45fd4561f02e032dad6e80d864b7bfc1}
+
+\item 
+\hypertarget{interface_game_records_ae659b5bdfd2c5662ed4edbc43593eb90}{
+NSNumber $\ast$ {\bfseries real\_\-x}}
+\label{interface_game_records_ae659b5bdfd2c5662ed4edbc43593eb90}
+
+\item 
+\hypertarget{interface_game_records_acfe802f54e8a19c2069c5e84c0eae38c}{
+NSNumber $\ast$ {\bfseries real\_\-y}}
+\label{interface_game_records_acfe802f54e8a19c2069c5e84c0eae38c}
+
+\item 
+\hypertarget{interface_game_records_af8f2b44d291b5d53214e9f35fe91ce77}{
+NSNumber $\ast$ {\bfseries width}}
+\label{interface_game_records_af8f2b44d291b5d53214e9f35fe91ce77}
+
+\item 
+\hypertarget{interface_game_records_a4fc7d57ec48774fb91242c2f00010946}{
+NSNumber $\ast$ {\bfseries height}}
+\label{interface_game_records_a4fc7d57ec48774fb91242c2f00010946}
+
+\end{DoxyCompactItemize}
+
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/GameRecords.h\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/GameRecords.m\end{DoxyCompactItemize}

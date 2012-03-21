@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>GoClinic: クラス BoardView</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GoClinic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('interface_board_view.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pro-attribs">Protected 変数</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス BoardView</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="BoardView" --><!-- doxytag: inherits="AnimationView,GoStoneViewDelegate-p" --><div class="dynheader">
+BoardViewに対する継承グラフ</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_board_view.png" usemap="#BoardView_map" alt=""/>
+  <map id="BoardView_map" name="BoardView_map">
+<area href="interface_animation_view.html" alt="AnimationView" shape="rect" coords="0,0,152,24"/>
+<area href="protocol_go_stone_view_delegate-p.html" alt="&lt;GoStoneViewDelegate&gt;" shape="rect" coords="162,0,314,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_board_view-members.html">すべてのメンバ一覧</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b296c50f680b6066749d13efda2d665"></a><!-- doxytag: member="BoardView::initWithXY:y:" ref="a9b296c50f680b6066749d13efda2d665" args="(int x,[y] int y)" -->
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithXY:y:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7602d30020b9a5761ad15f66f303e589"></a><!-- doxytag: member="BoardView::rectFromOrigin:inset:" ref="a7602d30020b9a5761ad15f66f303e589" args="(CGPoint origin,[inset] int inset)" -->
+(CGRect)&#160;</td><td class="memItemRight" valign="bottom">- <b>rectFromOrigin:inset:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01b2a8d349437ef4c068f46c940fd27a"></a><!-- doxytag: member="BoardView::rectFromXY:y:" ref="a01b2a8d349437ef4c068f46c940fd27a" args="(int x,[y] int y)" -->
+(CGRect)&#160;</td><td class="memItemRight" valign="bottom">- <b>rectFromXY:y:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42c6b9837b229497508de761898b2ab6"></a><!-- doxytag: member="BoardView::resetBoard" ref="a42c6b9837b229497508de761898b2ab6" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>resetBoard</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab81dda5b6781c4ff20bd43496456ce4c"></a><!-- doxytag: member="BoardView::createGameRecords:y:" ref="ab81dda5b6781c4ff20bd43496456ce4c" args="(int x,[y] int y)" -->
+(<a class="el" href="interface_game_records.html">GameRecords</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <b>createGameRecords:y:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a479d3f7b658a5003b26316a5f40fb490"></a><!-- doxytag: member="BoardView::animateView:toPosition:" ref="a479d3f7b658a5003b26316a5f40fb490" args="(UIView *theView,[toPosition] CGPoint thePosition)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>animateView:toPosition:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac124cbbf405c711685621df3ea0466f5"></a><!-- doxytag: member="BoardView::animateFirstTouchAtPoint:forView:" ref="ac124cbbf405c711685621df3ea0466f5" args="(CGPoint touchPoint,[forView] UIView *theView)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>animateFirstTouchAtPoint:forView:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_board_view.html#a4314849127b847c86e832aa56c602af8">animateStones:orientation:duration:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36070d4bfe580afaeb9ba4aee34f186e"></a><!-- doxytag: member="BoardView::calcGoPoint:" ref="a36070d4bfe580afaeb9ba4aee34f186e" args="(CGRect rect)" -->
+(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <b>calcGoPoint:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceb17ba7e02ae18f2349466c55598919"></a><!-- doxytag: member="BoardView::calcNormalizedRect:" ref="aceb17ba7e02ae18f2349466c55598919" args="(UITouch *touch)" -->
+(CGRect)&#160;</td><td class="memItemRight" valign="bottom">- <b>calcNormalizedRect:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbb741010571202a5b270c4521c52c03"></a><!-- doxytag: member="BoardView::_delegate" ref="afbb741010571202a5b270c4521c52c03" args="" -->
+id&lt; <a class="el" href="protocol_board_view_delegate-p.html">BoardViewDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a190d16ef976d1b061da3d24ec25bad84"></a><!-- doxytag: member="BoardView::_redrawBoard" ref="a190d16ef976d1b061da3d24ec25bad84" args="" -->
+Boolean&#160;</td><td class="memItemRight" valign="bottom"><b>_redrawBoard</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4989ff0737c80e88b737b48f0ab7c89"></a><!-- doxytag: member="BoardView::_isStarDrawn" ref="ad4989ff0737c80e88b737b48f0ab7c89" args="" -->
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_isStarDrawn</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4f563bf4e7fd5a54953dbb85c1b4ba3"></a><!-- doxytag: member="BoardView::_isXYScaleDrawn" ref="ad4f563bf4e7fd5a54953dbb85c1b4ba3" args="" -->
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_isXYScaleDrawn</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fc8faf205467309abd8af760d9e9e86"></a><!-- doxytag: member="BoardView::_isStoneMobed" ref="a4fc8faf205467309abd8af760d9e9e86" args="" -->
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_isStoneMobed</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac02174b90d76f01f5641563c9a6675c2"></a><!-- doxytag: member="BoardView::_xSize" ref="ac02174b90d76f01f5641563c9a6675c2" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_xSize</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56becca2fd671b02acf25bc838c20bbb"></a><!-- doxytag: member="BoardView::_ySize" ref="a56becca2fd671b02acf25bc838c20bbb" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_ySize</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67d40f51a96e539f814a361c35e63c30"></a><!-- doxytag: member="BoardView::_currentSelection" ref="a67d40f51a96e539f814a361c35e63c30" args="" -->
+<a class="el" href="interface_game_records.html">GameRecords</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_currentSelection</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a711b8a7299dda4e88cc8024da31ab976"></a><!-- doxytag: member="BoardView::delegate" ref="a711b8a7299dda4e88cc8024da31ab976" args="" -->
+id&lt; <a class="el" href="protocol_board_view_delegate-p.html">BoardViewDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ad1876cb123df583595fc3c2ef2bd59"></a><!-- doxytag: member="BoardView::isStarDrawn" ref="a5ad1876cb123df583595fc3c2ef2bd59" args="" -->
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>isStarDrawn</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab64409d176ead5675462296b0d9b3481"></a><!-- doxytag: member="BoardView::isXYScaleDrawn" ref="ab64409d176ead5675462296b0d9b3481" args="" -->
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>isXYScaleDrawn</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7e836788d82a05b05a3f8d90ce360b2"></a><!-- doxytag: member="BoardView::xSize" ref="ae7e836788d82a05b05a3f8d90ce360b2" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>xSize</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac83f921533e57a4df21a7a7fb671bfe9"></a><!-- doxytag: member="BoardView::ySize" ref="ac83f921533e57a4df21a7a7fb671bfe9" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ySize</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb31e0f64bad49e0782aef0048920cc"></a><!-- doxytag: member="BoardView::stones" ref="a7cb31e0f64bad49e0782aef0048920cc" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>stones</b></td></tr>
+</table>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a4314849127b847c86e832aa56c602af8"></a><!-- doxytag: member="BoardView::animateStones:orientation:duration:" ref="a4314849127b847c86e832aa56c602af8" args="(NSMutableSet *recordArray,[orientation] UIDeviceOrientation orientation,[duration] float duration)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) animateStones: </td>
+          <td></td>
+          <td class="paramtype">(NSMutableSet*)&#160;</td>
+          <td class="paramname"><em>recordArray</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">orientation:</td>
+          <td></td>
+          <td class="paramtype">(UIDeviceOrientation)&#160;</td>
+          <td class="paramname"><em>orientation</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">duration:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>指定された石を指定された方向にアニメーションさせる </p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>/Users/inoko/iPhoneProject/GoClinic_no_GoStone/GoClinic/Classes/<a class="el" href="_board_view_8h_source.html">BoardView.h</a></li>
+<li>/Users/inoko/iPhoneProject/GoClinic_no_GoStone/GoClinic/Classes/BoardView.m</li>
+</ul>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="interface_board_view.html">BoardView</a>      </li>
+      <li class="footer">GoClinicに対してSun May 15 2011 18:10:24に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+</body>
+</html>

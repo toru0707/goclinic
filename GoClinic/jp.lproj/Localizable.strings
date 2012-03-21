@@ -1,0 +1,45 @@
+/* 
+   Localizable.strings
+   GoClinic
+
+   Created by 猪子 徹 on 11/02/28.
+   Copyright 2011 __MyCompanyName__. All rights reserved.
+ */
+
+"NORMAL_COMMENT" = "";
+"SMILE_COMMENT" = "正しい";
+"WEAK_COMMENT" = "悪手";
+"STRONG_COMMENT" = "がんばってる";
+"DEATH_COMMENT" = "おどろきましたね。悪くて。";
+"NOTGOOD_COMMENT" = "ぬるいね";
+"SOPPO_COMMENT" = "ないことは無いけど、無いね";
+"UP_COMMENT" = "中央に石がいっている";
+"DOWN_COMMENT" = "弱気。守ってばっかり。";
+"NORMAL2_COMMENT" = "疑問手";
+"SHIRA-N_COMMENT" = "甘い！";
+"SOPPO2_COMMENT" = "そっぽ";
+"NANDAKA_COMMENT" = "大甘！";
+"KARAI_COMMENT" = "まずまず。";
+"BIGKARAI_COMMENT" = "気が付かない。悪すぎて。";
+"ODOROKI_COMMENT" = "悪手に近い疑問手だね";
+"VERYGOOD_COMMENT" = "良手";
+"SUGOISUGOI_COMMENT" = "まずまず。90点";
+"HANAHOJI_COMMENT" = "ぬるすぎる。";
+"STAR_COMMENT" = "うまい！";
+"MONEY_COMMENT" = "辛いね〜";
+"MOUDAME_COMMENT" =  "形勢悪い";
+"SUPPAI_COMMENT" =  "負け！敗着";
+"YOKUDEKIMASHITA_COMMENT" =  "勝着";
+"CHIISAI_COMMENT" =  "小さい";
+"OOKII_COMMENT" =  "大きい";
+"OOKARA_COMMENT" =  "大辛";
+"GANBARISUGI_COMMENT" =  "がんばりすぎ";
+"YONDEUTE_COMMENT" =  "よんでうて！";
+"DAIAKUSYU_COMMENT" =  "大悪手";
+"DAIDAIAKUSYU_COMMENT" =  "大大悪手";
+"KIMOCHIWARUI_COMMENT" =  "気持ち悪い";
+"USUI_COMMENT" =  "薄い";
+"ATUI_COMMENT" =  "厚い";
+"HAKKYOU_COMMENT" =  "論外！";
+"GOJANAI_COMMENT" =  "碁じゃない！";
+"FURUETERU_COMMENT" =  "しびれちゃった";

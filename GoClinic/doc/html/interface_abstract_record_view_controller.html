@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>GoClinic: クラス AbstractRecordViewController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GoClinic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('interface_abstract_record_view_controller.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pro-attribs">Protected 変数</a> &#124;
+<a href="#properties">プロパティ</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス AbstractRecordViewController</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="AbstractRecordViewController" --><!-- doxytag: inherits="BoardViewDelegate-p,MenuPopOverViewControllerDelegate-p,GamePickerAlertViewControllerDelegate-p" -->
+<p><code>#import &lt;<a class="el" href="_abstract_record_view_controller_8h_source.html">AbstractRecordViewController.h</a>&gt;</code></p>
+<div class="dynheader">
+AbstractRecordViewControllerに対する継承グラフ</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_abstract_record_view_controller.png" usemap="#AbstractRecordViewController_map" alt=""/>
+  <map id="AbstractRecordViewController_map" name="AbstractRecordViewController_map">
+<area href="protocol_board_view_delegate-p.html" alt="&lt;BoardViewDelegate&gt;" shape="rect" coords="397,0,652,24"/>
+<area href="protocol_menu_pop_over_view_controller_delegate-p.html" alt="&lt;MenuPopOverViewControllerDelegate&gt;" shape="rect" coords="662,0,917,24"/>
+<area href="protocol_game_picker_alert_view_controller_delegate-p.html" alt="&lt;GamePickerAlertViewControllerDelegate&gt;" shape="rect" coords="927,0,1182,24"/>
+<area href="interface_record_regist_view_controller.html" alt="RecordRegistViewController" shape="rect" coords="265,112,520,136"/>
+<area href="interface_record_show_view_controller.html" alt="RecordShowViewController" shape="rect" coords="1060,112,1315,136"/>
+<area href="interface_normal_regist_view_controller.html" alt="NormalRegistViewController" shape="rect" coords="0,168,255,192"/>
+<area href="interface_question_regist_view_controller.html" alt="QuestionRegistViewController" shape="rect" coords="265,168,520,192"/>
+<area href="interface_tsumego_regist_view_controller.html" alt="TsumegoRegistViewController" shape="rect" coords="530,168,785,192"/>
+<area href="interface_normal_show_view_controller.html" alt="NormalShowViewController" shape="rect" coords="795,168,1050,192"/>
+<area href="interface_question_show_view_controller.html" alt="QuestionShowViewController" shape="rect" coords="1060,168,1315,192"/>
+<area href="interface_tsumego_show_view_controller.html" alt="TsumegoShowViewController" shape="rect" coords="1325,168,1580,192"/>
+</map>
+ </div></div>
+
+<p><a href="class_abstract_record_view_controller-members.html">すべてのメンバ一覧</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b7e23969bdfd31a40bcb96a3ace9db4"></a><!-- doxytag: member="AbstractRecordViewController::initWithNibNameAndGame:bundle:game:" ref="a1b7e23969bdfd31a40bcb96a3ace9db4" args="(NSString *nibNameOrNil,[bundle] NSBundle *nibBundleOrNil,[game] Games *game)" -->
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithNibNameAndGame:bundle:game:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a439cd9960b3b729fe932df6201d913a1"></a><!-- doxytag: member="AbstractRecordViewController::initBoardView" ref="a439cd9960b3b729fe932df6201d913a1" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>initBoardView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c1ebc2a0be8d378f5c7f58552575896"></a><!-- doxytag: member="AbstractRecordViewController::hideSubViews:" ref="a5c1ebc2a0be8d378f5c7f58552575896" args="(BOOL animated)" -->
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>hideSubViews:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a160875d6c608a4c35496f671bf8cd8ec"></a><!-- doxytag: member="AbstractRecordViewController::commentGoStoneMenu:" ref="a160875d6c608a4c35496f671bf8cd8ec" args="(id sender)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>commentGoStoneMenu:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa813c99049d9925edc590cc79199da5e"></a><!-- doxytag: member="AbstractRecordViewController::createGame" ref="aa813c99049d9925edc590cc79199da5e" args="()" -->
+(<a class="el" href="interface_games.html">Games</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <b>createGame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82e716f77a003cef242f02a887a5aff3"></a><!-- doxytag: member="AbstractRecordViewController::showCommentView:" ref="a82e716f77a003cef242f02a887a5aff3" args="(BOOL animated)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>showCommentView:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a407cf65034096ae1bb6bf44cefc9ca96"></a><!-- doxytag: member="AbstractRecordViewController::hideCommentView:" ref="a407cf65034096ae1bb6bf44cefc9ca96" args="(BOOL animated)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>hideCommentView:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#af3b65256360492aa93ae7ac9f30b76f1">resetBoard</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a056d70c4b20510d4e7a01afe8969085a">showAllRecords:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a6ac797433b51ead28bcad34f1ca007b3">saveCurrentGame</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a88c06199d7984204877247efa0fd7d74">startClinicMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a168fde1ca4265b914184586db6879a0c">moveToClinicMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a4654420f24fa6731e6dc5fa0fb4cf2a9">quitClinicMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2486a78d1ba9dafa3420bc04c4d01777"></a><!-- doxytag: member="AbstractRecordViewController::selectStone:" ref="a2486a78d1ba9dafa3420bc04c4d01777" args="(GameRecords *stone)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>selectStone:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15573660efc14f63a120755ca61fc28e"></a><!-- doxytag: member="AbstractRecordViewController::unSelectStone:" ref="a15573660efc14f63a120755ca61fc28e" args="(GameRecords *stone)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>unSelectStone:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad02361418e5b86ddbf7946b920b20934"></a><!-- doxytag: member="AbstractRecordViewController::showStoneComments:" ref="ad02361418e5b86ddbf7946b920b20934" args="(GameRecords *stone)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>showStoneComments:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d7a681d978dd332edcbe7ee9a01e0a0"></a><!-- doxytag: member="AbstractRecordViewController::setGoStoneViewDispSetting:" ref="a2d7a681d978dd332edcbe7ee9a01e0a0" args="(GoStoneView *view)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setGoStoneViewDispSetting:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a778850dccbf812d31aa9c0af085524b8">checkButtonActivate</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#aa9e3322b6d0237359c2bb22952aab672">checkBranchRecord</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a0bfed8687161c14e782505a08de09ef5">checkComparable</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97400ed3e78f1e33b83e32d0faaaae54"></a><!-- doxytag: member="AbstractRecordViewController::checkPrevRecords" ref="a97400ed3e78f1e33b83e32d0faaaae54" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>checkPrevRecords</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b981a14f16bb0b25431714ec0678b73"></a><!-- doxytag: member="AbstractRecordViewController::checkNextRecords" ref="a6b981a14f16bb0b25431714ec0678b73" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>checkNextRecords</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a7a55e5530e121e0b39f035dca29e8577">insertGoStoneView:aboveView:opacity:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_game_records.html">GameRecords</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a6b332a9fa53a850166a12a5f5d6a99fe">insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a7e16eb8996e2d0b5d825374d564a533c">removeGoStoneViewCyclic:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a67b4f0f87e9ed347378125b6a834cfdd">startNewGame</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3edda20fcfcbeb5c4f3a453aedbfc1e2"></a><!-- doxytag: member="AbstractRecordViewController::initGameInfoControl" ref="a3edda20fcfcbeb5c4f3a453aedbfc1e2" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>initGameInfoControl</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a1c50772482cb391a0317ac01b8fbdc51">showSelectExsistedGamesAlertView</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ac797433b51ead28bcad34f1ca007b3"></a><!-- doxytag: member="AbstractRecordViewController::saveCurrentGame" ref="a6ac797433b51ead28bcad34f1ca007b3" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>saveCurrentGame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#af72ba6db1ca2fc1e23ddcaf324a71388">prepareStartGame:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a1eb9d4c04d8d2922b3531ec8fafd1bb0">showAnswerStones</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a3600f7d5e1e176f16fc6707ca9e59bd3">clearAnswerStones</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_game_records.html">GameRecords</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a826af0d182748e78f8798d2fe5cc2b6d">getLastShownGoStoneViewRecord:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a019625ec4026858785a1579676a1f69b"></a><!-- doxytag: member="AbstractRecordViewController::changePractiveRecordTransparency" ref="a019625ec4026858785a1579676a1f69b" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>changePractiveRecordTransparency</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65bf13a50920e352d60dd6b8985fab9b"></a><!-- doxytag: member="AbstractRecordViewController::getCurrentDispMode" ref="a65bf13a50920e352d60dd6b8985fab9b" args="()" -->
+(int)&#160;</td><td class="memItemRight" valign="bottom">- <b>getCurrentDispMode</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40384d4a2a0528073f206b2f345532e0"></a><!-- doxytag: member="AbstractRecordViewController::refreshAllGoStoneView" ref="a40384d4a2a0528073f206b2f345532e0" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>refreshAllGoStoneView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a27a4c02c17337cece7bc250de2449f96">showNormalShowMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a5709ef9f7c65e524822ec7765f8c4c4b">showNormalRegistMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#ae0a771f6cbfe223a0b3d72fab37e12a8">showTsumegoShowMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a3af87d17d486ae3ac03adb8c6bf76c14">showTsumegoRegistMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a55f6add41b02e10e1e89a6fca71c18a5">showQuestionShowMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#a6405ef4502d057e9778a265fa63230f4">showQuestionRegistMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36ee966347c83a924feccd85aa6b2826"></a><!-- doxytag: member="AbstractRecordViewController::showSaveAlertView:" ref="a36ee966347c83a924feccd85aa6b2826" args="(int gameType)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>showSaveAlertView:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf6f1c4329169c26f22e85091b790f3c"></a><!-- doxytag: member="AbstractRecordViewController::showGameTitle" ref="abf6f1c4329169c26f22e85091b790f3c" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>showGameTitle</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a4c889e86c8c7bbb2ec7292b4c1d851"></a><!-- doxytag: member="AbstractRecordViewController::showMenu:delegate:" ref="a1a4c889e86c8c7bbb2ec7292b4c1d851" args="(id sender,[delegate] id delegate)" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>showMenu:delegate:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfef3c389bc87c5501223a0340bb5d42"></a><!-- doxytag: member="AbstractRecordViewController::putOffEnclosedStonesFromStack" ref="acfef3c389bc87c5501223a0340bb5d42" args="()" -->
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>putOffEnclosedStonesFromStack</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6117104a05041dc47753c5e918005b5e"></a><!-- doxytag: member="AbstractRecordViewController::touchNavRightButton:" ref="a6117104a05041dc47753c5e918005b5e" args="(id sender)" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>touchNavRightButton:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bd01a686778e5e9f78f178275743d8e"></a><!-- doxytag: member="AbstractRecordViewController::touchMenuButton:" ref="a1bd01a686778e5e9f78f178275743d8e" args="(id sender)" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>touchMenuButton:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96715e03545a334e6130b497c5c7a5ff"></a><!-- doxytag: member="AbstractRecordViewController::touchFaceDispSwitch:" ref="a96715e03545a334e6130b497c5c7a5ff" args="(id sender)" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>touchFaceDispSwitch:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addab1ecf92b8c94664a76e93a3744133"></a><!-- doxytag: member="AbstractRecordViewController::touchMoveDispSwitch:" ref="addab1ecf92b8c94664a76e93a3744133" args="(id sender)" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>touchMoveDispSwitch:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73f1464349e87832512dccb1a8b91690"></a><!-- doxytag: member="AbstractRecordViewController::moveToNextRecord" ref="a73f1464349e87832512dccb1a8b91690" args="()" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>moveToNextRecord</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0fe59d1fd39235023bc3b0dabf50f67"></a><!-- doxytag: member="AbstractRecordViewController::moveToPrevRecord" ref="af0fe59d1fd39235023bc3b0dabf50f67" args="()" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>moveToPrevRecord</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fa41d23c44bd1089c2f779c2f5e07a9"></a><!-- doxytag: member="AbstractRecordViewController::moveToFirstRecord" ref="a7fa41d23c44bd1089c2f779c2f5e07a9" args="()" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>moveToFirstRecord</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35cb69eb2dadd660e34a9da3113470c8"></a><!-- doxytag: member="AbstractRecordViewController::moveToLastRecord" ref="a35cb69eb2dadd660e34a9da3113470c8" args="()" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>moveToLastRecord</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a244fc7ff5da9673ecab53aa9020c4724"></a><!-- doxytag: member="AbstractRecordViewController::touchReturnToAboveLevelButton:" ref="a244fc7ff5da9673ecab53aa9020c4724" args="(id sender)" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>touchReturnToAboveLevelButton:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_abstract_record_view_controller.html#aecfc6bd891d5023408a112f650722707">touchCompareClinicButton:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40faf26c1ca681ee3591bdefaeca3c90"></a><!-- doxytag: member="AbstractRecordViewController::touchBranchButton:" ref="a40faf26c1ca681ee3591bdefaeca3c90" args="(id sender)" -->
+(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <b>touchBranchButton:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13dde1eb5f4219b5969cd4ee21f290c7"></a><!-- doxytag: member="AbstractRecordViewController::_navBar" ref="a13dde1eb5f4219b5969cd4ee21f290c7" args="" -->
+IBOutlet UINavigationBar *&#160;</td><td class="memItemRight" valign="bottom"><b>_navBar</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21fc7774c20031d2e61e5641da05771a"></a><!-- doxytag: member="AbstractRecordViewController::_commentView" ref="a21fc7774c20031d2e61e5641da05771a" args="" -->
+IBOutlet <a class="el" href="interface_comment_view.html">CommentView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_commentView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7561ef44a265422a44b80e4e06e6432d"></a><!-- doxytag: member="AbstractRecordViewController::_boardView" ref="a7561ef44a265422a44b80e4e06e6432d" args="" -->
+IBOutlet <a class="el" href="interface_board_view.html">BoardView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_boardView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5366410d1844c2b0635e914c09d2748"></a><!-- doxytag: member="AbstractRecordViewController::_gameTitleLabel" ref="aa5366410d1844c2b0635e914c09d2748" args="" -->
+IBOutlet UILabel *&#160;</td><td class="memItemRight" valign="bottom"><b>_gameTitleLabel</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80f03fc22b3a42dbb18be8f35ac17792"></a><!-- doxytag: member="AbstractRecordViewController::_returnToAboveLevelButton" ref="a80f03fc22b3a42dbb18be8f35ac17792" args="" -->
+IBOutlet UIButton *&#160;</td><td class="memItemRight" valign="bottom"><b>_returnToAboveLevelButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9e9358af1d5b00add9326ad42445b28"></a><!-- doxytag: member="AbstractRecordViewController::_changeToClinicButton" ref="ad9e9358af1d5b00add9326ad42445b28" args="" -->
+IBOutlet UIButton *&#160;</td><td class="memItemRight" valign="bottom"><b>_changeToClinicButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800aaf69a6d1ddc48e53713db3e6e82d"></a><!-- doxytag: member="AbstractRecordViewController::_compareClinicButton" ref="a800aaf69a6d1ddc48e53713db3e6e82d" args="" -->
+IBOutlet UIButton *&#160;</td><td class="memItemRight" valign="bottom"><b>_compareClinicButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eae56a73770a200995c407f60da2fe2"></a><!-- doxytag: member="AbstractRecordViewController::_moveToFirstRecordButton" ref="a5eae56a73770a200995c407f60da2fe2" args="" -->
+IBOutlet UIButton *&#160;</td><td class="memItemRight" valign="bottom"><b>_moveToFirstRecordButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1650b6eee98b02c083540cbd5bb4625e"></a><!-- doxytag: member="AbstractRecordViewController::_moveToLastRecordButton" ref="a1650b6eee98b02c083540cbd5bb4625e" args="" -->
+IBOutlet UIButton *&#160;</td><td class="memItemRight" valign="bottom"><b>_moveToLastRecordButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0420fc592460a6ae28de1fc7bef20cc6"></a><!-- doxytag: member="AbstractRecordViewController::_moveToNextRecordButton" ref="a0420fc592460a6ae28de1fc7bef20cc6" args="" -->
+IBOutlet UIBarButtonItem *&#160;</td><td class="memItemRight" valign="bottom"><b>_moveToNextRecordButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeacc6f8b5cc426aa4fe89e6109152b1f"></a><!-- doxytag: member="AbstractRecordViewController::_moveToPrevRecordButton" ref="aeacc6f8b5cc426aa4fe89e6109152b1f" args="" -->
+IBOutlet UIBarButtonItem *&#160;</td><td class="memItemRight" valign="bottom"><b>_moveToPrevRecordButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fa14d365bf0622321d357f438d0f024"></a><!-- doxytag: member="AbstractRecordViewController::_stoneNumberSwitch" ref="a1fa14d365bf0622321d357f438d0f024" args="" -->
+IBOutlet UISwitch *&#160;</td><td class="memItemRight" valign="bottom"><b>_stoneNumberSwitch</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f82b7b40c8e24c8650bb38c3dd2aca7"></a><!-- doxytag: member="AbstractRecordViewController::_stoneFaceSwitch" ref="a8f82b7b40c8e24c8650bb38c3dd2aca7" args="" -->
+IBOutlet UISwitch *&#160;</td><td class="memItemRight" valign="bottom"><b>_stoneFaceSwitch</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c3a85a9d14dcb7b9aeb320cf950aa36"></a><!-- doxytag: member="AbstractRecordViewController::_bobFaceView" ref="a1c3a85a9d14dcb7b9aeb320cf950aa36" args="" -->
+IBOutlet UIImageView *&#160;</td><td class="memItemRight" valign="bottom"><b>_bobFaceView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41fd69fa81bc98a15f5d42e410ba3271"></a><!-- doxytag: member="AbstractRecordViewController::_commentTextView" ref="a41fd69fa81bc98a15f5d42e410ba3271" args="" -->
+IBOutlet UITextView *&#160;</td><td class="memItemRight" valign="bottom"><b>_commentTextView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a192865b1b2d15a7df8f8bc482937b603"></a><!-- doxytag: member="AbstractRecordViewController::_stoneDispMode" ref="a192865b1b2d15a7df8f8bc482937b603" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_stoneDispMode</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95974f12d7b77527290f08edbcbeed48"></a><!-- doxytag: member="AbstractRecordViewController::_isPractiveRecordTransparent" ref="a95974f12d7b77527290f08edbcbeed48" args="" -->
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>_isPractiveRecordTransparent</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83688601809e3c6d2bbb1fed20a6bb52"></a><!-- doxytag: member="AbstractRecordViewController::_currentGame" ref="a83688601809e3c6d2bbb1fed20a6bb52" args="" -->
+<a class="el" href="interface_games.html">Games</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_currentGame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abed47fdca333426ec912c7f3ca670f95"></a><!-- doxytag: member="AbstractRecordViewController::_commentViewController" ref="abed47fdca333426ec912c7f3ca670f95" args="" -->
+<a class="el" href="interface_comment_view_controller.html">CommentViewController</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_commentViewController</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd7973557d4a016cd6c0cca348664ea2"></a><!-- doxytag: member="AbstractRecordViewController::_popoverView" ref="afd7973557d4a016cd6c0cca348664ea2" args="" -->
+UIPopoverController *&#160;</td><td class="memItemRight" valign="bottom"><b>_popoverView</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a340c4197ab534a13a4bfdc6681486092"></a><!-- doxytag: member="AbstractRecordViewController::currentGame" ref="a340c4197ab534a13a4bfdc6681486092" args="" -->
+<a class="el" href="interface_games.html">Games</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currentGame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e8eab3134a3d4178d9c95782314efe0"></a><!-- doxytag: member="AbstractRecordViewController::popoverView" ref="a7e8eab3134a3d4178d9c95782314efe0" args="" -->
+UIPopoverController *&#160;</td><td class="memItemRight" valign="bottom"><b>popoverView</b></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>説明</h2>
+<div class="textblock"><p>テストテスト  inoko </p>
+</div><hr/><h2>関数</h2>
+<a class="anchor" id="aa9e3322b6d0237359c2bb22952aab672"></a><!-- doxytag: member="AbstractRecordViewController::checkBranchRecord" ref="aa9e3322b6d0237359c2bb22952aab672" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) checkBranchRecord </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>現在のレコードに分岐レコードがあるかチェックし、存在する場合は分岐ボタンをアクティブにする 実戦譜以外の場合は、戻るボタンを有効にする </p>
+
+</div>
+</div>
+<a class="anchor" id="a778850dccbf812d31aa9c0af085524b8"></a><!-- doxytag: member="AbstractRecordViewController::checkButtonActivate" ref="a778850dccbf812d31aa9c0af085524b8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) checkButtonActivate </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>現在のレコードに対し、各ボタンのOn/Offをチェックする。 デフォルトでは、"分岐”、"比較"、"次へ"、"前へ"ボタンをチェック </p>
+
+</div>
+</div>
+<a class="anchor" id="a0bfed8687161c14e782505a08de09ef5"></a><!-- doxytag: member="AbstractRecordViewController::checkComparable" ref="a0bfed8687161c14e782505a08de09ef5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) checkComparable </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比較可能かどうかをチェックし、可能な場合は比較ボタンをアクティブにする </p>
+
+</div>
+</div>
+<a class="anchor" id="a3600f7d5e1e176f16fc6707ca9e59bd3"></a><!-- doxytag: member="AbstractRecordViewController::clearAnswerStones" ref="a3600f7d5e1e176f16fc6707ca9e59bd3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) clearAnswerStones </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解答の碁石を消去すrる。 </p>
+
+<p><a class="el" href="interface_tsumego_regist_view_controller.html#a13002ba7374640f80c252671dc8fb1e9">TsumegoRegistViewController</a>で再定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a826af0d182748e78f8798d2fe5cc2b6d"></a><!-- doxytag: member="AbstractRecordViewController::getLastShownGoStoneViewRecord:" ref="a826af0d182748e78f8798d2fe5cc2b6d" args="(GameRecords *from)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_game_records.html">GameRecords</a> *) getLastShownGoStoneViewRecord: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_game_records.html">GameRecords</a>*)&#160;</td>
+          <td class="paramname"><em>from</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Fromのレコードより前のレコードで、表示されているGoStoneViewを保持しているGameRecordの中で最も手番が多い物を返す </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a55e5530e121e0b39f035dca29e8577"></a><!-- doxytag: member="AbstractRecordViewController::insertGoStoneView:aboveView:opacity:" ref="a7a55e5530e121e0b39f035dca29e8577" args="(GoStoneView *view,[aboveView] UIView *aboveView,[opacity] float opacity)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) insertGoStoneView: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_go_stone_view.html">GoStoneView</a>*)&#160;</td>
+          <td class="paramname"><em>view</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">aboveView:</td>
+          <td></td>
+          <td class="paramtype">(UIView*)&#160;</td>
+          <td class="paramname"><em>aboveView</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">opacity:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>opacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>碁石を表示する </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b332a9fa53a850166a12a5f5d6a99fe"></a><!-- doxytag: member="AbstractRecordViewController::insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:" ref="a6b332a9fa53a850166a12a5f5d6a99fe" args="(GameRecords *record,[toMove] int toMove,[opacity] float opacity,[isRemovedShow] BOOL isRemovedShow)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_game_records.html">GameRecords</a> *) insertGoStoneViewCyclick: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_game_records.html">GameRecords</a>*)&#160;</td>
+          <td class="paramname"><em>record</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">toMove:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>toMove</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">opacity:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>opacity</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">isRemovedShow:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>isRemovedShow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>指定されたGoStoneから、指定された手数まで棋譜を再帰的に表示する 尚、最後のレコードを返す </p>
+
+</div>
+</div>
+<a class="anchor" id="a168fde1ca4265b914184586db6879a0c"></a><!-- doxytag: member="AbstractRecordViewController::moveToClinicMode" ref="a168fde1ca4265b914184586db6879a0c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) moveToClinicMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ClinicModeを開始する 既に分岐レコードがあっても上書きしない (一階層分岐を掘る) </p>
+
+</div>
+</div>
+<a class="anchor" id="af72ba6db1ca2fc1e23ddcaf324a71388"></a><!-- doxytag: member="AbstractRecordViewController::prepareStartGame:" ref="af72ba6db1ca2fc1e23ddcaf324a71388" args="(int gameType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) prepareStartGame: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>gameType</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>新規のゲームを作成する準備をする。 もし、既存のゲームが存在したら、保存を促す。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4654420f24fa6731e6dc5fa0fb4cf2a9"></a><!-- doxytag: member="AbstractRecordViewController::quitClinicMode" ref="a4654420f24fa6731e6dc5fa0fb4cf2a9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) quitClinicMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ClinicMOdeを終了する (一階層分岐を戻る) </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e16eb8996e2d0b5d825374d564a533c"></a><!-- doxytag: member="AbstractRecordViewController::removeGoStoneViewCyclic:" ref="a7e16eb8996e2d0b5d825374d564a533c" args="(GameRecords *record)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeGoStoneViewCyclic: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_game_records.html">GameRecords</a>*)&#160;</td>
+          <td class="paramname"><em>record</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>次のGameRecordがNullになるまでGoStoneViewを取り除く </p>
+
+</div>
+</div>
+<a class="anchor" id="af3b65256360492aa93ae7ac9f30b76f1"></a><!-- doxytag: member="AbstractRecordViewController::resetBoard" ref="af3b65256360492aa93ae7ac9f30b76f1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) resetBoard </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>全てのレコードのViewを非表示にする </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ac797433b51ead28bcad34f1ca007b3"></a><!-- doxytag: member="AbstractRecordViewController::saveCurrentGame" ref="a6ac797433b51ead28bcad34f1ca007b3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) saveCurrentGame </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>現在のゲームを保存し、全てのフラグをリセットする。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a056d70c4b20510d4e7a01afe8969085a"></a><!-- doxytag: member="AbstractRecordViewController::showAllRecords:" ref="a056d70c4b20510d4e7a01afe8969085a" args="(int mode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showAllRecords: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>mode</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>現在のゲームの碁石をすべて表示する(Origin) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode,:</td><td>0:碁石に手数を表示する 1:碁石に顔を表示する </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1eb9d4c04d8d2922b3531ec8fafd1bb0"></a><!-- doxytag: member="AbstractRecordViewController::showAnswerStones" ref="a1eb9d4c04d8d2922b3531ec8fafd1bb0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showAnswerStones </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解答の碁石を表示する。尚、表示する際に手数を表示する </p>
+
+<p><a class="el" href="interface_tsumego_regist_view_controller.html#ad89444447bd6f8b4b5432c1312433c99">TsumegoRegistViewController</a>で再定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5709ef9f7c65e524822ec7765f8c4c4b"></a><!-- doxytag: member="AbstractRecordViewController::showNormalRegistMode" ref="a5709ef9f7c65e524822ec7765f8c4c4b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showNormalRegistMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>棋譜表示モードを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="a27a4c02c17337cece7bc250de2449f96"></a><!-- doxytag: member="AbstractRecordViewController::showNormalShowMode" ref="a27a4c02c17337cece7bc250de2449f96" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showNormalShowMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>棋譜表示モードを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="a6405ef4502d057e9778a265fa63230f4"></a><!-- doxytag: member="AbstractRecordViewController::showQuestionRegistMode" ref="a6405ef4502d057e9778a265fa63230f4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showQuestionRegistMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>問題登録モードを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="a55f6add41b02e10e1e89a6fca71c18a5"></a><!-- doxytag: member="AbstractRecordViewController::showQuestionShowMode" ref="a55f6add41b02e10e1e89a6fca71c18a5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showQuestionShowMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>問題表示モードを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="a1c50772482cb391a0317ac01b8fbdc51"></a><!-- doxytag: member="AbstractRecordViewController::showSelectExsistedGamesAlertView" ref="a1c50772482cb391a0317ac01b8fbdc51" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showSelectExsistedGamesAlertView </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>既存のゲームを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="a3af87d17d486ae3ac03adb8c6bf76c14"></a><!-- doxytag: member="AbstractRecordViewController::showTsumegoRegistMode" ref="a3af87d17d486ae3ac03adb8c6bf76c14" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showTsumegoRegistMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>詰碁表示モードを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0a771f6cbfe223a0b3d72fab37e12a8"></a><!-- doxytag: member="AbstractRecordViewController::showTsumegoShowMode" ref="ae0a771f6cbfe223a0b3d72fab37e12a8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) showTsumegoShowMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>詰碁表示モードを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="a88c06199d7984204877247efa0fd7d74"></a><!-- doxytag: member="AbstractRecordViewController::startClinicMode" ref="a88c06199d7984204877247efa0fd7d74" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startClinicMode </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ClinicModeを開始する 既に分岐レコードがある場合は上書きする (一階層分岐を掘る) </p>
+
+</div>
+</div>
+<a class="anchor" id="a67b4f0f87e9ed347378125b6a834cfdd"></a><!-- doxytag: member="AbstractRecordViewController::startNewGame" ref="a67b4f0f87e9ed347378125b6a834cfdd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startNewGame </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>新規のゲームを開始する </p>
+
+</div>
+</div>
+<a class="anchor" id="aecfc6bd891d5023408a112f650722707"></a><!-- doxytag: member="AbstractRecordViewController::touchCompareClinicButton:" ref="aecfc6bd891d5023408a112f650722707" args="(id sender)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (IBAction) touchCompareClinicButton: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>sender</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>現在の分岐レコードのルートレコードから、現在の手数迄のノーマルレコードを表示する(一階層上) </p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>/Users/inoko/iPhoneProject/GoClinic_no_GoStone/GoClinic/Classes/<a class="el" href="_abstract_record_view_controller_8h_source.html">AbstractRecordViewController.h</a></li>
+<li>/Users/inoko/iPhoneProject/GoClinic_no_GoStone/GoClinic/Classes/AbstractRecordViewController.m</li>
+</ul>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="interface_abstract_record_view_controller.html">AbstractRecordViewController</a>      </li>
+      <li class="footer">GoClinicに対してSun May 15 2011 18:10:23に生成されました。&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>プロパティ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+</body>
+</html>

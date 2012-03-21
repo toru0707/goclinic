@@ -1,0 +1,578 @@
+\hypertarget{interface_games}{
+\section{クラス Games}
+\label{interface_games}\index{Games@{Games}}
+}
+Gamesに対する継承グラフ\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_games}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_games_a01dfe628966c04670fedf35e02c33371}{
+(id) -\/ {\bfseries initGames}}
+\label{interface_games_a01dfe628966c04670fedf35e02c33371}
+
+\item 
+\hypertarget{interface_games_a430dea682d0d84b969200dd97dd2be98}{
+(id) -\/ {\bfseries initGamesWithBoardSize:ySize:}}
+\label{interface_games_a430dea682d0d84b969200dd97dd2be98}
+
+\item 
+(BOOL) -\/ \hyperlink{interface_games_ae1b6c93bf7add9a10162247a20065ae8}{save}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_aca0584d71aeaf9cb5d3f0ee24e69fe24}{reset}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_af8332c38140082709ec41bf91747c41f}{delete}
+\item 
+(void) -\/ \hyperlink{interface_games_a4c5e2dc4e111e48f56ecb8e94fb3cac1}{restore}
+\item 
+(void) -\/ \hyperlink{interface_games_ac3127f644ef9d8a28e87606f3d3dfabd}{clearStoneBoard}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_af18902533c38f8bcf431406bf03745bb}{createNewRecord:y:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_ae4fe69c9a21bec384055e089ceac2829}{changeToBranchRecord}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_a9ce3e100ef3c5624144c5447630b3a6e}{changeToNormalRecord}
+\item 
+(int) -\/ \hyperlink{interface_games_a3fb19a273e3591f2e8e61a9eee23d84c}{checkCurrentNextRecordPuttable:y:}
+\item 
+\hypertarget{interface_games_a6ebac07fc8659bbb8af5a5bc1201256f}{
+(int) -\/ {\bfseries checkRecordPuttable:}}
+\label{interface_games_a6ebac07fc8659bbb8af5a5bc1201256f}
+
+\item 
+(int) -\/ \hyperlink{interface_games_a0272aef1d669a1162b8025ff0eccd8df}{checkUser:}
+\item 
+(void) -\/ \hyperlink{interface_games_a19e7645f03f70e1215390106d8e5ff3a}{deleteGameRecord:}
+\item 
+(void) -\/ \hyperlink{interface_games_a66ef016bdf75662d0368b7726aca5fb3}{deleteGameRecordCyclic:}
+\item 
+\hypertarget{interface_games_a27c81a4af36aceb98772b9ac610e6135}{
+(NSNumber $\ast$) -\/ {\bfseries getCurrentUserId}}
+\label{interface_games_a27c81a4af36aceb98772b9ac610e6135}
+
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_games_a3c209384d054a75c0e08a5e1107ead3f}{getEnclosedStonesFromStack:}
+\item 
+\hypertarget{interface_games_a6fada6f7a5e589c859d987ebfe7ef69c}{
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ {\bfseries getEnclosedStonesFromXYStones:}}
+\label{interface_games_a6fada6f7a5e589c859d987ebfe7ef69c}
+
+\item 
+\hypertarget{interface_games_aec8599f725ed45a79fea1a19a919f5dd}{
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ {\bfseries getStoneArrayXY:y:}}
+\label{interface_games_aec8599f725ed45a79fea1a19a919f5dd}
+
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a2bcadbacf50a9d7e7e45e1372de6ac97}{moveToNextRecord}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a620301ed77395102fdb427c8a0d060cf}{moveToPrevRecord}
+\item 
+(void) -\/ \hyperlink{interface_games_aad47ae4e9af60c4288ba8a0b61e604d3}{pushRecordToStackCyclic:}
+\item 
+(void) -\/ \hyperlink{interface_games_ac2add832bf20e19420784775a061d300}{popToMoveCyclic:}
+\item 
+\hypertarget{interface_games_a585c2b097394ef607f29d2a36a113c1a}{
+(void) -\/ {\bfseries showStackLog}}
+\label{interface_games_a585c2b097394ef607f29d2a36a113c1a}
+
+\item 
+\hypertarget{interface_games_ad6eacd14dcf954b902b66b445b1a5c6c}{
+(void) -\/ {\bfseries showStonesXYLog}}
+\label{interface_games_ad6eacd14dcf954b902b66b445b1a5c6c}
+
+\item 
+\hypertarget{interface_games_a18c5e32f0ce44370f981950e8f4121e4}{
+(void) -\/ {\bfseries setStackToXYArray}}
+\label{interface_games_a18c5e32f0ce44370f981950e8f4121e4}
+
+\item 
+\hypertarget{interface_games_a373d76bc748ebe5a181c4b69803fd72b}{
+(void) -\/ {\bfseries setStoneArrayXY:y:stone:}}
+\label{interface_games_a373d76bc748ebe5a181c4b69803fd72b}
+
+\item 
+\hypertarget{interface_games_a00f0d0456bde50486d6144218ec608f8}{
+(void) -\/ {\bfseries addGame\_\-recordsObject:}}
+\label{interface_games_a00f0d0456bde50486d6144218ec608f8}
+
+\item 
+\hypertarget{interface_games_ac747f01b9449eac068cd3f400c75f4da}{
+(void) -\/ {\bfseries removeGame\_\-recordsObject:}}
+\label{interface_games_ac747f01b9449eac068cd3f400c75f4da}
+
+\item 
+\hypertarget{interface_games_a728428abc6477a64e3af4fb03a67fc60}{
+(void) -\/ {\bfseries addGame\_\-records:}}
+\label{interface_games_a728428abc6477a64e3af4fb03a67fc60}
+
+\item 
+\hypertarget{interface_games_a221f3c724f98ffa3f870d6f597750557}{
+(void) -\/ {\bfseries removeGame\_\-records:}}
+\label{interface_games_a221f3c724f98ffa3f870d6f597750557}
+
+\item 
+\hypertarget{interface_games_a4b748d245b2717e54d5581aaa851a9b5}{
+(void) -\/ {\bfseries checkAutoSave}}
+\label{interface_games_a4b748d245b2717e54d5581aaa851a9b5}
+
+\item 
+\hypertarget{interface_games_aede639ff391e10c3b864b2610155bd5e}{
+(void) -\/ {\bfseries clearCheckBoard}}
+\label{interface_games_aede639ff391e10c3b864b2610155bd5e}
+
+\item 
+\hypertarget{interface_games_a9bd21f92c54850bcb5b474602522376a}{
+(void) -\/ {\bfseries createGoStoneViewCyclic:}}
+\label{interface_games_a9bd21f92c54850bcb5b474602522376a}
+
+\item 
+\hypertarget{interface_games_a80bf136743a5da3cc6c3e13bc2c71ecb}{
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ {\bfseries createNewNormalRecord:y:}}
+\label{interface_games_a80bf136743a5da3cc6c3e13bc2c71ecb}
+
+\item 
+\hypertarget{interface_games_aa04ffa3b4aef586defb52c1b8e4c91ec}{
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ {\bfseries createNewBranchRecord:y:}}
+\label{interface_games_aa04ffa3b4aef586defb52c1b8e4c91ec}
+
+\item 
+\hypertarget{interface_games_ad2d24effe36485105bde94171e77deb6}{
+(NSNumber $\ast$) -\/ {\bfseries getCurrentNextRecodeMove}}
+\label{interface_games_ad2d24effe36485105bde94171e77deb6}
+
+\item 
+\hypertarget{interface_games_a7eb3fe2c98bf87e30a85aa5312db2d99}{
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ {\bfseries getEnclosedStonesFromStackWithStack:stack:}}
+\label{interface_games_a7eb3fe2c98bf87e30a85aa5312db2d99}
+
+\item 
+\hypertarget{interface_games_a47becd0c290f96ce3fd635a1d3c17af8}{
+(int) -\/ {\bfseries getOpponentUser:}}
+\label{interface_games_a47becd0c290f96ce3fd635a1d3c17af8}
+
+\item 
+\hypertarget{interface_games_a0478be8859388476b846e6840b5abf26}{
+(int) -\/ {\bfseries getRecordUserId:}}
+\label{interface_games_a0478be8859388476b846e6840b5abf26}
+
+\item 
+\hypertarget{interface_games_aac304863fcdaa29bd627766ea24ea5d5}{
+(void) -\/ {\bfseries setNewCurrentRecord:}}
+\label{interface_games_aac304863fcdaa29bd627766ea24ea5d5}
+
+\item 
+\hypertarget{interface_games_ab105dfc06c682a58a0bc9421425635a6}{
+(BOOL) -\/ {\bfseries checkSuicide:x:y:}}
+\label{interface_games_ab105dfc06c682a58a0bc9421425635a6}
+
+\item 
+\hypertarget{interface_games_abae461aa449e572d9706ff5837f0e3cd}{
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ {\bfseries checkSuicideAndReturnStones:x:y:}}
+\label{interface_games_abae461aa449e572d9706ff5837f0e3cd}
+
+\item 
+\hypertarget{interface_games_af9c158e6105d8a0afb05fde82d0faefb}{
+(BOOL) -\/ {\bfseries doCheckRemoveStone:x:y:}}
+\label{interface_games_af9c158e6105d8a0afb05fde82d0faefb}
+
+\item 
+\hypertarget{interface_games_a35a940a5a3b0c9176b35106d38779a04}{
+(BOOL) -\/ {\bfseries doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:}}
+\label{interface_games_a35a940a5a3b0c9176b35106d38779a04}
+
+\item 
+\hypertarget{interface_games_a97f53c5367df474c90fb9ff869627bfb}{
+(void) -\/ {\bfseries setCheckBoardXY:y:checked:}}
+\label{interface_games_a97f53c5367df474c90fb9ff869627bfb}
+
+\item 
+\hypertarget{interface_games_a2d9c4ec95804f78a087188b0ea7eef87}{
+(BOOL) -\/ {\bfseries getCheckBoardXY:y:}}
+\label{interface_games_a2d9c4ec95804f78a087188b0ea7eef87}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 変数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_games_a7f97e43d2e57ea8b8d24bbebec583013}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries \_\-recordStack}}
+\label{interface_games_a7f97e43d2e57ea8b8d24bbebec583013}
+
+\item 
+\hypertarget{interface_games_adf59b1fa9a0cfe911d992ffa2ab00ede}{
+int {\bfseries \_\-insertMode}}
+\label{interface_games_adf59b1fa9a0cfe911d992ffa2ab00ede}
+
+\item 
+\hypertarget{interface_games_af1c274d54923dce41904ba78f1256ac5}{
+BOOL {\bfseries \_\-isNewBranchRecord}}
+\label{interface_games_af1c274d54923dce41904ba78f1256ac5}
+
+\item 
+\hypertarget{interface_games_abb798d37b60e6016079ec2c01335624d}{
+int {\bfseries \_\-xSize}}
+\label{interface_games_abb798d37b60e6016079ec2c01335624d}
+
+\item 
+\hypertarget{interface_games_adbf5d8b47c74df7302f494d2d7e6958f}{
+int {\bfseries \_\-ySize}}
+\label{interface_games_adbf5d8b47c74df7302f494d2d7e6958f}
+
+\item 
+\hypertarget{interface_games_a4a445b26c8840314243be910add4ef81}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries \_\-stoneArray}}
+\label{interface_games_a4a445b26c8840314243be910add4ef81}
+
+\item 
+\hypertarget{interface_games_a128844d6d9dbb18844a3ac8b57167329}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries \_\-checkBoard}}
+\label{interface_games_a128844d6d9dbb18844a3ac8b57167329}
+
+\item 
+\hypertarget{interface_games_aa473c6742f9bc0192dd115ea3bce6f68}{
+int {\bfseries \_\-currentUserId}}
+\label{interface_games_aa473c6742f9bc0192dd115ea3bce6f68}
+
+\item 
+\hypertarget{interface_games_a946b513550a9d9603bf1c1b75c561845}{
+BOOL {\bfseries \_\-autoSaveEnable}}
+\label{interface_games_a946b513550a9d9603bf1c1b75c561845}
+
+\item 
+\hypertarget{interface_games_acc34d75c0288d85f09e22a6e10d95922}{
+int {\bfseries \_\-autoSaveInterval}}
+\label{interface_games_acc34d75c0288d85f09e22a6e10d95922}
+
+\item 
+\hypertarget{interface_games_a4a67ea08275ead5aa598cf4e2c8ad648}{
+int {\bfseries \_\-currentDepth}}
+\label{interface_games_a4a67ea08275ead5aa598cf4e2c8ad648}
+
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_games_adfd10a0ab71e7707a93b9f6fb6d1a725}{
+int {\bfseries currentUserId}}
+\label{interface_games_adfd10a0ab71e7707a93b9f6fb6d1a725}
+
+\item 
+\hypertarget{interface_games_a13992e2a7bf44b87037af4c0ae8ba3c7}{
+int {\bfseries insertMode}}
+\label{interface_games_a13992e2a7bf44b87037af4c0ae8ba3c7}
+
+\item 
+\hypertarget{interface_games_ab21cd03e3e2ad1465bfb1c7cd7ffd31f}{
+int {\bfseries autoSaveInterval}}
+\label{interface_games_ab21cd03e3e2ad1465bfb1c7cd7ffd31f}
+
+\item 
+\hypertarget{interface_games_a69d167507d10954f3dfc877dd24cd9ab}{
+int {\bfseries xSize}}
+\label{interface_games_a69d167507d10954f3dfc877dd24cd9ab}
+
+\item 
+\hypertarget{interface_games_ac18291e244ca8a4c50de563a8e3ac0a8}{
+int {\bfseries ySize}}
+\label{interface_games_ac18291e244ca8a4c50de563a8e3ac0a8}
+
+\item 
+\hypertarget{interface_games_a9deb4ef9948a554a428985eaeb0d2b31}{
+int {\bfseries currentDepth}}
+\label{interface_games_a9deb4ef9948a554a428985eaeb0d2b31}
+
+\item 
+\hypertarget{interface_games_a703b51f88f07e90dcedc96ba2205fad2}{
+BOOL {\bfseries isNewBranchRecord}}
+\label{interface_games_a703b51f88f07e90dcedc96ba2205fad2}
+
+\item 
+\hypertarget{interface_games_ad5eb3884caccccce5c0e732331888e31}{
+BOOL {\bfseries autoSaveEnable}}
+\label{interface_games_ad5eb3884caccccce5c0e732331888e31}
+
+\item 
+\hypertarget{interface_games_a9c5b953f8926d3c38fd932edec0aeb30}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries stoneArray}}
+\label{interface_games_a9c5b953f8926d3c38fd932edec0aeb30}
+
+\item 
+\hypertarget{interface_games_a6c4d48fdb1e411f0eeca709d3dc7eda7}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries checkBoard}}
+\label{interface_games_a6c4d48fdb1e411f0eeca709d3dc7eda7}
+
+\item 
+\hypertarget{interface_games_a129e05192a7c91baac3ac5e4d764dbbd}{
+NSString $\ast$ {\bfseries title}}
+\label{interface_games_a129e05192a7c91baac3ac5e4d764dbbd}
+
+\item 
+\hypertarget{interface_games_ae761bedd4895d81eddf1dddf662db959}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries current\_\-root\_\-record}}
+\label{interface_games_ae761bedd4895d81eddf1dddf662db959}
+
+\item 
+\hypertarget{interface_games_a2679abfcd824a28c617292efccfc610b}{
+\hyperlink{interface_board_view}{BoardView} $\ast$ {\bfseries boardView}}
+\label{interface_games_a2679abfcd824a28c617292efccfc610b}
+
+\item 
+\hypertarget{interface_games_aebe294475787b67c8aa8ac4c5a75e861}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ {\bfseries recordStack}}
+\label{interface_games_aebe294475787b67c8aa8ac4c5a75e861}
+
+\item 
+\hypertarget{interface_games_a17ce505b2339650db82c94e99c40e52a}{
+NSNumber $\ast$ {\bfseries current\_\-move}}
+\label{interface_games_a17ce505b2339650db82c94e99c40e52a}
+
+\item 
+\hypertarget{interface_games_aadd53bb8402e64bfb25c9e847cce4b35}{
+NSNumber $\ast$ {\bfseries current\_\-branch\_\-move}}
+\label{interface_games_aadd53bb8402e64bfb25c9e847cce4b35}
+
+\item 
+\hypertarget{interface_games_a799f4655d7b47e04445c82b1dbf9f4d6}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries current\_\-record}}
+\label{interface_games_a799f4655d7b47e04445c82b1dbf9f4d6}
+
+\item 
+\hypertarget{interface_games_adf535cb37946a3be379ef00e240594a4}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries first\_\-record}}
+\label{interface_games_adf535cb37946a3be379ef00e240594a4}
+
+\item 
+\hypertarget{interface_games_a923707c0c4aefa34a61b168ba560184a}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ {\bfseries last\_\-record}}
+\label{interface_games_a923707c0c4aefa34a61b168ba560184a}
+
+\item 
+\hypertarget{interface_games_a40778a2f58868099a3f97eadbd5453fa}{
+\hyperlink{interface_users}{Users} $\ast$ {\bfseries current\_\-user}}
+\label{interface_games_a40778a2f58868099a3f97eadbd5453fa}
+
+\item 
+\hypertarget{interface_games_ab89e9ea7d6e1a0040524ad7f81383d98}{
+NSNumber $\ast$ {\bfseries first\_\-user\_\-id}}
+\label{interface_games_ab89e9ea7d6e1a0040524ad7f81383d98}
+
+\item 
+\hypertarget{interface_games_a575c15a3a35681ad239f63a4264653e4}{
+NSNumber $\ast$ {\bfseries game\_\-id}}
+\label{interface_games_a575c15a3a35681ad239f63a4264653e4}
+
+\item 
+\hypertarget{interface_games_aba47c20db33f8f1000c19a6ad62dee95}{
+NSNumber $\ast$ {\bfseries second\_\-user\_\-id}}
+\label{interface_games_aba47c20db33f8f1000c19a6ad62dee95}
+
+\item 
+\hypertarget{interface_games_ab7afecc431e6ddb95bbd4866a2d15866}{
+NSNumber $\ast$ {\bfseries game\_\-category}}
+\label{interface_games_ab7afecc431e6ddb95bbd4866a2d15866}
+
+\item 
+\hypertarget{interface_games_aad355f00c1b6a1a5cf357bc8b43aaecb}{
+NSMutableSet $\ast$ {\bfseries game\_\-records}}
+\label{interface_games_aad355f00c1b6a1a5cf357bc8b43aaecb}
+
+\item 
+\hypertarget{interface_games_a0765b81292303fec128e619fab915d7b}{
+\hyperlink{interface_users}{Users} $\ast$ {\bfseries first\_\-user}}
+\label{interface_games_a0765b81292303fec128e619fab915d7b}
+
+\item 
+\hypertarget{interface_games_ac220cf3094d5f19ca52def5f66e0b2b9}{
+\hyperlink{interface_users}{Users} $\ast$ {\bfseries second\_\-user}}
+\label{interface_games_ac220cf3094d5f19ca52def5f66e0b2b9}
+
+\item 
+\hypertarget{interface_games_abac1b630a22106487a418cc1385727f3}{
+NSNumber $\ast$ {\bfseries is\_\-tmp\_\-game}}
+\label{interface_games_abac1b630a22106487a418cc1385727f3}
+
+\item 
+\hypertarget{interface_games_a6ed89c5b910e9913e4f28462e32691f1}{
+NSDate $\ast$ {\bfseries save\_\-date}}
+\label{interface_games_a6ed89c5b910e9913e4f28462e32691f1}
+
+\item 
+\hypertarget{interface_games_a16743e0db90137485d16cec0d61c16da}{
+NSNumber $\ast$ {\bfseries is\_\-updated}}
+\label{interface_games_a16743e0db90137485d16cec0d61c16da}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{関数}
+\hypertarget{interface_games_ae4fe69c9a21bec384055e089ceac2829}{
+\index{Games@{Games}!changeToBranchRecord@{changeToBranchRecord}}
+\index{changeToBranchRecord@{changeToBranchRecord}!Games@{Games}}
+\subsubsection[{changeToBranchRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) changeToBranchRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ae4fe69c9a21bec384055e089ceac2829}
+現在のレコードの一つ下の階層のレコードに移動する \hypertarget{interface_games_a9ce3e100ef3c5624144c5447630b3a6e}{
+\index{Games@{Games}!changeToNormalRecord@{changeToNormalRecord}}
+\index{changeToNormalRecord@{changeToNormalRecord}!Games@{Games}}
+\subsubsection[{changeToNormalRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) changeToNormalRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a9ce3e100ef3c5624144c5447630b3a6e}
+現在のレコードの一つ上の階層のレコードに移動する \hypertarget{interface_games_a3fb19a273e3591f2e8e61a9eee23d84c}{
+\index{Games@{Games}!checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}}
+\index{checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}!Games@{Games}}
+\subsubsection[{checkCurrentNextRecordPuttable:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) checkCurrentNextRecordPuttable: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a3fb19a273e3591f2e8e61a9eee23d84c}
+打とうとしている石が、配置可能かどうかを判定する \hypertarget{interface_games_a0272aef1d669a1162b8025ff0eccd8df}{
+\index{Games@{Games}!checkUser:@{checkUser:}}
+\index{checkUser:@{checkUser:}!Games@{Games}}
+\subsubsection[{checkUser:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) checkUser: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{move}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a0272aef1d669a1162b8025ff0eccd8df}
+現在の手が先行か後攻か判断する 1:先行 0:後攻 \hypertarget{interface_games_ac3127f644ef9d8a28e87606f3d3dfabd}{
+\index{Games@{Games}!clearStoneBoard@{clearStoneBoard}}
+\index{clearStoneBoard@{clearStoneBoard}!Games@{Games}}
+\subsubsection[{clearStoneBoard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clearStoneBoard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ac3127f644ef9d8a28e87606f3d3dfabd}
+基板をクリアする \hypertarget{interface_games_af18902533c38f8bcf431406bf03745bb}{
+\index{Games@{Games}!createNewRecord:y:@{createNewRecord:y:}}
+\index{createNewRecord:y:@{createNewRecord:y:}!Games@{Games}}
+\subsubsection[{createNewRecord:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createNewRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_af18902533c38f8bcf431406bf03745bb}
+現在のレコードの次の手のレコードを作成する \hypertarget{interface_games_af8332c38140082709ec41bf91747c41f}{
+\index{Games@{Games}!delete@{delete}}
+\index{delete@{delete}!Games@{Games}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) delete 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_af8332c38140082709ec41bf91747c41f}
+ゲームを削除する \hypertarget{interface_games_a19e7645f03f70e1215390106d8e5ff3a}{
+\index{Games@{Games}!deleteGameRecord:@{deleteGameRecord:}}
+\index{deleteGameRecord:@{deleteGameRecord:}!Games@{Games}}
+\subsubsection[{deleteGameRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deleteGameRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a19e7645f03f70e1215390106d8e5ff3a}
+GameからRecordを削除する。同時に以下に影響を与える。 ・一つ前のRecordのNextRecordにNilを設定する ・LastRecordの場合は、RecordのPrevRecordをLastRecordに設定する ・RecordStackからRecordを取り除く \hypertarget{interface_games_a66ef016bdf75662d0368b7726aca5fb3}{
+\index{Games@{Games}!deleteGameRecordCyclic:@{deleteGameRecordCyclic:}}
+\index{deleteGameRecordCyclic:@{deleteGameRecordCyclic:}!Games@{Games}}
+\subsubsection[{deleteGameRecordCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deleteGameRecordCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a66ef016bdf75662d0368b7726aca5fb3}
+指定したRecord以降のRecordを全て削除する \hypertarget{interface_games_a3c209384d054a75c0e08a5e1107ead3f}{
+\index{Games@{Games}!getEnclosedStonesFromStack:@{getEnclosedStonesFromStack:}}
+\index{getEnclosedStonesFromStack:@{getEnclosedStonesFromStack:}!Games@{Games}}
+\subsubsection[{getEnclosedStonesFromStack:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray} $\ast$) getEnclosedStonesFromStack: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{fromMove}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a3c209384d054a75c0e08a5e1107ead3f}
+RecordStackから指定されたMoveから最終手までの手を、最終手側から順に評価し、削除されたGoStoneを返す \hypertarget{interface_games_a2bcadbacf50a9d7e7e45e1372de6ac97}{
+\index{Games@{Games}!moveToNextRecord@{moveToNextRecord}}
+\index{moveToNextRecord@{moveToNextRecord}!Games@{Games}}
+\subsubsection[{moveToNextRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) moveToNextRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a2bcadbacf50a9d7e7e45e1372de6ac97}
+現在のレコードの一手次のレコードに進める \begin{DoxyReturn}{戻り値}
+: 次のレコードのmove.-\/1の場合は、次の手が存在しないことを示す 
+\end{DoxyReturn}
+\hypertarget{interface_games_a620301ed77395102fdb427c8a0d060cf}{
+\index{Games@{Games}!moveToPrevRecord@{moveToPrevRecord}}
+\index{moveToPrevRecord@{moveToPrevRecord}!Games@{Games}}
+\subsubsection[{moveToPrevRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) moveToPrevRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a620301ed77395102fdb427c8a0d060cf}
+現在のレコードの一手前のレコードに戻る \begin{DoxyReturn}{戻り値}
+: 前のレコードのmove. -\/1の場合は、次の手が存在しないことを示す。 
+\end{DoxyReturn}
+\hypertarget{interface_games_ac2add832bf20e19420784775a061d300}{
+\index{Games@{Games}!popToMoveCyclic:@{popToMoveCyclic:}}
+\index{popToMoveCyclic:@{popToMoveCyclic:}!Games@{Games}}
+\subsubsection[{popToMoveCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) popToMoveCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSNumber$\ast$)}]{move}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ac2add832bf20e19420784775a061d300}
+指定されたレコードの手番迄スタックをpopする \hypertarget{interface_games_aad47ae4e9af60c4288ba8a0b61e604d3}{
+\index{Games@{Games}!pushRecordToStackCyclic:@{pushRecordToStackCyclic:}}
+\index{pushRecordToStackCyclic:@{pushRecordToStackCyclic:}!Games@{Games}}
+\subsubsection[{pushRecordToStackCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) pushRecordToStackCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aad47ae4e9af60c4288ba8a0b61e604d3}
+指定されたレコードのNextGameRecordが存在しなくなる迄、再帰的にレコードをスタックに挿入する \hypertarget{interface_games_aca0584d71aeaf9cb5d3f0ee24e69fe24}{
+\index{Games@{Games}!reset@{reset}}
+\index{reset@{reset}!Games@{Games}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) reset 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aca0584d71aeaf9cb5d3f0ee24e69fe24}
+ゲームを保存せず、初期化する \hypertarget{interface_games_a4c5e2dc4e111e48f56ecb8e94fb3cac1}{
+\index{Games@{Games}!restore@{restore}}
+\index{restore@{restore}!Games@{Games}}
+\subsubsection[{restore}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) restore 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a4c5e2dc4e111e48f56ecb8e94fb3cac1}
+ゲームの初期化を行う。GameRecords, GameRecordsからGoStoneViewを作成し、CurrentRecordを設定する \hypertarget{interface_games_ae1b6c93bf7add9a10162247a20065ae8}{
+\index{Games@{Games}!save@{save}}
+\index{save@{save}!Games@{Games}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) save 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ae1b6c93bf7add9a10162247a20065ae8}
+ゲームをセーブする 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/Games.h\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/Games.m\end{DoxyCompactItemize}

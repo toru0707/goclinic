@@ -1,0 +1,598 @@
+\hypertarget{interface_abstract_record_view_controller}{
+\section{クラス AbstractRecordViewController}
+\label{interface_abstract_record_view_controller}\index{AbstractRecordViewController@{AbstractRecordViewController}}
+}
+
+
+{\ttfamily \#import $<$AbstractRecordViewController.h$>$}
+
+AbstractRecordViewControllerに対する継承グラフ\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.419518cm]{interface_abstract_record_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a1b7e23969bdfd31a40bcb96a3ace9db4}{
+(id) -\/ {\bfseries initWithNibNameAndGame:bundle:game:}}
+\label{interface_abstract_record_view_controller_a1b7e23969bdfd31a40bcb96a3ace9db4}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a439cd9960b3b729fe932df6201d913a1}{
+(void) -\/ {\bfseries initBoardView}}
+\label{interface_abstract_record_view_controller_a439cd9960b3b729fe932df6201d913a1}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a5c1ebc2a0be8d378f5c7f58552575896}{
+(BOOL) -\/ {\bfseries hideSubViews:}}
+\label{interface_abstract_record_view_controller_a5c1ebc2a0be8d378f5c7f58552575896}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a160875d6c608a4c35496f671bf8cd8ec}{
+(void) -\/ {\bfseries commentGoStoneMenu:}}
+\label{interface_abstract_record_view_controller_a160875d6c608a4c35496f671bf8cd8ec}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_aa813c99049d9925edc590cc79199da5e}{
+(\hyperlink{interface_games}{Games} $\ast$) -\/ {\bfseries createGame}}
+\label{interface_abstract_record_view_controller_aa813c99049d9925edc590cc79199da5e}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a82e716f77a003cef242f02a887a5aff3}{
+(void) -\/ {\bfseries showCommentView:}}
+\label{interface_abstract_record_view_controller_a82e716f77a003cef242f02a887a5aff3}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a407cf65034096ae1bb6bf44cefc9ca96}{
+(void) -\/ {\bfseries hideCommentView:}}
+\label{interface_abstract_record_view_controller_a407cf65034096ae1bb6bf44cefc9ca96}
+
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_af3b65256360492aa93ae7ac9f30b76f1}{resetBoard}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a056d70c4b20510d4e7a01afe8969085a}{showAllRecords:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{saveCurrentGame}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a88c06199d7984204877247efa0fd7d74}{startClinicMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a168fde1ca4265b914184586db6879a0c}{moveToClinicMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a4654420f24fa6731e6dc5fa0fb4cf2a9}{quitClinicMode}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a2486a78d1ba9dafa3420bc04c4d01777}{
+(void) -\/ {\bfseries selectStone:}}
+\label{interface_abstract_record_view_controller_a2486a78d1ba9dafa3420bc04c4d01777}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a15573660efc14f63a120755ca61fc28e}{
+(void) -\/ {\bfseries unSelectStone:}}
+\label{interface_abstract_record_view_controller_a15573660efc14f63a120755ca61fc28e}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_ad02361418e5b86ddbf7946b920b20934}{
+(void) -\/ {\bfseries showStoneComments:}}
+\label{interface_abstract_record_view_controller_ad02361418e5b86ddbf7946b920b20934}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a2d7a681d978dd332edcbe7ee9a01e0a0}{
+(void) -\/ {\bfseries setGoStoneViewDispSetting:}}
+\label{interface_abstract_record_view_controller_a2d7a681d978dd332edcbe7ee9a01e0a0}
+
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a778850dccbf812d31aa9c0af085524b8}{checkButtonActivate}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_aa9e3322b6d0237359c2bb22952aab672}{checkBranchRecord}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a0bfed8687161c14e782505a08de09ef5}{checkComparable}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a97400ed3e78f1e33b83e32d0faaaae54}{
+(void) -\/ {\bfseries checkPrevRecords}}
+\label{interface_abstract_record_view_controller_a97400ed3e78f1e33b83e32d0faaaae54}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a6b981a14f16bb0b25431714ec0678b73}{
+(void) -\/ {\bfseries checkNextRecords}}
+\label{interface_abstract_record_view_controller_a6b981a14f16bb0b25431714ec0678b73}
+
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a7a55e5530e121e0b39f035dca29e8577}{insertGoStoneView:aboveView:opacity:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_abstract_record_view_controller_a6b332a9fa53a850166a12a5f5d6a99fe}{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a7e16eb8996e2d0b5d825374d564a533c}{removeGoStoneViewCyclic:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a67b4f0f87e9ed347378125b6a834cfdd}{startNewGame}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a3edda20fcfcbeb5c4f3a453aedbfc1e2}{
+(void) -\/ {\bfseries initGameInfoControl}}
+\label{interface_abstract_record_view_controller_a3edda20fcfcbeb5c4f3a453aedbfc1e2}
+
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a1c50772482cb391a0317ac01b8fbdc51}{showSelectExsistedGamesAlertView}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{
+(void) -\/ {\bfseries saveCurrentGame}}
+\label{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}
+
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_af72ba6db1ca2fc1e23ddcaf324a71388}{prepareStartGame:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a1eb9d4c04d8d2922b3531ec8fafd1bb0}{showAnswerStones}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a3600f7d5e1e176f16fc6707ca9e59bd3}{clearAnswerStones}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_abstract_record_view_controller_a826af0d182748e78f8798d2fe5cc2b6d}{getLastShownGoStoneViewRecord:}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a019625ec4026858785a1579676a1f69b}{
+(void) -\/ {\bfseries changePractiveRecordTransparency}}
+\label{interface_abstract_record_view_controller_a019625ec4026858785a1579676a1f69b}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a65bf13a50920e352d60dd6b8985fab9b}{
+(int) -\/ {\bfseries getCurrentDispMode}}
+\label{interface_abstract_record_view_controller_a65bf13a50920e352d60dd6b8985fab9b}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a40384d4a2a0528073f206b2f345532e0}{
+(void) -\/ {\bfseries refreshAllGoStoneView}}
+\label{interface_abstract_record_view_controller_a40384d4a2a0528073f206b2f345532e0}
+
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a27a4c02c17337cece7bc250de2449f96}{showNormalShowMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a5709ef9f7c65e524822ec7765f8c4c4b}{showNormalRegistMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_ae0a771f6cbfe223a0b3d72fab37e12a8}{showTsumegoShowMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a3af87d17d486ae3ac03adb8c6bf76c14}{showTsumegoRegistMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a55f6add41b02e10e1e89a6fca71c18a5}{showQuestionShowMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a6405ef4502d057e9778a265fa63230f4}{showQuestionRegistMode}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a36ee966347c83a924feccd85aa6b2826}{
+(void) -\/ {\bfseries showSaveAlertView:}}
+\label{interface_abstract_record_view_controller_a36ee966347c83a924feccd85aa6b2826}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_abf6f1c4329169c26f22e85091b790f3c}{
+(void) -\/ {\bfseries showGameTitle}}
+\label{interface_abstract_record_view_controller_abf6f1c4329169c26f22e85091b790f3c}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a1a4c889e86c8c7bbb2ec7292b4c1d851}{
+(void) -\/ {\bfseries showMenu:delegate:}}
+\label{interface_abstract_record_view_controller_a1a4c889e86c8c7bbb2ec7292b4c1d851}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_acfef3c389bc87c5501223a0340bb5d42}{
+(void) -\/ {\bfseries putOffEnclosedStonesFromStack}}
+\label{interface_abstract_record_view_controller_acfef3c389bc87c5501223a0340bb5d42}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a6117104a05041dc47753c5e918005b5e}{
+(IBAction) -\/ {\bfseries touchNavRightButton:}}
+\label{interface_abstract_record_view_controller_a6117104a05041dc47753c5e918005b5e}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a1bd01a686778e5e9f78f178275743d8e}{
+(IBAction) -\/ {\bfseries touchMenuButton:}}
+\label{interface_abstract_record_view_controller_a1bd01a686778e5e9f78f178275743d8e}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a96715e03545a334e6130b497c5c7a5ff}{
+(IBAction) -\/ {\bfseries touchFaceDispSwitch:}}
+\label{interface_abstract_record_view_controller_a96715e03545a334e6130b497c5c7a5ff}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_addab1ecf92b8c94664a76e93a3744133}{
+(IBAction) -\/ {\bfseries touchMoveDispSwitch:}}
+\label{interface_abstract_record_view_controller_addab1ecf92b8c94664a76e93a3744133}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a73f1464349e87832512dccb1a8b91690}{
+(IBAction) -\/ {\bfseries moveToNextRecord}}
+\label{interface_abstract_record_view_controller_a73f1464349e87832512dccb1a8b91690}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_af0fe59d1fd39235023bc3b0dabf50f67}{
+(IBAction) -\/ {\bfseries moveToPrevRecord}}
+\label{interface_abstract_record_view_controller_af0fe59d1fd39235023bc3b0dabf50f67}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a7fa41d23c44bd1089c2f779c2f5e07a9}{
+(IBAction) -\/ {\bfseries moveToFirstRecord}}
+\label{interface_abstract_record_view_controller_a7fa41d23c44bd1089c2f779c2f5e07a9}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a35cb69eb2dadd660e34a9da3113470c8}{
+(IBAction) -\/ {\bfseries moveToLastRecord}}
+\label{interface_abstract_record_view_controller_a35cb69eb2dadd660e34a9da3113470c8}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a244fc7ff5da9673ecab53aa9020c4724}{
+(IBAction) -\/ {\bfseries touchReturnToAboveLevelButton:}}
+\label{interface_abstract_record_view_controller_a244fc7ff5da9673ecab53aa9020c4724}
+
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_aecfc6bd891d5023408a112f650722707}{touchCompareClinicButton:}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a40faf26c1ca681ee3591bdefaeca3c90}{
+(IBAction) -\/ {\bfseries touchBranchButton:}}
+\label{interface_abstract_record_view_controller_a40faf26c1ca681ee3591bdefaeca3c90}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 変数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a13dde1eb5f4219b5969cd4ee21f290c7}{
+IBOutlet UINavigationBar $\ast$ {\bfseries \_\-navBar}}
+\label{interface_abstract_record_view_controller_a13dde1eb5f4219b5969cd4ee21f290c7}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a21fc7774c20031d2e61e5641da05771a}{
+IBOutlet \hyperlink{interface_comment_view}{CommentView} $\ast$ {\bfseries \_\-commentView}}
+\label{interface_abstract_record_view_controller_a21fc7774c20031d2e61e5641da05771a}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a7561ef44a265422a44b80e4e06e6432d}{
+IBOutlet \hyperlink{interface_board_view}{BoardView} $\ast$ {\bfseries \_\-boardView}}
+\label{interface_abstract_record_view_controller_a7561ef44a265422a44b80e4e06e6432d}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_aa5366410d1844c2b0635e914c09d2748}{
+IBOutlet UILabel $\ast$ {\bfseries \_\-gameTitleLabel}}
+\label{interface_abstract_record_view_controller_aa5366410d1844c2b0635e914c09d2748}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a80f03fc22b3a42dbb18be8f35ac17792}{
+IBOutlet UIButton $\ast$ {\bfseries \_\-returnToAboveLevelButton}}
+\label{interface_abstract_record_view_controller_a80f03fc22b3a42dbb18be8f35ac17792}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_ad9e9358af1d5b00add9326ad42445b28}{
+IBOutlet UIButton $\ast$ {\bfseries \_\-changeToClinicButton}}
+\label{interface_abstract_record_view_controller_ad9e9358af1d5b00add9326ad42445b28}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a800aaf69a6d1ddc48e53713db3e6e82d}{
+IBOutlet UIButton $\ast$ {\bfseries \_\-compareClinicButton}}
+\label{interface_abstract_record_view_controller_a800aaf69a6d1ddc48e53713db3e6e82d}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a5eae56a73770a200995c407f60da2fe2}{
+IBOutlet UIButton $\ast$ {\bfseries \_\-moveToFirstRecordButton}}
+\label{interface_abstract_record_view_controller_a5eae56a73770a200995c407f60da2fe2}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a1650b6eee98b02c083540cbd5bb4625e}{
+IBOutlet UIButton $\ast$ {\bfseries \_\-moveToLastRecordButton}}
+\label{interface_abstract_record_view_controller_a1650b6eee98b02c083540cbd5bb4625e}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a0420fc592460a6ae28de1fc7bef20cc6}{
+IBOutlet UIBarButtonItem $\ast$ {\bfseries \_\-moveToNextRecordButton}}
+\label{interface_abstract_record_view_controller_a0420fc592460a6ae28de1fc7bef20cc6}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_aeacc6f8b5cc426aa4fe89e6109152b1f}{
+IBOutlet UIBarButtonItem $\ast$ {\bfseries \_\-moveToPrevRecordButton}}
+\label{interface_abstract_record_view_controller_aeacc6f8b5cc426aa4fe89e6109152b1f}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a1fa14d365bf0622321d357f438d0f024}{
+IBOutlet UISwitch $\ast$ {\bfseries \_\-stoneNumberSwitch}}
+\label{interface_abstract_record_view_controller_a1fa14d365bf0622321d357f438d0f024}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a8f82b7b40c8e24c8650bb38c3dd2aca7}{
+IBOutlet UISwitch $\ast$ {\bfseries \_\-stoneFaceSwitch}}
+\label{interface_abstract_record_view_controller_a8f82b7b40c8e24c8650bb38c3dd2aca7}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a1c3a85a9d14dcb7b9aeb320cf950aa36}{
+IBOutlet UIImageView $\ast$ {\bfseries \_\-bobFaceView}}
+\label{interface_abstract_record_view_controller_a1c3a85a9d14dcb7b9aeb320cf950aa36}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a41fd69fa81bc98a15f5d42e410ba3271}{
+IBOutlet UITextView $\ast$ {\bfseries \_\-commentTextView}}
+\label{interface_abstract_record_view_controller_a41fd69fa81bc98a15f5d42e410ba3271}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a192865b1b2d15a7df8f8bc482937b603}{
+int {\bfseries \_\-stoneDispMode}}
+\label{interface_abstract_record_view_controller_a192865b1b2d15a7df8f8bc482937b603}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a95974f12d7b77527290f08edbcbeed48}{
+BOOL {\bfseries \_\-isPractiveRecordTransparent}}
+\label{interface_abstract_record_view_controller_a95974f12d7b77527290f08edbcbeed48}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a83688601809e3c6d2bbb1fed20a6bb52}{
+\hyperlink{interface_games}{Games} $\ast$ {\bfseries \_\-currentGame}}
+\label{interface_abstract_record_view_controller_a83688601809e3c6d2bbb1fed20a6bb52}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_abed47fdca333426ec912c7f3ca670f95}{
+\hyperlink{interface_comment_view_controller}{CommentViewController} $\ast$ {\bfseries \_\-commentViewController}}
+\label{interface_abstract_record_view_controller_abed47fdca333426ec912c7f3ca670f95}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_afd7973557d4a016cd6c0cca348664ea2}{
+UIPopoverController $\ast$ {\bfseries \_\-popoverView}}
+\label{interface_abstract_record_view_controller_afd7973557d4a016cd6c0cca348664ea2}
+
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a340c4197ab534a13a4bfdc6681486092}{
+\hyperlink{interface_games}{Games} $\ast$ {\bfseries currentGame}}
+\label{interface_abstract_record_view_controller_a340c4197ab534a13a4bfdc6681486092}
+
+\item 
+\hypertarget{interface_abstract_record_view_controller_a7e8eab3134a3d4178d9c95782314efe0}{
+UIPopoverController $\ast$ {\bfseries popoverView}}
+\label{interface_abstract_record_view_controller_a7e8eab3134a3d4178d9c95782314efe0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+テストテスト  inoko 
+
+\subsection{関数}
+\hypertarget{interface_abstract_record_view_controller_aa9e3322b6d0237359c2bb22952aab672}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkBranchRecord@{checkBranchRecord}}
+\index{checkBranchRecord@{checkBranchRecord}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkBranchRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkBranchRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aa9e3322b6d0237359c2bb22952aab672}
+現在のレコードに分岐レコードがあるかチェックし、存在する場合は分岐ボタンをアクティブにする 実戦譜以外の場合は、戻るボタンを有効にする \hypertarget{interface_abstract_record_view_controller_a778850dccbf812d31aa9c0af085524b8}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkButtonActivate@{checkButtonActivate}}
+\index{checkButtonActivate@{checkButtonActivate}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkButtonActivate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkButtonActivate 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a778850dccbf812d31aa9c0af085524b8}
+現在のレコードに対し、各ボタンのOn/Offをチェックする。 デフォルトでは、\char`\"{}分岐”、\char`\"{}比較\char`\"{}、\char`\"{}次へ\char`\"{}、\char`\"{}前へ"ボタンをチェック \hypertarget{interface_abstract_record_view_controller_a0bfed8687161c14e782505a08de09ef5}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkComparable@{checkComparable}}
+\index{checkComparable@{checkComparable}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkComparable}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkComparable 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a0bfed8687161c14e782505a08de09ef5}
+比較可能かどうかをチェックし、可能な場合は比較ボタンをアクティブにする \hypertarget{interface_abstract_record_view_controller_a3600f7d5e1e176f16fc6707ca9e59bd3}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!clearAnswerStones@{clearAnswerStones}}
+\index{clearAnswerStones@{clearAnswerStones}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{clearAnswerStones}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clearAnswerStones 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a3600f7d5e1e176f16fc6707ca9e59bd3}
+解答の碁石を消去すrる。 
+
+\hyperlink{interface_tsumego_regist_view_controller_a13002ba7374640f80c252671dc8fb1e9}{TsumegoRegistViewController}で再定義されています。
+
+\hypertarget{interface_abstract_record_view_controller_a826af0d182748e78f8798d2fe5cc2b6d}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!getLastShownGoStoneViewRecord:@{getLastShownGoStoneViewRecord:}}
+\index{getLastShownGoStoneViewRecord:@{getLastShownGoStoneViewRecord:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{getLastShownGoStoneViewRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) getLastShownGoStoneViewRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{from}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a826af0d182748e78f8798d2fe5cc2b6d}
+Fromのレコードより前のレコードで、表示されているGoStoneViewを保持しているGameRecordの中で最も手番が多い物を返す \hypertarget{interface_abstract_record_view_controller_a7a55e5530e121e0b39f035dca29e8577}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!insertGoStoneView:aboveView:opacity:@{insertGoStoneView:aboveView:opacity:}}
+\index{insertGoStoneView:aboveView:opacity:@{insertGoStoneView:aboveView:opacity:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{insertGoStoneView:aboveView:opacity:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insertGoStoneView: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView}$\ast$)}]{view}
+\item[{aboveView:(UIView$\ast$)}]{aboveView}
+\item[{opacity:(float)}]{opacity}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a7a55e5530e121e0b39f035dca29e8577}
+碁石を表示する \hypertarget{interface_abstract_record_view_controller_a6b332a9fa53a850166a12a5f5d6a99fe}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:@{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}}
+\index{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:@{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) insertGoStoneViewCyclick: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\item[{toMove:(int)}]{toMove}
+\item[{opacity:(float)}]{opacity}
+\item[{isRemovedShow:(BOOL)}]{isRemovedShow}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6b332a9fa53a850166a12a5f5d6a99fe}
+指定されたGoStoneから、指定された手数まで棋譜を再帰的に表示する 尚、最後のレコードを返す \hypertarget{interface_abstract_record_view_controller_a168fde1ca4265b914184586db6879a0c}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!moveToClinicMode@{moveToClinicMode}}
+\index{moveToClinicMode@{moveToClinicMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{moveToClinicMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) moveToClinicMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a168fde1ca4265b914184586db6879a0c}
+ClinicModeを開始する 既に分岐レコードがあっても上書きしない (一階層分岐を掘る) \hypertarget{interface_abstract_record_view_controller_af72ba6db1ca2fc1e23ddcaf324a71388}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!prepareStartGame:@{prepareStartGame:}}
+\index{prepareStartGame:@{prepareStartGame:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{prepareStartGame:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) prepareStartGame: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{gameType}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_af72ba6db1ca2fc1e23ddcaf324a71388}
+新規のゲームを作成する準備をする。 もし、既存のゲームが存在したら、保存を促す。 \hypertarget{interface_abstract_record_view_controller_a4654420f24fa6731e6dc5fa0fb4cf2a9}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!quitClinicMode@{quitClinicMode}}
+\index{quitClinicMode@{quitClinicMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{quitClinicMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) quitClinicMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a4654420f24fa6731e6dc5fa0fb4cf2a9}
+ClinicMOdeを終了する (一階層分岐を戻る) \hypertarget{interface_abstract_record_view_controller_a7e16eb8996e2d0b5d825374d564a533c}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!removeGoStoneViewCyclic:@{removeGoStoneViewCyclic:}}
+\index{removeGoStoneViewCyclic:@{removeGoStoneViewCyclic:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{removeGoStoneViewCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeGoStoneViewCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a7e16eb8996e2d0b5d825374d564a533c}
+次のGameRecordがNullになるまでGoStoneViewを取り除く \hypertarget{interface_abstract_record_view_controller_af3b65256360492aa93ae7ac9f30b76f1}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!resetBoard@{resetBoard}}
+\index{resetBoard@{resetBoard}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{resetBoard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) resetBoard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_af3b65256360492aa93ae7ac9f30b76f1}
+全てのレコードのViewを非表示にする \hypertarget{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!saveCurrentGame@{saveCurrentGame}}
+\index{saveCurrentGame@{saveCurrentGame}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{saveCurrentGame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) saveCurrentGame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}
+現在のゲームを保存し、全てのフラグをリセットする。 \hypertarget{interface_abstract_record_view_controller_a056d70c4b20510d4e7a01afe8969085a}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showAllRecords:@{showAllRecords:}}
+\index{showAllRecords:@{showAllRecords:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showAllRecords:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showAllRecords: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{mode}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a056d70c4b20510d4e7a01afe8969085a}
+現在のゲームの碁石をすべて表示する(Origin) 
+\begin{DoxyParams}{引数}
+{\em mode,:} & 0:碁石に手数を表示する 1:碁石に顔を表示する \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a1eb9d4c04d8d2922b3531ec8fafd1bb0}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showAnswerStones@{showAnswerStones}}
+\index{showAnswerStones@{showAnswerStones}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showAnswerStones}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showAnswerStones 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1eb9d4c04d8d2922b3531ec8fafd1bb0}
+解答の碁石を表示する。尚、表示する際に手数を表示する 
+
+\hyperlink{interface_tsumego_regist_view_controller_ad89444447bd6f8b4b5432c1312433c99}{TsumegoRegistViewController}で再定義されています。
+
+\hypertarget{interface_abstract_record_view_controller_a5709ef9f7c65e524822ec7765f8c4c4b}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showNormalRegistMode@{showNormalRegistMode}}
+\index{showNormalRegistMode@{showNormalRegistMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showNormalRegistMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showNormalRegistMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a5709ef9f7c65e524822ec7765f8c4c4b}
+棋譜表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a27a4c02c17337cece7bc250de2449f96}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showNormalShowMode@{showNormalShowMode}}
+\index{showNormalShowMode@{showNormalShowMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showNormalShowMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showNormalShowMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a27a4c02c17337cece7bc250de2449f96}
+棋譜表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a6405ef4502d057e9778a265fa63230f4}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showQuestionRegistMode@{showQuestionRegistMode}}
+\index{showQuestionRegistMode@{showQuestionRegistMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showQuestionRegistMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showQuestionRegistMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6405ef4502d057e9778a265fa63230f4}
+問題登録モードを開始する \hypertarget{interface_abstract_record_view_controller_a55f6add41b02e10e1e89a6fca71c18a5}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showQuestionShowMode@{showQuestionShowMode}}
+\index{showQuestionShowMode@{showQuestionShowMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showQuestionShowMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showQuestionShowMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a55f6add41b02e10e1e89a6fca71c18a5}
+問題表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a1c50772482cb391a0317ac01b8fbdc51}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showSelectExsistedGamesAlertView@{showSelectExsistedGamesAlertView}}
+\index{showSelectExsistedGamesAlertView@{showSelectExsistedGamesAlertView}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showSelectExsistedGamesAlertView}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showSelectExsistedGamesAlertView 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1c50772482cb391a0317ac01b8fbdc51}
+既存のゲームを開始する \hypertarget{interface_abstract_record_view_controller_a3af87d17d486ae3ac03adb8c6bf76c14}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showTsumegoRegistMode@{showTsumegoRegistMode}}
+\index{showTsumegoRegistMode@{showTsumegoRegistMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showTsumegoRegistMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showTsumegoRegistMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a3af87d17d486ae3ac03adb8c6bf76c14}
+詰碁表示モードを開始する \hypertarget{interface_abstract_record_view_controller_ae0a771f6cbfe223a0b3d72fab37e12a8}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showTsumegoShowMode@{showTsumegoShowMode}}
+\index{showTsumegoShowMode@{showTsumegoShowMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showTsumegoShowMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showTsumegoShowMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_ae0a771f6cbfe223a0b3d72fab37e12a8}
+詰碁表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a88c06199d7984204877247efa0fd7d74}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!startClinicMode@{startClinicMode}}
+\index{startClinicMode@{startClinicMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{startClinicMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) startClinicMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a88c06199d7984204877247efa0fd7d74}
+ClinicModeを開始する 既に分岐レコードがある場合は上書きする (一階層分岐を掘る) \hypertarget{interface_abstract_record_view_controller_a67b4f0f87e9ed347378125b6a834cfdd}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!startNewGame@{startNewGame}}
+\index{startNewGame@{startNewGame}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{startNewGame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) startNewGame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a67b4f0f87e9ed347378125b6a834cfdd}
+新規のゲームを開始する \hypertarget{interface_abstract_record_view_controller_aecfc6bd891d5023408a112f650722707}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchCompareClinicButton:@{touchCompareClinicButton:}}
+\index{touchCompareClinicButton:@{touchCompareClinicButton:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchCompareClinicButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchCompareClinicButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aecfc6bd891d5023408a112f650722707}
+現在の分岐レコードのルートレコードから、現在の手数迄のノーマルレコードを表示する(一階層上) 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/AbstractRecordViewController.h\item 
+/Users/inoko/iPhoneProject/GoClinic\_\-no\_\-GoStone/GoClinic/Classes/AbstractRecordViewController.m\end{DoxyCompactItemize}
