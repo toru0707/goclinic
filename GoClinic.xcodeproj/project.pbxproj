@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639EC26215751329006B573B /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639EC26115751329006B573B /* TopViewController.xib */; };
+		639EC2681576511A006B573B /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639EC2671576511A006B573B /* TopViewController.m */; };
 		7406E351139FC5540074BE79 /* QuestionGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406E350139FC5540074BE79 /* QuestionGameState.m */; };
 		7406E355139FDC150074BE79 /* NormalQuestionGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406E354139FDC150074BE79 /* NormalQuestionGameState.m */; };
 		7406E358139FDC480074BE79 /* AnswerQuestionGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7406E357139FDC470074BE79 /* AnswerQuestionGameState.m */; };
@@ -339,7 +341,7 @@
 		74E16FEC13A1022C00B33D24 /* QuestionAnswerGoStoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E16FEB13A1022C00B33D24 /* QuestionAnswerGoStoneView.m */; };
 		74E663451395256400D5738C /* SaveGameAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E663441395256400D5738C /* SaveGameAlertViewController.m */; };
 		74E6634913952E3600D5738C /* InputGameNameAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6634813952E3600D5738C /* InputGameNameAlertViewController.m */; };
-		74E73D521374268D0035C3A2 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E73D511374268D0035C3A2 /* Util.m */; };
+		74E73D521374268D0035C3A2 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E73D511374268D0035C3A2 /* StringUtil.m */; };
 		74EE3D8A139273B900CEE32E /* BranchFukidashiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EE3D89139273B800CEE32E /* BranchFukidashiView.m */; };
 /* End PBXBuildFile section */
 
@@ -354,6 +356,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		639EC26115751329006B573B /* TopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		639EC2661576511A006B573B /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		639EC2671576511A006B573B /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 		7406E34F139FC5540074BE79 /* QuestionGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameState.h; sourceTree = "<group>"; };
 		7406E350139FC5540074BE79 /* QuestionGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameState.m; sourceTree = "<group>"; };
 		7406E353139FDC150074BE79 /* NormalQuestionGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalQuestionGameState.h; sourceTree = "<group>"; };
@@ -757,8 +762,8 @@
 		74E663441395256400D5738C /* SaveGameAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveGameAlertViewController.m; sourceTree = "<group>"; };
 		74E6634713952E3600D5738C /* InputGameNameAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputGameNameAlertViewController.h; sourceTree = "<group>"; };
 		74E6634813952E3600D5738C /* InputGameNameAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputGameNameAlertViewController.m; sourceTree = "<group>"; };
-		74E73D501374268D0035C3A2 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		74E73D511374268D0035C3A2 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		74E73D501374268D0035C3A2 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		74E73D511374268D0035C3A2 /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
 		74EE3D88139273B800CEE32E /* BranchFukidashiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchFukidashiView.h; sourceTree = "<group>"; };
 		74EE3D89139273B800CEE32E /* BranchFukidashiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchFukidashiView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1214,6 +1219,7 @@
 				7479360C132DD3590038CBA5 /* CommentViewCell.xib */,
 				74793611132DD3590038CBA5 /* CommentViewController.xib */,
 				74793630132DD3590038CBA5 /* MenuPopOverViewController.xib */,
+				639EC26115751329006B573B /* TopViewController.xib */,
 				7479398D132DD5AE0038CBA5 /* Imgs */,
 			);
 			name = Resources;
@@ -1296,6 +1302,8 @@
 				74DCE72013A4BBC7001F5CB9 /* QuestionViewControllerState.m */,
 				74DCE72213A4BBFE001F5CB9 /* QuestionAnswerViewControllerState.h */,
 				74DCE72313A4BBFF001F5CB9 /* QuestionAnswerViewControllerState.m */,
+				639EC2661576511A006B573B /* TopViewController.h */,
+				639EC2671576511A006B573B /* TopViewController.m */,
 			);
 			name = Controller;
 			path = ..;
@@ -1388,8 +1396,8 @@
 		74E73D4F137426660035C3A2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				74E73D501374268D0035C3A2 /* Util.h */,
-				74E73D511374268D0035C3A2 /* Util.m */,
+				74E73D501374268D0035C3A2 /* StringUtil.h */,
+				74E73D511374268D0035C3A2 /* StringUtil.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -1466,6 +1474,9 @@
 /* Begin PBXProject section */
 		747932E6132DD0EE0038CBA5 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 747932E9132DD0EE0038CBA5 /* Build configuration list for PBXProject "GoClinic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -1743,6 +1754,7 @@
 				744B855C137C0A4D00DD2EF9 /* FacesViewController.xib in Resources */,
 				744B855D137C0A4D00DD2EF9 /* QuestionRegistViewController.xib in Resources */,
 				744B855E137C0A4D00DD2EF9 /* QuestionShowViewController.xib in Resources */,
+				639EC26215751329006B573B /* TopViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1810,7 +1822,7 @@
 				74793962132DD35A0038CBA5 /* TsumegoRegistViewController.m in Sources */,
 				74793964132DD35A0038CBA5 /* TsumegoShowViewController.m in Sources */,
 				74793985132DD3730038CBA5 /* MyData.xcdatamodel in Sources */,
-				74E73D521374268D0035C3A2 /* Util.m in Sources */,
+				74E73D521374268D0035C3A2 /* StringUtil.m in Sources */,
 				744B851D137C027500DD2EF9 /* BaseLabelPickerAlertViewController.m in Sources */,
 				744B851E137C027500DD2EF9 /* CategoryPickerAlertViewController.m in Sources */,
 				744B852E137C02B900DD2EF9 /* GamesPickerAlertViewController.m in Sources */,
@@ -1849,6 +1861,7 @@
 				74DCE71D13A4BB2E001F5CB9 /* QuestionNormalViewControllerState.m in Sources */,
 				74DCE72113A4BBC7001F5CB9 /* QuestionViewControllerState.m in Sources */,
 				74DCE72413A4BBFF001F5CB9 /* QuestionAnswerViewControllerState.m in Sources */,
+				639EC2681576511A006B573B /* TopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1973,6 +1986,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoClinic/GoClinic-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "GoClinic/GoClinic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1988,6 +2002,7 @@
 				DEPLOYMENT_LOCATION = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoClinic/GoClinic-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "GoClinic/GoClinic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2008,6 +2023,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoClinicTests/GoClinicTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "GoClinicTests/GoClinicTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -2031,6 +2047,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoClinicTests/GoClinicTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "GoClinicTests/GoClinicTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",

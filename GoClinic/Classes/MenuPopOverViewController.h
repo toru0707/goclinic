@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#define MENU_POP_OVER_VIEW_CONTROLLER_TAG 400
+#define MENU_POP_OVER_VIEW_CONTROLLER_TAG 400 ///< ViewControllerを識別するためのタグ
 
 @protocol MenuPopOverViewControllerDelegate
+/**
+メニューのアイテムを押下した時に呼び出されるメソッド
+*/
 -(void)touchMenuItem:(id)menuItem menuId:(int)menuId;
 @end
 
@@ -19,11 +22,11 @@
  @auther inoko
  */
 @interface MenuPopOverViewController : UITableViewController {
-	id<MenuPopOverViewControllerDelegate> _delegate;
-	NSMutableArray* _menuList;
+	id<MenuPopOverViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
+	NSMutableArray* _menuList; ///< メニューのリストを格納する配列
 }
 
-@property(nonatomic, assign) id<MenuPopOverViewControllerDelegate> delegate;
+@property(nonatomic, assign) id<MenuPopOverViewControllerDelegate> delegate; ///< デリゲートオブジェクト
 
 /**
  コンストラクタ

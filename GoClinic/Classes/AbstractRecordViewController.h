@@ -23,34 +23,31 @@
  */
 @interface AbstractRecordViewController : UIViewController <UIScrollViewDelegate, NSFetchedResultsControllerDelegate, BoardViewDelegate,  MenuPopOverViewControllerDelegate, GamePickerAlertViewControllerDelegate, SaveGameAlertViewControllerDelegate>{
     
-	IBOutlet UINavigationBar *_navBar;
-	IBOutlet CommentView* _commentView; 
-	IBOutlet BoardView *_boardView;
-	IBOutlet UILabel* _gameTitleLabel;
-	IBOutlet UIButton* _returnToAboveLevelButton;
-	IBOutlet UIButton* _changeToClinicButton;
-	IBOutlet UIButton* _compareClinicButton;
-	IBOutlet UIButton* _moveToFirstRecordButton;
-	IBOutlet UIButton* _moveToLastRecordButton;
-	IBOutlet UIBarButtonItem* _moveToNextRecordButton;
-	IBOutlet UIBarButtonItem* _moveToPrevRecordButton;
-    IBOutlet UISwitch* _stoneNumberSwitch;
-    IBOutlet UISwitch* _stoneFaceSwitch;
-	IBOutlet UIImageView* _bobFaceView;
-	IBOutlet UITextView* _commentTextView;
-    
-    //石の表示モードを示す。0:手数を表示する, 1:顔を表示する, 2:何も表示しない
-	int _stoneDispMode;
-    //比較モード中に実戦譜が半透明かどうかを判定する
-    BOOL _isPractiveRecordTransparent;
-    
-	Games* _currentGame;
-	CommentViewController* _commentViewController;
-    UIPopoverController* _popoverView;
+	IBOutlet UINavigationBar *_navBar; ///< ナビゲーションバーのアウトレットオブジェクト
+  IBOutlet CommentView* _commentView; ///< コメントViewのアウトレットオブジェクト
+	IBOutlet BoardView *_boardView; ///< 盤面Viewのアウトレットオブジェクト
+	IBOutlet UILabel* _gameTitleLabel; ///< ゲームのタイトルLabelのアウトレットオブジェクト
+	IBOutlet UIButton* _returnToAboveLevelButton; ///< 上に戻るボタンのアウトレットオブジェクト
+  IBOutlet UIButton* _changeToClinicButton; ///<クリニックボタンのアウトレットオブジェクト
+  IBOutlet UIButton* _compareClinicButton; ///<比較ボタンのアウトレットオブジェクト
+  IBOutlet UIButton* _moveToFirstRecordButton; ///<初めに戻るボタンのアウトレットオブジェクト
+  IBOutlet UIButton* _moveToLastRecordButton; ///<最後に進むボタンのアウトレットオブジェクト
+  IBOutlet UIBarButtonItem* _moveToNextRecordButton; ///<次へボタンのアウトレットオブジェクト
+  IBOutlet UIBarButtonItem* _moveToPrevRecordButton; ///<前へボタンのアウトレットオブジェクト
+  IBOutlet UISwitch* _stoneNumberSwitch; ///<手数を表示するボタンのアウトレットオブジェクト
+  IBOutlet UISwitch* _stoneFaceSwitch; ///<BOB顔を表示するボタンのアウトレットオブジェクト
+  IBOutlet UIImageView* _bobFaceView; ///<BOB顔Viewのアウトレットオブジェクト
+  IBOutlet UITextView* _commentTextView; ///<コメントViewのアウトレットオブジェクト
+  
+  int _stoneDispMode; ///<石の表示モードを示す。0:手数を表示する, 1:顔を表示する, 2:何も表示しない
+  BOOL _isPractiveRecordTransparent; ///<比較モード中に実戦譜が半透明かどうかを判定する
+  CommentViewController* _commentViewController; ///<コメントViewControlelr
+	Games* _currentGame; ///< プロパティ受け渡し用変数
+  UIPopoverController* _popoverView; ///< プロパティ受け渡し用変数
 }
-@property (nonatomic, retain) BoardView* boardView;
-@property (nonatomic, retain) Games* currentGame;
-@property (nonatomic, retain) UIPopoverController* popoverView;
+@property (nonatomic, retain) BoardView* boardView; ///<盤面View
+@property (nonatomic, retain) Games* currentGame; ///<現在のゲームオブジェクト
+@property (nonatomic, retain) UIPopoverController* popoverView; ///<ポップアップView
 
 /**
  コンストラクタ
@@ -186,7 +183,7 @@
 
 
 /**
- 
+ 指定されたXY座標に碁石が配置可能かチェックする
  */
 -(void)checkCurrentNextRecordPuttable:(int)x y:(int)y;
 
@@ -347,13 +344,26 @@
  @param delegate AbstractRecordViewControllerを実装したViewController
  */
 -(void)showMenu:(id)sender delegate:(id)delegate;
-//TODO なくても良い？
+
+/**
+ StoneStackから抜き石を削除する
+ */
 -(void)putOffEnclosedStonesFromStack;
 
+/**
+ 全ての碁石を指定された表示モードにする
+ @param isStateSaved YES:表示する、NO:表示しない
+ */
 -(void)setShownViewToShowView:(BOOL)isStateSaved;
 
+/**
+ 次の手が指定されたXY座標に配置可能か判断する
+ */
 -(void)checkCurrentNextRecordPuttable:(int)x y:(int)y;
 
+/**
+ 碁石を配置した後に碁石Viewを表示する
+ */
 -(void)showGoStoneViewAfterPutGoStone:(GameRecords*)record;
 
 /**

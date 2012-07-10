@@ -8,23 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-#define kUITextFieldHeight 30.0
-#define kUITextFieldWidth 260.0
-#define kUITextFieldXPadding 12.0
-#define kUITextFieldYPadding 10.0
-#define kUIAlertOffset 10.0
+#define kUITextFieldHeight 30.0 ///< Viewサイズ調整用パラメータ 
+#define kUITextFieldWidth 260.0 ///< Viewサイズ調整用パラメータ 
+#define kUITextFieldXPadding 12.0 ///< Viewサイズ調整用パラメータ 
+#define kUITextFieldYPadding 10.0 ///< Viewサイズ調整用パラメータ 
+#define kUIAlertOffset 10.0 ///< Viewサイズ調整用パラメータ 
 
 /**
  TextFieldが表示されたAlertView
+ 
  @auther inoko
  */
 @interface TextAlertView : UIAlertView {
 	UITextField *textField;
-	int tableExtHeight;
-	BOOL layoutDone;
+	int tableExtHeight; ///< AlertViewの高さ調整
+	BOOL layoutDone; ///< AlertViewのレイアウト描画が終了したか
 }
 
-@property (nonatomic, retain) UITextField *textField;
+@property (nonatomic, retain) UITextField *textField; ///< TextFieldのアウトレットオブジェクト
 
 /**
  コンストラクタ

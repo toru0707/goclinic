@@ -17,10 +17,9 @@
 @interface Comments :  NSManagedObject  
 {
 }
-
-@property (nonatomic, retain) NSString * text;
-@property (nonatomic, retain) NSNumber * point;
-@property (nonatomic, retain) NSNumber * category;
+@property (nonatomic, retain) NSString * text; ///< コメントのテキスト
+@property (nonatomic, retain) NSNumber * point; ///< ポイント
+@property (nonatomic, retain) NSNumber * category; ///< カテゴリ
 
 /**
  コンストラクタ

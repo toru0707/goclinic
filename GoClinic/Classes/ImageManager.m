@@ -585,10 +585,6 @@ NSString* BOB_G_W_FURUETERU = @"g_w_normal.png";
     return UINT_MAX;
 }
 
-- (void)release
-{
-}
-
 - (id)autorelease
 {
     return self;

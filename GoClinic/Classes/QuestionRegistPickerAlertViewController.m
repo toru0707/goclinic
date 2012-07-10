@@ -21,8 +21,7 @@
 - (id)initWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle okButtonTitle:(NSString *)okayButtonTitle facesList:(NSMutableArray*)facesList facesCategoriesList:(NSMutableArray*)facesCategoriesList{
     if((self = [super init])){
         self.view.tag = QUESTION_REGIST_PICKER_ALERT_VIEW_TAG;
-		QuestionRegistAlertView* picker = [[QuestionRegistAlertView alloc] initWithTitle:title
-                                                                                 message:message delegate:self dataSource:self cancelButtonTitle:cancelButtonTitle okButtonTitle:okayButtonTitle];
+		QuestionRegistAlertView* picker = [[QuestionRegistAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:cancelButtonTitle otherButtonTitles:okayButtonTitle, nil];
 		self.view = picker;
 		[picker release];
         _facesList = [[NSMutableArray alloc] initWithArray:facesList];

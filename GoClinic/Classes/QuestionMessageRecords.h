@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "GameRecords.h"
 
+/**
+ 問題モードで使用する指導用棋譜の手クラス
+ 
+ @auther inoko
+ */
 @interface QuestionMessageRecords : GameRecords {
     
 }

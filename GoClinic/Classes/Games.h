@@ -14,15 +14,15 @@
 #import "BoardView.h"
 #import "GoStoneView.h"
 
-#define MAX_MOVE 400
-#define AUTO_SAVE_INTERVAL 5
-#define NORMAL_GAME_CATEGORY 0
-#define TSUMEGO_GAME_CATEGORY 1
-#define QUESTION_GAME_CATEGORY 2
+#define MAX_MOVE 400 ///< ゲームの最大手数
+#define AUTO_SAVE_INTERVAL 5 ///< ゲームの自動セーブ間隔（手数）
+#define NORMAL_GAME_CATEGORY 0 ///< 通常モードのゲームカテゴリ
+#define TSUMEGO_GAME_CATEGORY 1 ///< 詰碁モードのゲームカテゴリ
+#define QUESTION_GAME_CATEGORY 2 ///< 問題モードのゲームカテゴリ
 
-#define THE_STONE_IS_NOT_PUTTABLE_BECAUSE_DUPULICATED -1
-#define THE_STONE_IS_NOT_PUTTABLE_BECAUSE_SUICEDED -2
-#define THE_STONE_IS_PUTTABLE 1
+#define THE_STONE_IS_NOT_PUTTABLE_BECAUSE_DUPULICATED -1 ///< 状態ID（既に碁石が存在するため、石を配置できない）
+#define THE_STONE_IS_NOT_PUTTABLE_BECAUSE_SUICEDED -2 ///< 状態ID（自殺手のため、石を配置できない）
+#define THE_STONE_IS_PUTTABLE 1 ///< 状態ID（石を配置できる）
 
 /**
  ゲームの情報を扱う抽象クラス
@@ -30,62 +30,56 @@
  */
 @interface Games :  NSManagedObject  
 {
-	NSMutableArray* _recordStack;
-	BOOL _isNewBranchRecord;
-    BOOL _isShowNumberMode;
-    BOOL _isShowFaceMode;
+	NSMutableArray* _recordStack; ///< プロパティ受け渡し用変数
+	BOOL _isNewBranchRecord; ///< プロパティ受け渡し用変数
+  BOOL _isShowNumberMode; ///< プロパティ受け渡し用変数
+  BOOL _isShowFaceMode; ///< プロパティ受け渡し用変数
 	
-	int _xSize;
-	int _ySize;
+	int _xSize; ///< プロパティ受け渡し用変数
+	int _ySize; ///< プロパティ受け渡し用変数
 	
-	NSMutableArray* _stoneArray;
-	NSMutableArray* _checkBoard;
-    NSMutableArray* _okiishiArray;
+	NSMutableArray* _stoneArray; ///< プロパティ受け渡し用変数
+	NSMutableArray* _checkBoard; ///< プロパティ受け渡し用変数
+  NSMutableArray* _okiishiArray; ///< プロパティ受け渡し用変数
 	
-    //棋譜入力モード
-	int _insertMode;
-    //現在の
-	int _currentUserId;
-	//自動セーブを行う
-	BOOL _autoSaveEnable;
-	//自動セーブ迄のカウント
-	int _autoSaveInterval;
-	//クリニックの階層を示す。デフォルトは０
-	int _currentDepth;
+	int _insertMode; ///< プロパティ受け渡し用変数
+	int _currentUserId; ///< プロパティ受け渡し用変数
+	BOOL _autoSaveEnable; ///< 自動セーブをするか
+	int _autoSaveInterval; ///< 自動セーブまでの手数間隔
+	int _currentDepth; ///< 現在のクリニック階層 
 }
-@property int currentUserId;
-@property int insertMode;
-@property int autoSaveInterval;
-@property int xSize;
-@property int ySize;
-@property int currentDepth;
-@property BOOL isNewBranchRecord;
-@property BOOL isShowNumberMode;
-@property BOOL isShowFaceMode;
-@property BOOL autoSaveEnable;
-@property (nonatomic, retain) NSMutableArray* stoneArray;
-@property (nonatomic, retain) NSMutableArray* checkBoard;
-
-@property (nonatomic, retain) NSString* title;
-@property (nonatomic, retain) GameRecords* current_root_record;
-@property (nonatomic, retain) BoardView* boardView;
-@property (nonatomic, retain) NSMutableArray* recordStack;
-@property (nonatomic, retain) NSNumber * current_move;
-@property (nonatomic, retain) NSNumber * current_branch_move;
-@property (nonatomic, retain) GameRecords* current_record;
-@property (nonatomic, retain) GameRecords* first_record;
-@property (nonatomic, retain) GameRecords* last_record;
-@property (nonatomic, retain) Users* current_user;
-@property (nonatomic, retain) NSNumber * first_user_id;
-@property (nonatomic, retain) NSNumber * second_user_id;
-@property (nonatomic, retain) NSNumber * game_category;
-@property (nonatomic, retain) NSMutableSet* game_records;
-@property (nonatomic, retain) Users * first_user;
-@property (nonatomic, retain) Users * second_user;
-@property (nonatomic, retain) NSNumber * is_tmp_game;
-@property (nonatomic, retain) NSDate *save_date;
-@property (nonatomic, retain) NSNumber* is_updated;
-@property (nonatomic, retain) NSNumber* is_state_saved;
+@property int currentUserId; ///<現在の順番のユーザID
+@property int insertMode; ///<棋譜入力モードか否か
+@property int autoSaveInterval; ///<自動セーブ間隔
+@property int xSize; ///<盤面の幅（何目か）
+@property int ySize; ///<盤面の高さ（何目か）
+@property int currentDepth; ///<クリニックの階層を示す。デフォルトは０
+@property BOOL isNewBranchRecord; ///<分岐を開始した直後の碁石か否か
+@property BOOL isShowNumberMode; ///<手数を表示するか
+@property BOOL isShowFaceMode; ///<BOB顔を表示するか
+@property BOOL autoSaveEnable; ///<自動セーブが有効化どうか
+@property (nonatomic, retain) NSMutableArray* stoneArray; ///<ゲーム中の全ての碁石（階層0）を格納する配列。手数でソートされている
+@property (nonatomic, retain) NSMutableArray* recordStack; ///<現在盤面に表示されている碁石を格納しており、抜き石された場合、取り除かれる。手数でソートされている。
+@property (nonatomic, retain) NSMutableArray* checkBoard; ///<抜き石状態を確認するための碁石配列。手数でソートされている。
+@property (nonatomic, retain) NSMutableSet* game_records; ///<ゲーム中の全ての碁石を格納する配列
+@property (nonatomic, retain) NSString* title; ///<ゲームのタイトル
+@property (nonatomic, retain) GameRecords* current_root_record; ///<現在の階層の初手を示す。分岐していた場合、分岐元の碁石を示す。
+@property (nonatomic, retain) GameRecords* current_record; ///<現在選択されている碁石
+@property (nonatomic, retain) GameRecords* first_record; ///<初手の碁石
+@property (nonatomic, retain) GameRecords* last_record; ///<現在の階層の最終手の碁石
+@property (nonatomic, retain) BoardView* boardView; ///<盤面のView
+@property (nonatomic, retain) NSNumber* current_move; ///<現在の手数
+@property (nonatomic, retain) NSNumber* current_branch_move; ///<分岐元の碁石の手数
+@property (nonatomic, retain) NSNumber* game_category; ///<ゲームのカテゴリ
+@property (nonatomic, retain) NSNumber* is_tmp_game; ///<未保存のゲームか
+@property (nonatomic, retain) NSNumber* is_updated; ///<更新されたゲームか
+@property (nonatomic, retain) NSNumber* is_state_saved; ///<セーブされたゲームか
+@property (nonatomic, retain) NSNumber* first_user_id; ///<先手のユーザID
+@property (nonatomic, retain) NSNumber* second_user_id; ///<後手のユーザID
+@property (nonatomic, retain) Users* current_user; ///<現在の手番のユーザ
+@property (nonatomic, retain) Users* first_user; ///<先手のユーザ
+@property (nonatomic, retain) Users* second_user; ///<後手のユーザ
+@property (nonatomic, retain) NSDate* save_date; ///<最終セーブ日付
 
 /**
  コンストラクタ
@@ -154,8 +148,13 @@
  */
 -(GameRecords*)createOkiishiRecord:(int)x y:(int)y goStoneView:(GoStoneView*)view;
 
-
+/**
+ 指定された座標に通常の碁石を配置する。
+ */
 -(GameRecords*)createNewNormalRecord:(int)x y:(int)y;
+/**
+ 指定された座標に分岐の碁石を配置する。
+ */
 -(GameRecords*)createNewBranchRecord:(int)x y:(int)y;
 
 /**
@@ -257,7 +256,9 @@
  */
 -(GameRecords *)moveToPrevRecord;
 
-
+/**
+指定されたGameRecordをCurrent_recordに設定する
+*/
 -(void)setNewCurrentRecord:(GameRecords *)newRecord;
 
 /**
@@ -297,5 +298,28 @@
 -(void)setStoneArrayXY:(int)x y:(int)y stone:(GameRecords*)record;
 
 @end
+
+/**
+ 以下のメソッドの実装は、ManagedObjectによって動的に生成される
+ */
+@interface Games (CoreDataGeneratedAccessors)
+/**
+ * 指定された碁石を保存する
+ */
+-(void)addGame_recordsObject:(GameRecords *)value;
+/**
+ * 指定された碁石を削除する
+ */
+-(void)removeGame_recordsObject:(GameRecords *)value;
+/**
+ * 指定された碁石配列を保存する
+ */
+-(void)addGame_records:(NSSet *)value;
+/**
+ * 指定された碁石配列を削除する
+ */
+-(void)removeGame_records:(NSSet *)value;
+@end
+
 
 

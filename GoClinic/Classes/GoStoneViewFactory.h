@@ -10,11 +10,18 @@
 #import "GoStoneView.h"
 #import "GameRecords.h"
 
-
+/**
+ GoStoneViewのFactoryクラス
+ 
+ @auther inoko
+ */
 @interface GoStoneViewFactory : NSObject {
     
 }
 
+/**
+ GameRecordsからGoStoneViewを生成する
+ */
 +(GoStoneView*)createGoStoneView:(GameRecords*)record;
 
 @end

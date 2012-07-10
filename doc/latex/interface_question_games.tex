@@ -1,0 +1,200 @@
+\hypertarget{interface_question_games}{
+\section{QuestionGames Class Reference}
+\label{interface_question_games}\index{QuestionGames@{QuestionGames}}
+}
+
+
+{\ttfamily \#import $<$QuestionGames.h$>$}
+
+Inheritance diagram for QuestionGames:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_question_games}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \hyperlink{interface_question_games_a3c881d4e05359466b662b833b1b87c13}{isNormalState}
+\item 
+(BOOL) -\/ \hyperlink{interface_question_games_a684bb179665deb81ac8df288fe9a1dff}{isMessageState}
+\item 
+(BOOL) -\/ \hyperlink{interface_question_games_a4a1f42cca11e99e106ad199b7b6135b3}{isAnswerState}
+\item 
+(void) -\/ \hyperlink{interface_question_games_a1c8c97ca3941d03f9b5a67ebcddfaed2}{changeState:}
+\item 
+(void) -\/ \hyperlink{interface_question_games_a7c16b336492619016d621312e8cd4d93}{changeToNormalState}
+\item 
+(void) -\/ \hyperlink{interface_question_games_ae23e5870fc4e09e063a9323afed8af7d}{changeToAnswerState}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_question_games_a5ca598357da635f2db637633e131f688}{createQuestionMessageRecord:y:faceCategory:comment:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_question_games_ae30ef678dd08de65c94ff028ad7cd4b4}{getQuestionRecordXY:y:}
+\item 
+(void) -\/ \hyperlink{interface_question_games_a8b4be5f0802f2078c7bbba9774654996}{setQuestionRecordsXY:y:record:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_question_games_a182b27435ddbaceb91ddf916cc6b942c}{getQuestionAnswerRecordXY:y:}
+\item 
+(void) -\/ \hyperlink{interface_question_games_ad9922cc0296c85f3e352449db7f45186}{setQuestionAnswerRecordsXY:y:record:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_question_games_abf9b19a19179cb4d061d6ecbbcee456b}{
+\hyperlink{interface_question_game_state}{QuestionGameState} $\ast$ \hyperlink{interface_question_games_abf9b19a19179cb4d061d6ecbbcee456b}{\_\-state}}
+\label{interface_question_games_abf9b19a19179cb4d061d6ecbbcee456b}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_question_games_a6506ceada180d02f435d5d40aee57514}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_question_games_a6506ceada180d02f435d5d40aee57514}{\_\-answerStack}}
+\label{interface_question_games_a6506ceada180d02f435d5d40aee57514}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_question_games_a4cf52e5fe2989f5b06be2fa268d5cfde}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_question_games_a4cf52e5fe2989f5b06be2fa268d5cfde}{\_\-answerRecordsArray}}
+\label{interface_question_games_a4cf52e5fe2989f5b06be2fa268d5cfde}
+
+\begin{DoxyCompactList}\small\item\em 解答用の碁石を格納する配列。 \end{DoxyCompactList}\item 
+\hypertarget{interface_question_games_ae62d0566f3509043d51de8d8889e13d6}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_question_games_ae62d0566f3509043d51de8d8889e13d6}{\_\-questionRecordsArray}}
+\label{interface_question_games_ae62d0566f3509043d51de8d8889e13d6}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_question_games_a722ede5dc015760de7b4fbfe2db141c8}{
+\hyperlink{interface_question_game_state}{QuestionGameState} $\ast$ \hyperlink{interface_question_games_a722ede5dc015760de7b4fbfe2db141c8}{state}}
+\label{interface_question_games_a722ede5dc015760de7b4fbfe2db141c8}
+
+\begin{DoxyCompactList}\small\item\em ゲームの状態を表すStateオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_question_games_aeeacec3371e509446a81d54434a707db}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_question_games_aeeacec3371e509446a81d54434a707db}{answerStack}}
+\label{interface_question_games_aeeacec3371e509446a81d54434a707db}
+
+\begin{DoxyCompactList}\small\item\em 現在表示中の解答の碁石を格納するStack。抜き石は削除されている。手数でソートされている。 \end{DoxyCompactList}\item 
+\hypertarget{interface_question_games_ac634f474eaa5d64159b9a67648bb14a7}{
+NSMutableSet $\ast$ \hyperlink{interface_question_games_ac634f474eaa5d64159b9a67648bb14a7}{question\_\-records}}
+\label{interface_question_games_ac634f474eaa5d64159b9a67648bb14a7}
+
+\begin{DoxyCompactList}\small\item\em 問題用の碁石を格納する配列 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+問題モード用のGameクラス  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_question_games_a1c8c97ca3941d03f9b5a67ebcddfaed2}{
+\index{QuestionGames@{QuestionGames}!changeState:@{changeState:}}
+\index{changeState:@{changeState:}!QuestionGames@{QuestionGames}}
+\subsubsection[{changeState:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeState: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf QuestionGameState}$\ast$)}]{state}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a1c8c97ca3941d03f9b5a67ebcddfaed2}
+指定された状態オブジェクトへ状態を変更する \hypertarget{interface_question_games_ae23e5870fc4e09e063a9323afed8af7d}{
+\index{QuestionGames@{QuestionGames}!changeToAnswerState@{changeToAnswerState}}
+\index{changeToAnswerState@{changeToAnswerState}!QuestionGames@{QuestionGames}}
+\subsubsection[{changeToAnswerState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeToAnswerState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_ae23e5870fc4e09e063a9323afed8af7d}
+解凍モードへ変更する \hypertarget{interface_question_games_a7c16b336492619016d621312e8cd4d93}{
+\index{QuestionGames@{QuestionGames}!changeToNormalState@{changeToNormalState}}
+\index{changeToNormalState@{changeToNormalState}!QuestionGames@{QuestionGames}}
+\subsubsection[{changeToNormalState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeToNormalState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a7c16b336492619016d621312e8cd4d93}
+通常モードへ変更する \hypertarget{interface_question_games_a5ca598357da635f2db637633e131f688}{
+\index{QuestionGames@{QuestionGames}!createQuestionMessageRecord:y:faceCategory:comment:@{createQuestionMessageRecord:y:faceCategory:comment:}}
+\index{createQuestionMessageRecord:y:faceCategory:comment:@{createQuestionMessageRecord:y:faceCategory:comment:}!QuestionGames@{QuestionGames}}
+\subsubsection[{createQuestionMessageRecord:y:faceCategory:comment:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createQuestionMessageRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{faceCategory:(int)}]{faceCategory}
+\item[{comment:(NSString$\ast$)}]{comment}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a5ca598357da635f2db637633e131f688}
+問題用碁石を生成する \hypertarget{interface_question_games_a182b27435ddbaceb91ddf916cc6b942c}{
+\index{QuestionGames@{QuestionGames}!getQuestionAnswerRecordXY:y:@{getQuestionAnswerRecordXY:y:}}
+\index{getQuestionAnswerRecordXY:y:@{getQuestionAnswerRecordXY:y:}!QuestionGames@{QuestionGames}}
+\subsubsection[{getQuestionAnswerRecordXY:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf QuestionAnswerRecords} $\ast$) getQuestionAnswerRecordXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a182b27435ddbaceb91ddf916cc6b942c}
+指定されたXY座標の解答用碁石を取得する。存在しない場合nilを返す \hypertarget{interface_question_games_ae30ef678dd08de65c94ff028ad7cd4b4}{
+\index{QuestionGames@{QuestionGames}!getQuestionRecordXY:y:@{getQuestionRecordXY:y:}}
+\index{getQuestionRecordXY:y:@{getQuestionRecordXY:y:}!QuestionGames@{QuestionGames}}
+\subsubsection[{getQuestionRecordXY:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf QuestionMessageRecords} $\ast$) getQuestionRecordXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_ae30ef678dd08de65c94ff028ad7cd4b4}
+指定されたXY座標に存在する問題碁石を取得する。存在しない場合nilを返す。 \hypertarget{interface_question_games_a4a1f42cca11e99e106ad199b7b6135b3}{
+\index{QuestionGames@{QuestionGames}!isAnswerState@{isAnswerState}}
+\index{isAnswerState@{isAnswerState}!QuestionGames@{QuestionGames}}
+\subsubsection[{isAnswerState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) isAnswerState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a4a1f42cca11e99e106ad199b7b6135b3}
+解答モードか \hypertarget{interface_question_games_a684bb179665deb81ac8df288fe9a1dff}{
+\index{QuestionGames@{QuestionGames}!isMessageState@{isMessageState}}
+\index{isMessageState@{isMessageState}!QuestionGames@{QuestionGames}}
+\subsubsection[{isMessageState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) isMessageState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a684bb179665deb81ac8df288fe9a1dff}
+メッセージ書き込みモードか \hypertarget{interface_question_games_a3c881d4e05359466b662b833b1b87c13}{
+\index{QuestionGames@{QuestionGames}!isNormalState@{isNormalState}}
+\index{isNormalState@{isNormalState}!QuestionGames@{QuestionGames}}
+\subsubsection[{isNormalState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) isNormalState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a3c881d4e05359466b662b833b1b87c13}
+通常モードか \hypertarget{interface_question_games_ad9922cc0296c85f3e352449db7f45186}{
+\index{QuestionGames@{QuestionGames}!setQuestionAnswerRecordsXY:y:record:@{setQuestionAnswerRecordsXY:y:record:}}
+\index{setQuestionAnswerRecordsXY:y:record:@{setQuestionAnswerRecordsXY:y:record:}!QuestionGames@{QuestionGames}}
+\subsubsection[{setQuestionAnswerRecordsXY:y:record:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setQuestionAnswerRecordsXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{record:({\bf GameRecords} $\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_ad9922cc0296c85f3e352449db7f45186}
+指定されたXY座標に解答用碁石をセットする \hypertarget{interface_question_games_a8b4be5f0802f2078c7bbba9774654996}{
+\index{QuestionGames@{QuestionGames}!setQuestionRecordsXY:y:record:@{setQuestionRecordsXY:y:record:}}
+\index{setQuestionRecordsXY:y:record:@{setQuestionRecordsXY:y:record:}!QuestionGames@{QuestionGames}}
+\subsubsection[{setQuestionRecordsXY:y:record:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setQuestionRecordsXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{record:({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_games_a8b4be5f0802f2078c7bbba9774654996}
+指定されたXY座標に問題碁石をセットする 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/QuestionGames.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/QuestionGames.m\end{DoxyCompactItemize}

@@ -10,11 +10,37 @@
 NSString *GoStoneUTI = @"com.yourcompany.CopyPasteTile.GoStone";
 
 @interface BoardView(private)
+/**
+ タッチしたポイントから碁石の位置（pixel)を計算する
+ 原点は1,1とする
+ */
 -(CGPoint)calcGoPoint:(CGRect)rect;
+/**
+ * タッチしたポイントから、碁石の目を計算する
+ */
 -(CGRect)calcNormalizedRect:(UITouch*)touch;
+
+/**
+ * 指定された位置に対する四角形のCGRectを作成する
+ * @param origin 指定された原点
+ * @parma inset 四角形のoffset
+ */
 -(CGRect)rectFromOrigin:(CGPoint)origin inset:(int)inset;
+
+/**
+ * 碁石の目から、Pixelベースの位置を計算する
+ * 原点は1,1とする
+ */
 -(CGRect)rectFromXY:(int)x y:(int)y;
+/**
+ * 指定されたViewを指定された位置へアニメーション移動させる
+ */
 -(void)animateView:(UIView *)theView toPosition:(CGPoint)thePosition;
+
+/**
+ * 指定されたViewに対して拡大アニメーションを実行させる
+ */
+
 -(void)animateFirstTouchAtPoint:(CGPoint)touchPoint forView:(UIView *)theView;
 @end
 

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 /**
- 棋譜の順序を保存するためのスタッククラス
- スタックに格納された棋譜に基づき抜き石を判断する
+ 棋譜の順序を保存するためのStackクラス
+ @auther inoko
  */
 @interface NSMutableArray (StackAdditions)
 

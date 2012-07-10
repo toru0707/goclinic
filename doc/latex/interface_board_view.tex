@@ -1,0 +1,245 @@
+\hypertarget{interface_board_view}{
+\section{BoardView Class Reference}
+\label{interface_board_view}\index{BoardView@{BoardView}}
+}
+
+
+{\ttfamily \#import $<$BoardView.h$>$}
+
+Inheritance diagram for BoardView:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_board_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_board_view_a35b448e94b0afef9ef7834dd3256e3f8}{initWithXYSizes:ySize:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_board_view_ab81dda5b6781c4ff20bd43496456ce4c}{createGameRecords:y:}
+\item 
+(void) -\/ \hyperlink{interface_board_view_a4314849127b847c86e832aa56c602af8}{animateStones:orientation:duration:}
+\item 
+(CGPoint) -\/ \hyperlink{interface_board_view_a2404630181aa820647ec4df487f903d8}{calcGoPoint:}
+\item 
+(CGRect) -\/ \hyperlink{interface_board_view_a79120b9e3eb75c2aecd34cd79eb50f37}{calcNormalizedRect:}
+\item 
+(CGRect) -\/ \hyperlink{interface_board_view_aed7c9c69458b904491c53569a87036ac}{rectFromOrigin:inset:}
+\item 
+(CGRect) -\/ \hyperlink{interface_board_view_a686745940531ff731503e98da409ccbb}{rectFromXY:y:}
+\item 
+(void) -\/ \hyperlink{interface_board_view_a2c2ffb609dd68a01a483395a2c1b5dd6}{animateView:toPosition:}
+\item 
+(void) -\/ \hyperlink{interface_board_view_a0307004494273cfb10109cee4cf2d169}{animateFirstTouchAtPoint:forView:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_board_view_afbb741010571202a5b270c4521c52c03}{
+id$<$ \hyperlink{protocol_board_view_delegate-p}{BoardViewDelegate} $>$ \hyperlink{interface_board_view_afbb741010571202a5b270c4521c52c03}{\_\-delegate}}
+\label{interface_board_view_afbb741010571202a5b270c4521c52c03}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_ad4989ff0737c80e88b737b48f0ab7c89}{
+BOOL \hyperlink{interface_board_view_ad4989ff0737c80e88b737b48f0ab7c89}{\_\-isStarDrawn}}
+\label{interface_board_view_ad4989ff0737c80e88b737b48f0ab7c89}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_ad4f563bf4e7fd5a54953dbb85c1b4ba3}{
+BOOL \hyperlink{interface_board_view_ad4f563bf4e7fd5a54953dbb85c1b4ba3}{\_\-isXYScaleDrawn}}
+\label{interface_board_view_ad4f563bf4e7fd5a54953dbb85c1b4ba3}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_a4fc8faf205467309abd8af760d9e9e86}{
+BOOL \hyperlink{interface_board_view_a4fc8faf205467309abd8af760d9e9e86}{\_\-isStoneMobed}}
+\label{interface_board_view_a4fc8faf205467309abd8af760d9e9e86}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_ac02174b90d76f01f5641563c9a6675c2}{
+int \hyperlink{interface_board_view_ac02174b90d76f01f5641563c9a6675c2}{\_\-xSize}}
+\label{interface_board_view_ac02174b90d76f01f5641563c9a6675c2}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_a56becca2fd671b02acf25bc838c20bbb}{
+int \hyperlink{interface_board_view_a56becca2fd671b02acf25bc838c20bbb}{\_\-ySize}}
+\label{interface_board_view_a56becca2fd671b02acf25bc838c20bbb}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_a190d16ef976d1b061da3d24ec25bad84}{
+Boolean \hyperlink{interface_board_view_a190d16ef976d1b061da3d24ec25bad84}{\_\-redrawBoard}}
+\label{interface_board_view_a190d16ef976d1b061da3d24ec25bad84}
+
+\begin{DoxyCompactList}\small\item\em 盤面を再描画したか \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_a67d40f51a96e539f814a361c35e63c30}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ \hyperlink{interface_board_view_a67d40f51a96e539f814a361c35e63c30}{\_\-currentSelection}}
+\label{interface_board_view_a67d40f51a96e539f814a361c35e63c30}
+
+\begin{DoxyCompactList}\small\item\em 現在選択されている碁石 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_board_view_a711b8a7299dda4e88cc8024da31ab976}{
+id$<$ \hyperlink{protocol_board_view_delegate-p}{BoardViewDelegate} $>$ \hyperlink{interface_board_view_a711b8a7299dda4e88cc8024da31ab976}{delegate}}
+\label{interface_board_view_a711b8a7299dda4e88cc8024da31ab976}
+
+\begin{DoxyCompactList}\small\item\em デリゲートオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_a5ad1876cb123df583595fc3c2ef2bd59}{
+BOOL \hyperlink{interface_board_view_a5ad1876cb123df583595fc3c2ef2bd59}{isStarDrawn}}
+\label{interface_board_view_a5ad1876cb123df583595fc3c2ef2bd59}
+
+\begin{DoxyCompactList}\small\item\em 星が描画されているか \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_ab64409d176ead5675462296b0d9b3481}{
+BOOL \hyperlink{interface_board_view_ab64409d176ead5675462296b0d9b3481}{isXYScaleDrawn}}
+\label{interface_board_view_ab64409d176ead5675462296b0d9b3481}
+
+\begin{DoxyCompactList}\small\item\em XYの数字が描画されているか \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_ae7e836788d82a05b05a3f8d90ce360b2}{
+int \hyperlink{interface_board_view_ae7e836788d82a05b05a3f8d90ce360b2}{xSize}}
+\label{interface_board_view_ae7e836788d82a05b05a3f8d90ce360b2}
+
+\begin{DoxyCompactList}\small\item\em X座標の目数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_ac83f921533e57a4df21a7a7fb671bfe9}{
+int \hyperlink{interface_board_view_ac83f921533e57a4df21a7a7fb671bfe9}{ySize}}
+\label{interface_board_view_ac83f921533e57a4df21a7a7fb671bfe9}
+
+\begin{DoxyCompactList}\small\item\em Y座標の目数 \end{DoxyCompactList}\item 
+\hypertarget{interface_board_view_a7cb31e0f64bad49e0782aef0048920cc}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_board_view_a7cb31e0f64bad49e0782aef0048920cc}{stones}}
+\label{interface_board_view_a7cb31e0f64bad49e0782aef0048920cc}
+
+\begin{DoxyCompactList}\small\item\em 碁石を格納している配列 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+盤面のView  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_board_view_a0307004494273cfb10109cee4cf2d169}{
+\index{BoardView@{BoardView}!animateFirstTouchAtPoint:forView:@{animateFirstTouchAtPoint:forView:}}
+\index{animateFirstTouchAtPoint:forView:@{animateFirstTouchAtPoint:forView:}!BoardView@{BoardView}}
+\subsubsection[{animateFirstTouchAtPoint:forView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) animateFirstTouchAtPoint: 
+\begin{DoxyParamCaption}
+\item[{dummy(CGPoint)}]{touchPoint}
+\item[{forView:(UIView $\ast$)}]{theView}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a0307004494273cfb10109cee4cf2d169}
+指定されたViewに対して拡大アニメーションを実行させる \hypertarget{interface_board_view_a4314849127b847c86e832aa56c602af8}{
+\index{BoardView@{BoardView}!animateStones:orientation:duration:@{animateStones:orientation:duration:}}
+\index{animateStones:orientation:duration:@{animateStones:orientation:duration:}!BoardView@{BoardView}}
+\subsubsection[{animateStones:orientation:duration:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) animateStones: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSMutableSet$\ast$)}]{recordArray}
+\item[{orientation:(UIDeviceOrientation)}]{orientation}
+\item[{duration:(float)}]{duration}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a4314849127b847c86e832aa56c602af8}
+指定された棋譜配列に対応する石Viewを、デバイスの傾き方向へアニメーションさせる 
+\begin{DoxyParams}{Parameters}
+{\em recordArray} & アニメーションさせる石Viewに対応する棋譜配列 \\
+\hline
+{\em orientation} & デバイスの傾き方向 \\
+\hline
+{\em duration} & アニメーションにかかる時間\\
+\hline
+\end{DoxyParams}
+指定された石を指定された方向にアニメーションさせる \hypertarget{interface_board_view_a2c2ffb609dd68a01a483395a2c1b5dd6}{
+\index{BoardView@{BoardView}!animateView:toPosition:@{animateView:toPosition:}}
+\index{animateView:toPosition:@{animateView:toPosition:}!BoardView@{BoardView}}
+\subsubsection[{animateView:toPosition:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) animateView: 
+\begin{DoxyParamCaption}
+\item[{dummy(UIView $\ast$)}]{theView}
+\item[{toPosition:(CGPoint)}]{thePosition}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a2c2ffb609dd68a01a483395a2c1b5dd6}
+指定されたViewを指定された位置へアニメーション移動させる \hypertarget{interface_board_view_a2404630181aa820647ec4df487f903d8}{
+\index{BoardView@{BoardView}!calcGoPoint:@{calcGoPoint:}}
+\index{calcGoPoint:@{calcGoPoint:}!BoardView@{BoardView}}
+\subsubsection[{calcGoPoint:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (CGPoint) calcGoPoint: 
+\begin{DoxyParamCaption}
+\item[{dummy(CGRect)}]{rect}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a2404630181aa820647ec4df487f903d8}
+タッチしたポイントから碁石の位置（pixel)を計算する 原点は1,1とする \hypertarget{interface_board_view_a79120b9e3eb75c2aecd34cd79eb50f37}{
+\index{BoardView@{BoardView}!calcNormalizedRect:@{calcNormalizedRect:}}
+\index{calcNormalizedRect:@{calcNormalizedRect:}!BoardView@{BoardView}}
+\subsubsection[{calcNormalizedRect:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (CGRect) calcNormalizedRect: 
+\begin{DoxyParamCaption}
+\item[{dummy(UITouch $\ast$)}]{touch}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a79120b9e3eb75c2aecd34cd79eb50f37}
+タッチしたポイントから、碁石の目を計算する \hypertarget{interface_board_view_ab81dda5b6781c4ff20bd43496456ce4c}{
+\index{BoardView@{BoardView}!createGameRecords:y:@{createGameRecords:y:}}
+\index{createGameRecords:y:@{createGameRecords:y:}!BoardView@{BoardView}}
+\subsubsection[{createGameRecords:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createGameRecords: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_ab81dda5b6781c4ff20bd43496456ce4c}
+x座標、y座標を指定し、棋譜を作成する 
+\begin{DoxyParams}{Parameters}
+{\em x} & x座標 \\
+\hline
+{\em y} & y座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+作成された棋譜 
+\end{DoxyReturn}
+\hypertarget{interface_board_view_a35b448e94b0afef9ef7834dd3256e3f8}{
+\index{BoardView@{BoardView}!initWithXYSizes:ySize:@{initWithXYSizes:ySize:}}
+\index{initWithXYSizes:ySize:@{initWithXYSizes:ySize:}!BoardView@{BoardView}}
+\subsubsection[{initWithXYSizes:ySize:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithXYSizes: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{xSize}
+\item[{ySize:(int)}]{ySize}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a35b448e94b0afef9ef7834dd3256e3f8}
+コンストラクタ 
+\begin{DoxyParams}{Parameters}
+{\em xSize} & 盤面のX幅 \\
+\hline
+{\em ySize} & 盤面のY幅 \\
+\hline
+{\em BoardViewオブジェクト} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_board_view_aed7c9c69458b904491c53569a87036ac}{
+\index{BoardView@{BoardView}!rectFromOrigin:inset:@{rectFromOrigin:inset:}}
+\index{rectFromOrigin:inset:@{rectFromOrigin:inset:}!BoardView@{BoardView}}
+\subsubsection[{rectFromOrigin:inset:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (CGRect) rectFromOrigin: 
+\begin{DoxyParamCaption}
+\item[{dummy(CGPoint)}]{origin}
+\item[{inset:(int)}]{inset}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_aed7c9c69458b904491c53569a87036ac}
+指定された位置に対する四角形のCGRectを作成する 
+\begin{DoxyParams}{Parameters}
+{\em origin} & 指定された原点  inset 四角形のoffset \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_board_view_a686745940531ff731503e98da409ccbb}{
+\index{BoardView@{BoardView}!rectFromXY:y:@{rectFromXY:y:}}
+\index{rectFromXY:y:@{rectFromXY:y:}!BoardView@{BoardView}}
+\subsubsection[{rectFromXY:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (CGRect) rectFromXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_board_view_a686745940531ff731503e98da409ccbb}
+碁石の目から、Pixelベースの位置を計算する 原点は1,1とする 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/BoardView.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/BoardView.m\end{DoxyCompactItemize}

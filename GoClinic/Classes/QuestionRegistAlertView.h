@@ -14,18 +14,16 @@
  @auther inoko
  */
 @interface QuestionRegistAlertView : UIAlertView {
-	UIPickerView *_pickerView;
-	int tableHeight;
-	int tableExtHeight;
-	
-	Games* _selectedGame;
-    int _selectedIndex;
-	NSArray* _games;
+  int tableHeight; ///<AlertViewの高さ
+  int tableExtHeight; ///<AlertViewの高さ調整
+  Games* _selectedGame; ///<選択されたGames
+  int _selectedIndex; ///<選択されたLowのIndex
+  NSArray* _games; ///<表示するGames配列
     
-    UITextView* _textView;
+	UIPickerView *_pickerView; ///< プロパティ受け渡し用変数
+  UITextView* _textView; ///< プロパティ受け渡し用変数
 }
 
-@property (nonatomic, retain) UIPickerView *pickerView;
-@property (nonatomic, retain) UITextView *textView;
-
+@property (nonatomic, retain) UIPickerView* pickerView; ///<PickerViewのアウトレットオブジェクト
+@property (nonatomic, retain) UITextView* textView; ///<TextViewのアウトレットオブジェクト
 @end

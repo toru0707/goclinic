@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "GoStoneView.h"
 
+/**
+ 問題の解答用碁石Viewクラス
+ 
+ @auther inoko
+ */
 @interface QuestionAnswerGoStoneView : GoStoneView {
     
 }

@@ -78,7 +78,7 @@
 //コメントViewを表示させるために、コメント用のViewを表示させるとともに、必要に応じてBoardViewを左にスライドさせる
 - (void)showCommentView:(BOOL)animated{}
 
-
+-(void)showAllShownStateRecord:(int)mode{}
 
 - (void)commentGoStoneMenu:(id)sender {
 	[self showCommentView:YES];

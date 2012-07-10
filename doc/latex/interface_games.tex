@@ -1,0 +1,976 @@
+\hypertarget{interface_games}{
+\section{Games Class Reference}
+\label{interface_games}\index{Games@{Games}}
+}
+
+
+{\ttfamily \#import $<$Games.h$>$}
+
+Inheritance diagram for Games:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_games}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_games_a01dfe628966c04670fedf35e02c33371}{initGames}
+\item 
+(id) -\/ \hyperlink{interface_games_a430dea682d0d84b969200dd97dd2be98}{initGamesWithBoardSize:ySize:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_ae1b6c93bf7add9a10162247a20065ae8}{save}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_aca0584d71aeaf9cb5d3f0ee24e69fe24}{reset}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_af8332c38140082709ec41bf91747c41f}{delete}
+\item 
+(void) -\/ \hyperlink{interface_games_a4c5e2dc4e111e48f56ecb8e94fb3cac1}{restore}
+\item 
+(void) -\/ \hyperlink{interface_games_ac3127f644ef9d8a28e87606f3d3dfabd}{clearStoneBoard}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a1e4f77c7b6ea0101b16762c8621d861b}{createNewRecord:y:goStoneView:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a7f86f6e3eca9aba652ae5753f24e38a8}{createOkiishiRecord:y:goStoneView:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a60cb93e4d2051fa276a8d0504c65bed9}{createNewNormalRecord:y:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a079f26e20d4f1be8525166822b63c0c8}{createNewBranchRecord:y:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_ae4fe69c9a21bec384055e089ceac2829}{changeToBranchRecord}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_a08cf984bc98da86cfd1d1fefa4dbfda8}{changeToRootRecord}
+\item 
+(int) -\/ \hyperlink{interface_games_a3fb19a273e3591f2e8e61a9eee23d84c}{checkCurrentNextRecordPuttable:y:}
+\item 
+(int) -\/ \hyperlink{interface_games_a6ebac07fc8659bbb8af5a5bc1201256f}{checkRecordPuttable:}
+\item 
+(int) -\/ \hyperlink{interface_games_a0272aef1d669a1162b8025ff0eccd8df}{checkUser:}
+\item 
+(void) -\/ \hyperlink{interface_games_a19e7645f03f70e1215390106d8e5ff3a}{deleteGameRecord:}
+\item 
+(void) -\/ \hyperlink{interface_games_a66ef016bdf75662d0368b7726aca5fb3}{deleteGameRecordCyclic:}
+\item 
+(NSNumber $\ast$) -\/ \hyperlink{interface_games_a27c81a4af36aceb98772b9ac610e6135}{getCurrentUserId}
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_games_a3c209384d054a75c0e08a5e1107ead3f}{getEnclosedStonesFromStack:}
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_games_a7fd9604cfb14891c48455538ae2c7582}{getEnclosedStonesFromRecord:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_aec8599f725ed45a79fea1a19a919f5dd}{getStoneArrayXY:y:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a2bcadbacf50a9d7e7e45e1372de6ac97}{moveToNextRecord}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_games_a620301ed77395102fdb427c8a0d060cf}{moveToPrevRecord}
+\item 
+(void) -\/ \hyperlink{interface_games_aed3a13eb47643d1cd4b5b25f0b9582f0}{setNewCurrentRecord:}
+\item 
+(void) -\/ \hyperlink{interface_games_aad47ae4e9af60c4288ba8a0b61e604d3}{pushRecordToStackCyclic:}
+\item 
+(void) -\/ \hyperlink{interface_games_a882c82102ab5be113a0f7a2c7c782ca9}{popStackToMoveCyclic:}
+\item 
+(void) -\/ \hyperlink{interface_games_a585c2b097394ef607f29d2a36a113c1a}{showStackLog}
+\item 
+(void) -\/ \hyperlink{interface_games_ad6eacd14dcf954b902b66b445b1a5c6c}{showStonesXYLog}
+\item 
+(void) -\/ \hyperlink{interface_games_a18c5e32f0ce44370f981950e8f4121e4}{setStackToXYArray}
+\item 
+(void) -\/ \hyperlink{interface_games_aa388a32904aa9d1545fc045b0abc149f}{setStoneArrayXY:y:stone:}
+\item 
+(void) -\/ \hyperlink{interface_games_a00f0d0456bde50486d6144218ec608f8}{addGame\_\-recordsObject:}
+\item 
+(void) -\/ \hyperlink{interface_games_ac747f01b9449eac068cd3f400c75f4da}{removeGame\_\-recordsObject:}
+\item 
+(void) -\/ \hyperlink{interface_games_a728428abc6477a64e3af4fb03a67fc60}{addGame\_\-records:}
+\item 
+(void) -\/ \hyperlink{interface_games_a221f3c724f98ffa3f870d6f597750557}{removeGame\_\-records:}
+\item 
+(void) -\/ \hyperlink{interface_games_a4b748d245b2717e54d5581aaa851a9b5}{checkAutoSave}
+\item 
+(void) -\/ \hyperlink{interface_games_aede639ff391e10c3b864b2610155bd5e}{clearCheckBoard}
+\item 
+(void) -\/ \hyperlink{interface_games_a9bd21f92c54850bcb5b474602522376a}{createGoStoneViewCyclic:}
+\item 
+(NSNumber $\ast$) -\/ \hyperlink{interface_games_ad2d24effe36485105bde94171e77deb6}{getCurrentNextRecodeMove}
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_games_a7eb3fe2c98bf87e30a85aa5312db2d99}{getEnclosedStonesFromStackWithStack:stack:}
+\item 
+(int) -\/ \hyperlink{interface_games_a47becd0c290f96ce3fd635a1d3c17af8}{getOpponentUser:}
+\item 
+(int) -\/ \hyperlink{interface_games_a0478be8859388476b846e6840b5abf26}{getRecordUserId:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_ab105dfc06c682a58a0bc9421425635a6}{checkSuicide:x:y:}
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_games_abae461aa449e572d9706ff5837f0e3cd}{checkSuicideAndReturnStones:x:y:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_af9c158e6105d8a0afb05fde82d0faefb}{doCheckRemoveStone:x:y:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_a35a940a5a3b0c9176b35106d38779a04}{doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:}
+\item 
+(void) -\/ \hyperlink{interface_games_a97f53c5367df474c90fb9ff869627bfb}{setCheckBoardXY:y:checked:}
+\item 
+(BOOL) -\/ \hyperlink{interface_games_a2d9c4ec95804f78a087188b0ea7eef87}{getCheckBoardXY:y:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_games_a7f97e43d2e57ea8b8d24bbebec583013}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_a7f97e43d2e57ea8b8d24bbebec583013}{\_\-recordStack}}
+\label{interface_games_a7f97e43d2e57ea8b8d24bbebec583013}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_af1c274d54923dce41904ba78f1256ac5}{
+BOOL \hyperlink{interface_games_af1c274d54923dce41904ba78f1256ac5}{\_\-isNewBranchRecord}}
+\label{interface_games_af1c274d54923dce41904ba78f1256ac5}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a8ee250541d4087020e432fbe7bb6d88f}{
+BOOL \hyperlink{interface_games_a8ee250541d4087020e432fbe7bb6d88f}{\_\-isShowNumberMode}}
+\label{interface_games_a8ee250541d4087020e432fbe7bb6d88f}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ae6552ce4721f9e61174e044c9d23d86f}{
+BOOL \hyperlink{interface_games_ae6552ce4721f9e61174e044c9d23d86f}{\_\-isShowFaceMode}}
+\label{interface_games_ae6552ce4721f9e61174e044c9d23d86f}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_abb798d37b60e6016079ec2c01335624d}{
+int \hyperlink{interface_games_abb798d37b60e6016079ec2c01335624d}{\_\-xSize}}
+\label{interface_games_abb798d37b60e6016079ec2c01335624d}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_adbf5d8b47c74df7302f494d2d7e6958f}{
+int \hyperlink{interface_games_adbf5d8b47c74df7302f494d2d7e6958f}{\_\-ySize}}
+\label{interface_games_adbf5d8b47c74df7302f494d2d7e6958f}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a4a445b26c8840314243be910add4ef81}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_a4a445b26c8840314243be910add4ef81}{\_\-stoneArray}}
+\label{interface_games_a4a445b26c8840314243be910add4ef81}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a128844d6d9dbb18844a3ac8b57167329}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_a128844d6d9dbb18844a3ac8b57167329}{\_\-checkBoard}}
+\label{interface_games_a128844d6d9dbb18844a3ac8b57167329}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_aa656bc7ec11c1d9000bd8add0d754701}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_aa656bc7ec11c1d9000bd8add0d754701}{\_\-okiishiArray}}
+\label{interface_games_aa656bc7ec11c1d9000bd8add0d754701}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_adf59b1fa9a0cfe911d992ffa2ab00ede}{
+int \hyperlink{interface_games_adf59b1fa9a0cfe911d992ffa2ab00ede}{\_\-insertMode}}
+\label{interface_games_adf59b1fa9a0cfe911d992ffa2ab00ede}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_aa473c6742f9bc0192dd115ea3bce6f68}{
+int \hyperlink{interface_games_aa473c6742f9bc0192dd115ea3bce6f68}{\_\-currentUserId}}
+\label{interface_games_aa473c6742f9bc0192dd115ea3bce6f68}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a946b513550a9d9603bf1c1b75c561845}{
+BOOL \hyperlink{interface_games_a946b513550a9d9603bf1c1b75c561845}{\_\-autoSaveEnable}}
+\label{interface_games_a946b513550a9d9603bf1c1b75c561845}
+
+\begin{DoxyCompactList}\small\item\em 自動セーブをするか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_acc34d75c0288d85f09e22a6e10d95922}{
+int \hyperlink{interface_games_acc34d75c0288d85f09e22a6e10d95922}{\_\-autoSaveInterval}}
+\label{interface_games_acc34d75c0288d85f09e22a6e10d95922}
+
+\begin{DoxyCompactList}\small\item\em 自動セーブまでの手数間隔 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a4a67ea08275ead5aa598cf4e2c8ad648}{
+int \hyperlink{interface_games_a4a67ea08275ead5aa598cf4e2c8ad648}{\_\-currentDepth}}
+\label{interface_games_a4a67ea08275ead5aa598cf4e2c8ad648}
+
+\begin{DoxyCompactList}\small\item\em 現在のクリニック階層 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_games_adfd10a0ab71e7707a93b9f6fb6d1a725}{
+int \hyperlink{interface_games_adfd10a0ab71e7707a93b9f6fb6d1a725}{currentUserId}}
+\label{interface_games_adfd10a0ab71e7707a93b9f6fb6d1a725}
+
+\begin{DoxyCompactList}\small\item\em 現在の順番のユーザID \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a13992e2a7bf44b87037af4c0ae8ba3c7}{
+int \hyperlink{interface_games_a13992e2a7bf44b87037af4c0ae8ba3c7}{insertMode}}
+\label{interface_games_a13992e2a7bf44b87037af4c0ae8ba3c7}
+
+\begin{DoxyCompactList}\small\item\em 棋譜入力モードか否か \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ab21cd03e3e2ad1465bfb1c7cd7ffd31f}{
+int \hyperlink{interface_games_ab21cd03e3e2ad1465bfb1c7cd7ffd31f}{autoSaveInterval}}
+\label{interface_games_ab21cd03e3e2ad1465bfb1c7cd7ffd31f}
+
+\begin{DoxyCompactList}\small\item\em 自動セーブ間隔 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a69d167507d10954f3dfc877dd24cd9ab}{
+int \hyperlink{interface_games_a69d167507d10954f3dfc877dd24cd9ab}{xSize}}
+\label{interface_games_a69d167507d10954f3dfc877dd24cd9ab}
+
+\begin{DoxyCompactList}\small\item\em 盤面の幅（何目か） \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ac18291e244ca8a4c50de563a8e3ac0a8}{
+int \hyperlink{interface_games_ac18291e244ca8a4c50de563a8e3ac0a8}{ySize}}
+\label{interface_games_ac18291e244ca8a4c50de563a8e3ac0a8}
+
+\begin{DoxyCompactList}\small\item\em 盤面の高さ（何目か） \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a9deb4ef9948a554a428985eaeb0d2b31}{
+int \hyperlink{interface_games_a9deb4ef9948a554a428985eaeb0d2b31}{currentDepth}}
+\label{interface_games_a9deb4ef9948a554a428985eaeb0d2b31}
+
+\begin{DoxyCompactList}\small\item\em クリニックの階層を示す。デフォルトは０ \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a703b51f88f07e90dcedc96ba2205fad2}{
+BOOL \hyperlink{interface_games_a703b51f88f07e90dcedc96ba2205fad2}{isNewBranchRecord}}
+\label{interface_games_a703b51f88f07e90dcedc96ba2205fad2}
+
+\begin{DoxyCompactList}\small\item\em 分岐を開始した直後の碁石か否か \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a06655ec0a7ec764af915a37e86c03a32}{
+BOOL \hyperlink{interface_games_a06655ec0a7ec764af915a37e86c03a32}{isShowNumberMode}}
+\label{interface_games_a06655ec0a7ec764af915a37e86c03a32}
+
+\begin{DoxyCompactList}\small\item\em 手数を表示するか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a7dfdfdbff61a6e7985fde0cba2c2fa79}{
+BOOL \hyperlink{interface_games_a7dfdfdbff61a6e7985fde0cba2c2fa79}{isShowFaceMode}}
+\label{interface_games_a7dfdfdbff61a6e7985fde0cba2c2fa79}
+
+\begin{DoxyCompactList}\small\item\em BOB顔を表示するか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ad5eb3884caccccce5c0e732331888e31}{
+BOOL \hyperlink{interface_games_ad5eb3884caccccce5c0e732331888e31}{autoSaveEnable}}
+\label{interface_games_ad5eb3884caccccce5c0e732331888e31}
+
+\begin{DoxyCompactList}\small\item\em 自動セーブが有効化どうか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a9c5b953f8926d3c38fd932edec0aeb30}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_a9c5b953f8926d3c38fd932edec0aeb30}{stoneArray}}
+\label{interface_games_a9c5b953f8926d3c38fd932edec0aeb30}
+
+\begin{DoxyCompactList}\small\item\em ゲーム中の全ての碁石（階層0）を格納する配列。手数でソートされている \end{DoxyCompactList}\item 
+\hypertarget{interface_games_aebe294475787b67c8aa8ac4c5a75e861}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_aebe294475787b67c8aa8ac4c5a75e861}{recordStack}}
+\label{interface_games_aebe294475787b67c8aa8ac4c5a75e861}
+
+\begin{DoxyCompactList}\small\item\em 現在盤面に表示されている碁石を格納しており、抜き石された場合、取り除かれる。手数でソートされている。 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a6c4d48fdb1e411f0eeca709d3dc7eda7}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_games_a6c4d48fdb1e411f0eeca709d3dc7eda7}{checkBoard}}
+\label{interface_games_a6c4d48fdb1e411f0eeca709d3dc7eda7}
+
+\begin{DoxyCompactList}\small\item\em 抜き石状態を確認するための碁石配列。手数でソートされている。 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_aad355f00c1b6a1a5cf357bc8b43aaecb}{
+NSMutableSet $\ast$ \hyperlink{interface_games_aad355f00c1b6a1a5cf357bc8b43aaecb}{game\_\-records}}
+\label{interface_games_aad355f00c1b6a1a5cf357bc8b43aaecb}
+
+\begin{DoxyCompactList}\small\item\em ゲーム中の全ての碁石を格納する配列 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a129e05192a7c91baac3ac5e4d764dbbd}{
+NSString $\ast$ \hyperlink{interface_games_a129e05192a7c91baac3ac5e4d764dbbd}{title}}
+\label{interface_games_a129e05192a7c91baac3ac5e4d764dbbd}
+
+\begin{DoxyCompactList}\small\item\em ゲームのタイトル \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ae761bedd4895d81eddf1dddf662db959}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ \hyperlink{interface_games_ae761bedd4895d81eddf1dddf662db959}{current\_\-root\_\-record}}
+\label{interface_games_ae761bedd4895d81eddf1dddf662db959}
+
+\begin{DoxyCompactList}\small\item\em 現在の階層の初手を示す。分岐していた場合、分岐元の碁石を示す。 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a799f4655d7b47e04445c82b1dbf9f4d6}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ \hyperlink{interface_games_a799f4655d7b47e04445c82b1dbf9f4d6}{current\_\-record}}
+\label{interface_games_a799f4655d7b47e04445c82b1dbf9f4d6}
+
+\begin{DoxyCompactList}\small\item\em 現在選択されている碁石 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_adf535cb37946a3be379ef00e240594a4}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ \hyperlink{interface_games_adf535cb37946a3be379ef00e240594a4}{first\_\-record}}
+\label{interface_games_adf535cb37946a3be379ef00e240594a4}
+
+\begin{DoxyCompactList}\small\item\em 初手の碁石 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a923707c0c4aefa34a61b168ba560184a}{
+\hyperlink{interface_game_records}{GameRecords} $\ast$ \hyperlink{interface_games_a923707c0c4aefa34a61b168ba560184a}{last\_\-record}}
+\label{interface_games_a923707c0c4aefa34a61b168ba560184a}
+
+\begin{DoxyCompactList}\small\item\em 現在の階層の最終手の碁石 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a2679abfcd824a28c617292efccfc610b}{
+\hyperlink{interface_board_view}{BoardView} $\ast$ \hyperlink{interface_games_a2679abfcd824a28c617292efccfc610b}{boardView}}
+\label{interface_games_a2679abfcd824a28c617292efccfc610b}
+
+\begin{DoxyCompactList}\small\item\em 盤面のView \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a17ce505b2339650db82c94e99c40e52a}{
+NSNumber $\ast$ \hyperlink{interface_games_a17ce505b2339650db82c94e99c40e52a}{current\_\-move}}
+\label{interface_games_a17ce505b2339650db82c94e99c40e52a}
+
+\begin{DoxyCompactList}\small\item\em 現在の手数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_aadd53bb8402e64bfb25c9e847cce4b35}{
+NSNumber $\ast$ \hyperlink{interface_games_aadd53bb8402e64bfb25c9e847cce4b35}{current\_\-branch\_\-move}}
+\label{interface_games_aadd53bb8402e64bfb25c9e847cce4b35}
+
+\begin{DoxyCompactList}\small\item\em 分岐元の碁石の手数 \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ab7afecc431e6ddb95bbd4866a2d15866}{
+NSNumber $\ast$ \hyperlink{interface_games_ab7afecc431e6ddb95bbd4866a2d15866}{game\_\-category}}
+\label{interface_games_ab7afecc431e6ddb95bbd4866a2d15866}
+
+\begin{DoxyCompactList}\small\item\em ゲームのカテゴリ \end{DoxyCompactList}\item 
+\hypertarget{interface_games_abac1b630a22106487a418cc1385727f3}{
+NSNumber $\ast$ \hyperlink{interface_games_abac1b630a22106487a418cc1385727f3}{is\_\-tmp\_\-game}}
+\label{interface_games_abac1b630a22106487a418cc1385727f3}
+
+\begin{DoxyCompactList}\small\item\em 未保存のゲームか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a16743e0db90137485d16cec0d61c16da}{
+NSNumber $\ast$ \hyperlink{interface_games_a16743e0db90137485d16cec0d61c16da}{is\_\-updated}}
+\label{interface_games_a16743e0db90137485d16cec0d61c16da}
+
+\begin{DoxyCompactList}\small\item\em 更新されたゲームか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ae6c43f40c34dfcd906a2cb8e58ddc348}{
+NSNumber $\ast$ \hyperlink{interface_games_ae6c43f40c34dfcd906a2cb8e58ddc348}{is\_\-state\_\-saved}}
+\label{interface_games_ae6c43f40c34dfcd906a2cb8e58ddc348}
+
+\begin{DoxyCompactList}\small\item\em セーブされたゲームか \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ab89e9ea7d6e1a0040524ad7f81383d98}{
+NSNumber $\ast$ \hyperlink{interface_games_ab89e9ea7d6e1a0040524ad7f81383d98}{first\_\-user\_\-id}}
+\label{interface_games_ab89e9ea7d6e1a0040524ad7f81383d98}
+
+\begin{DoxyCompactList}\small\item\em 先手のユーザID \end{DoxyCompactList}\item 
+\hypertarget{interface_games_aba47c20db33f8f1000c19a6ad62dee95}{
+NSNumber $\ast$ \hyperlink{interface_games_aba47c20db33f8f1000c19a6ad62dee95}{second\_\-user\_\-id}}
+\label{interface_games_aba47c20db33f8f1000c19a6ad62dee95}
+
+\begin{DoxyCompactList}\small\item\em 後手のユーザID \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a40778a2f58868099a3f97eadbd5453fa}{
+\hyperlink{interface_users}{Users} $\ast$ \hyperlink{interface_games_a40778a2f58868099a3f97eadbd5453fa}{current\_\-user}}
+\label{interface_games_a40778a2f58868099a3f97eadbd5453fa}
+
+\begin{DoxyCompactList}\small\item\em 現在の手番のユーザ \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a0765b81292303fec128e619fab915d7b}{
+\hyperlink{interface_users}{Users} $\ast$ \hyperlink{interface_games_a0765b81292303fec128e619fab915d7b}{first\_\-user}}
+\label{interface_games_a0765b81292303fec128e619fab915d7b}
+
+\begin{DoxyCompactList}\small\item\em 先手のユーザ \end{DoxyCompactList}\item 
+\hypertarget{interface_games_ac220cf3094d5f19ca52def5f66e0b2b9}{
+\hyperlink{interface_users}{Users} $\ast$ \hyperlink{interface_games_ac220cf3094d5f19ca52def5f66e0b2b9}{second\_\-user}}
+\label{interface_games_ac220cf3094d5f19ca52def5f66e0b2b9}
+
+\begin{DoxyCompactList}\small\item\em 後手のユーザ \end{DoxyCompactList}\item 
+\hypertarget{interface_games_a6ed89c5b910e9913e4f28462e32691f1}{
+NSDate $\ast$ \hyperlink{interface_games_a6ed89c5b910e9913e4f28462e32691f1}{save\_\-date}}
+\label{interface_games_a6ed89c5b910e9913e4f28462e32691f1}
+
+\begin{DoxyCompactList}\small\item\em 最終セーブ日付 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ゲームの情報を扱う抽象クラス  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_games_a728428abc6477a64e3af4fb03a67fc60}{
+\index{Games@{Games}!addGame\_\-records:@{addGame\_\-records:}}
+\index{addGame\_\-records:@{addGame\_\-records:}!Games@{Games}}
+\subsubsection[{addGame\_\-records:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addGame\_\-records: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSSet $\ast$)}]{value}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a728428abc6477a64e3af4fb03a67fc60}
+指定された碁石配列を保存する \hypertarget{interface_games_a00f0d0456bde50486d6144218ec608f8}{
+\index{Games@{Games}!addGame\_\-recordsObject:@{addGame\_\-recordsObject:}}
+\index{addGame\_\-recordsObject:@{addGame\_\-recordsObject:}!Games@{Games}}
+\subsubsection[{addGame\_\-recordsObject:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) addGame\_\-recordsObject: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{value}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a00f0d0456bde50486d6144218ec608f8}
+指定された碁石を保存する \hypertarget{interface_games_ae4fe69c9a21bec384055e089ceac2829}{
+\index{Games@{Games}!changeToBranchRecord@{changeToBranchRecord}}
+\index{changeToBranchRecord@{changeToBranchRecord}!Games@{Games}}
+\subsubsection[{changeToBranchRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) changeToBranchRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ae4fe69c9a21bec384055e089ceac2829}
+現在の棋譜の分岐レコードにへ遷移する。 \begin{DoxyReturn}{Returns}
+分岐があり、遷移可能な場合はYES
+\end{DoxyReturn}
+現在のレコードの一つ下の階層のレコードに移動する \hypertarget{interface_games_a08cf984bc98da86cfd1d1fefa4dbfda8}{
+\index{Games@{Games}!changeToRootRecord@{changeToRootRecord}}
+\index{changeToRootRecord@{changeToRootRecord}!Games@{Games}}
+\subsubsection[{changeToRootRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) changeToRootRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a08cf984bc98da86cfd1d1fefa4dbfda8}
+現在の棋譜のRootレコード（一つ上の階層）へ遷移する。 \begin{DoxyReturn}{Returns}
+Rootレコードがあり、遷移可能な場合はYES
+\end{DoxyReturn}
+現在のレコードの一つ上の階層のレコードに移動する \hypertarget{interface_games_a4b748d245b2717e54d5581aaa851a9b5}{
+\index{Games@{Games}!checkAutoSave@{checkAutoSave}}
+\index{checkAutoSave@{checkAutoSave}!Games@{Games}}
+\subsubsection[{checkAutoSave}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkAutoSave 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a4b748d245b2717e54d5581aaa851a9b5}
+自動セーブカウントをひとつ進め、設定された値に到達していたらセーブする \hypertarget{interface_games_a3fb19a273e3591f2e8e61a9eee23d84c}{
+\index{Games@{Games}!checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}}
+\index{checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}!Games@{Games}}
+\subsubsection[{checkCurrentNextRecordPuttable:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) checkCurrentNextRecordPuttable: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a3fb19a273e3591f2e8e61a9eee23d84c}
+現在の手の次の手として指定された座標に石を置いた場合、石を置くことが出来るかを示す。 返却されるコードにより、石を置けない理由が判断可能 
+\begin{DoxyParams}{Parameters}
+{\em x} & x座標 \\
+\hline
+{\em y} & y座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+理由ID THE\_\-STONE\_\-IS\_\-NOT\_\-PUTTABLE\_\-BECAUSE\_\-DUPULICATED -\/1 THE\_\-STONE\_\-IS\_\-NOT\_\-PUTTABLE\_\-BECAUSE\_\-SUICEDED -\/2 THE\_\-STONE\_\-IS\_\-PUTTABLE 1
+\end{DoxyReturn}
+打とうとしている石が、配置可能かどうかを判定する \hypertarget{interface_games_a6ebac07fc8659bbb8af5a5bc1201256f}{
+\index{Games@{Games}!checkRecordPuttable:@{checkRecordPuttable:}}
+\index{checkRecordPuttable:@{checkRecordPuttable:}!Games@{Games}}
+\subsubsection[{checkRecordPuttable:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) checkRecordPuttable: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a6ebac07fc8659bbb8af5a5bc1201256f}
+指定された棋譜を置くことが出来るかを示す。 返却されるコードにより、石を置けない理由が判断可能 条件：指定された棋譜にはXY座標と、手番が指定されていなければならない。 
+\begin{DoxyParams}{Parameters}
+{\em record} & 指定された棋譜 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+理由ID THE\_\-STONE\_\-IS\_\-NOT\_\-PUTTABLE\_\-BECAUSE\_\-DUPULICATED -\/1 THE\_\-STONE\_\-IS\_\-NOT\_\-PUTTABLE\_\-BECAUSE\_\-SUICEDED -\/2 THE\_\-STONE\_\-IS\_\-PUTTABLE 1 
+\end{DoxyReturn}
+\hypertarget{interface_games_ab105dfc06c682a58a0bc9421425635a6}{
+\index{Games@{Games}!checkSuicide:x:y:@{checkSuicide:x:y:}}
+\index{checkSuicide:x:y:@{checkSuicide:x:y:}!Games@{Games}}
+\subsubsection[{checkSuicide:x:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) checkSuicide: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{stone}
+\item[{x:(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ab105dfc06c682a58a0bc9421425635a6}
+指定された碁石が自殺手かどうかチェックする \hypertarget{interface_games_abae461aa449e572d9706ff5837f0e3cd}{
+\index{Games@{Games}!checkSuicideAndReturnStones:x:y:@{checkSuicideAndReturnStones:x:y:}}
+\index{checkSuicideAndReturnStones:x:y:@{checkSuicideAndReturnStones:x:y:}!Games@{Games}}
+\subsubsection[{checkSuicideAndReturnStones:x:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray}$\ast$) checkSuicideAndReturnStones: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{stone}
+\item[{x:(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_abae461aa449e572d9706ff5837f0e3cd}
+指定された碁石が自殺手かどうかチェックし、自殺手の場合、囲んでいる碁石集合を取得する \hypertarget{interface_games_a0272aef1d669a1162b8025ff0eccd8df}{
+\index{Games@{Games}!checkUser:@{checkUser:}}
+\index{checkUser:@{checkUser:}!Games@{Games}}
+\subsubsection[{checkUser:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) checkUser: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{move}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a0272aef1d669a1162b8025ff0eccd8df}
+指定された手番のユーザIDを返す 
+\begin{DoxyParams}{Parameters}
+{\em move} & 手番 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ユーザID
+\end{DoxyReturn}
+現在の手が先行か後攻か判断する 1:先行 0:後攻 \hypertarget{interface_games_aede639ff391e10c3b864b2610155bd5e}{
+\index{Games@{Games}!clearCheckBoard@{clearCheckBoard}}
+\index{clearCheckBoard@{clearCheckBoard}!Games@{Games}}
+\subsubsection[{clearCheckBoard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clearCheckBoard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aede639ff391e10c3b864b2610155bd5e}
+抜き石チェック時のチェック用の碁盤をクリア \hypertarget{interface_games_ac3127f644ef9d8a28e87606f3d3dfabd}{
+\index{Games@{Games}!clearStoneBoard@{clearStoneBoard}}
+\index{clearStoneBoard@{clearStoneBoard}!Games@{Games}}
+\subsubsection[{clearStoneBoard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clearStoneBoard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ac3127f644ef9d8a28e87606f3d3dfabd}
+盤面に表示されているGoStoneViewをクリアする
+
+基板をクリアする \hypertarget{interface_games_a9bd21f92c54850bcb5b474602522376a}{
+\index{Games@{Games}!createGoStoneViewCyclic:@{createGoStoneViewCyclic:}}
+\index{createGoStoneViewCyclic:@{createGoStoneViewCyclic:}!Games@{Games}}
+\subsubsection[{createGoStoneViewCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) createGoStoneViewCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a9bd21f92c54850bcb5b474602522376a}
+ゲーム初期化時に、レコードに対応するGoStoneViewを再帰的に生成する \hypertarget{interface_games_a079f26e20d4f1be8525166822b63c0c8}{
+\index{Games@{Games}!createNewBranchRecord:y:@{createNewBranchRecord:y:}}
+\index{createNewBranchRecord:y:@{createNewBranchRecord:y:}!Games@{Games}}
+\subsubsection[{createNewBranchRecord:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createNewBranchRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a079f26e20d4f1be8525166822b63c0c8}
+指定された座標に分岐の碁石を配置する。
+
+分岐レコードを生成する。 current\_\-branch\_\-recordがある場合は、current\_\-branch\_\-recordに連結させる current\_\-branch\_\-recordがない場合は、current\_\-recordの分岐レコードを挿入する \hypertarget{interface_games_a60cb93e4d2051fa276a8d0504c65bed9}{
+\index{Games@{Games}!createNewNormalRecord:y:@{createNewNormalRecord:y:}}
+\index{createNewNormalRecord:y:@{createNewNormalRecord:y:}!Games@{Games}}
+\subsubsection[{createNewNormalRecord:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createNewNormalRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a60cb93e4d2051fa276a8d0504c65bed9}
+指定された座標に通常の碁石を配置する。
+
+現在のレコードの次の手のレコードを作成する \hypertarget{interface_games_a1e4f77c7b6ea0101b16762c8621d861b}{
+\index{Games@{Games}!createNewRecord:y:goStoneView:@{createNewRecord:y:goStoneView:}}
+\index{createNewRecord:y:goStoneView:@{createNewRecord:y:goStoneView:}!Games@{Games}}
+\subsubsection[{createNewRecord:y:goStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createNewRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{goStoneView:({\bf GoStoneView}$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a1e4f77c7b6ea0101b16762c8621d861b}
+x, y座標を指定して棋譜を作成する。各ゲーム実装により作成される棋譜は異なる。 
+\begin{DoxyParams}{Parameters}
+{\em x} & x座標 \\
+\hline
+{\em y} & y座標 \\
+\hline
+{\em goStoneView} & 棋譜Viewオブジェクト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+作成されたGameRecordオブジェクト
+\end{DoxyReturn}
+現在のレコードの次の手のレコードを作成する \hypertarget{interface_games_a7f86f6e3eca9aba652ae5753f24e38a8}{
+\index{Games@{Games}!createOkiishiRecord:y:goStoneView:@{createOkiishiRecord:y:goStoneView:}}
+\index{createOkiishiRecord:y:goStoneView:@{createOkiishiRecord:y:goStoneView:}!Games@{Games}}
+\subsubsection[{createOkiishiRecord:y:goStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords}$\ast$) createOkiishiRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{goStoneView:({\bf GoStoneView} $\ast$)}]{view}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a7f86f6e3eca9aba652ae5753f24e38a8}
+x, y座標を指定して置石を作成する。各ゲーム実装により作成される棋譜は異なる。 
+\begin{DoxyParams}{Parameters}
+{\em x} & x座標 \\
+\hline
+{\em y} & y座標 \\
+\hline
+{\em record} & 棋譜オブジェクト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+作成されたGameRecordオブジェクト 
+\end{DoxyReturn}
+\hypertarget{interface_games_af8332c38140082709ec41bf91747c41f}{
+\index{Games@{Games}!delete@{delete}}
+\index{delete@{delete}!Games@{Games}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) delete 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_af8332c38140082709ec41bf91747c41f}
+ゲームを削除する \begin{DoxyReturn}{Returns}
+削除が成功した場合YES
+\end{DoxyReturn}
+ゲームを削除する \hypertarget{interface_games_a19e7645f03f70e1215390106d8e5ff3a}{
+\index{Games@{Games}!deleteGameRecord:@{deleteGameRecord:}}
+\index{deleteGameRecord:@{deleteGameRecord:}!Games@{Games}}
+\subsubsection[{deleteGameRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deleteGameRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a19e7645f03f70e1215390106d8e5ff3a}
+指定された棋譜を削除する。同時に以下に影響を与える。 ・Current\_\-recordのPrevRecordのNextRecordにNilを設定する ・指定された棋譜がLastRecordの場合は、棋譜のPrevRecordをLastRecordに設定する ・RecordStackから棋譜を取り除く 
+\begin{DoxyParams}{Parameters}
+{\em record} & 削除する棋譜 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_games_a66ef016bdf75662d0368b7726aca5fb3}{
+\index{Games@{Games}!deleteGameRecordCyclic:@{deleteGameRecordCyclic:}}
+\index{deleteGameRecordCyclic:@{deleteGameRecordCyclic:}!Games@{Games}}
+\subsubsection[{deleteGameRecordCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deleteGameRecordCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a66ef016bdf75662d0368b7726aca5fb3}
+指定した棋譜以降の棋譜を全て削除する 
+\begin{DoxyParams}{Parameters}
+{\em record} & 削除の起点となる棋譜\\
+\hline
+\end{DoxyParams}
+指定したRecord以降のRecordを全て削除する \hypertarget{interface_games_af9c158e6105d8a0afb05fde82d0faefb}{
+\index{Games@{Games}!doCheckRemoveStone:x:y:@{doCheckRemoveStone:x:y:}}
+\index{doCheckRemoveStone:x:y:@{doCheckRemoveStone:x:y:}!Games@{Games}}
+\subsubsection[{doCheckRemoveStone:x:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) doCheckRemoveStone: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{opponent}
+\item[{x:(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_af9c158e6105d8a0afb05fde82d0faefb}
+指定された場所に碁石を置いた場合、抜き石が存在するかチェックする \hypertarget{interface_games_a35a940a5a3b0c9176b35106d38779a04}{
+\index{Games@{Games}!doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:@{doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:}}
+\index{doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:@{doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:}!Games@{Games}}
+\subsubsection[{doCheckRemoveStoneAndReturnStones:x:y:enclosed:enclosedBy:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) doCheckRemoveStoneAndReturnStones: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{opponent}
+\item[{x:(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{enclosed:({\bf NSMutableArray} $\ast$)}]{enclosed}
+\item[{enclosedBy:(NSMutableSet $\ast$)}]{enclosedBy}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a35a940a5a3b0c9176b35106d38779a04}
+指定された場所に碁石を置いた場合、抜き石が存在するかチェックし、抜き石が存在する場合、抜き石集合を取得する \hypertarget{interface_games_a2d9c4ec95804f78a087188b0ea7eef87}{
+\index{Games@{Games}!getCheckBoardXY:y:@{getCheckBoardXY:y:}}
+\index{getCheckBoardXY:y:@{getCheckBoardXY:y:}!Games@{Games}}
+\subsubsection[{getCheckBoardXY:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) getCheckBoardXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a2d9c4ec95804f78a087188b0ea7eef87}
+チェック用基板の指定された場所がチェックされているかどか取得する \hypertarget{interface_games_ad2d24effe36485105bde94171e77deb6}{
+\index{Games@{Games}!getCurrentNextRecodeMove@{getCurrentNextRecodeMove}}
+\index{getCurrentNextRecodeMove@{getCurrentNextRecodeMove}!Games@{Games}}
+\subsubsection[{getCurrentNextRecodeMove}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSNumber$\ast$) getCurrentNextRecodeMove 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ad2d24effe36485105bde94171e77deb6}
+現在の碁石の次の手数を取得する \hypertarget{interface_games_a27c81a4af36aceb98772b9ac610e6135}{
+\index{Games@{Games}!getCurrentUserId@{getCurrentUserId}}
+\index{getCurrentUserId@{getCurrentUserId}!Games@{Games}}
+\subsubsection[{getCurrentUserId}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSNumber $\ast$) getCurrentUserId 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a27c81a4af36aceb98772b9ac610e6135}
+現在の手番のユーザのユーザIDを返す \begin{DoxyReturn}{Returns}
+現在の手番のユーザのユーザID 
+\end{DoxyReturn}
+\hypertarget{interface_games_a7fd9604cfb14891c48455538ae2c7582}{
+\index{Games@{Games}!getEnclosedStonesFromRecord:@{getEnclosedStonesFromRecord:}}
+\index{getEnclosedStonesFromRecord:@{getEnclosedStonesFromRecord:}!Games@{Games}}
+\subsubsection[{getEnclosedStonesFromRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray} $\ast$) getEnclosedStonesFromRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a7fd9604cfb14891c48455538ae2c7582}
+指定された棋譜により抜き石となる棋譜配列を返す 
+\begin{DoxyParams}{Parameters}
+{\em record} & 指定された棋譜 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+抜き石となる棋譜の配列 
+\end{DoxyReturn}
+\hypertarget{interface_games_a3c209384d054a75c0e08a5e1107ead3f}{
+\index{Games@{Games}!getEnclosedStonesFromStack:@{getEnclosedStonesFromStack:}}
+\index{getEnclosedStonesFromStack:@{getEnclosedStonesFromStack:}!Games@{Games}}
+\subsubsection[{getEnclosedStonesFromStack:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray} $\ast$) getEnclosedStonesFromStack: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{fromMove}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a3c209384d054a75c0e08a5e1107ead3f}
+棋譜のスタックの中で、指定された手番以降の棋譜で抜き石となる棋譜の配列を返す 
+\begin{DoxyParams}{Parameters}
+{\em fromMove} & 抜き石を評価する起点となる手番 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+抜き石となる棋譜の配列 
+\end{DoxyReturn}
+\hypertarget{interface_games_a7eb3fe2c98bf87e30a85aa5312db2d99}{
+\index{Games@{Games}!getEnclosedStonesFromStackWithStack:stack:@{getEnclosedStonesFromStackWithStack:stack:}}
+\index{getEnclosedStonesFromStackWithStack:stack:@{getEnclosedStonesFromStackWithStack:stack:}!Games@{Games}}
+\subsubsection[{getEnclosedStonesFromStackWithStack:stack:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray}$\ast$) getEnclosedStonesFromStackWithStack: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{fromMove}
+\item[{stack:({\bf NSMutableArray} $\ast$)}]{stack}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a7eb3fe2c98bf87e30a85aa5312db2d99}
+碁石Stackから、指定された手数以後に抜き石された碁石集合を取得する \hypertarget{interface_games_a47becd0c290f96ce3fd635a1d3c17af8}{
+\index{Games@{Games}!getOpponentUser:@{getOpponentUser:}}
+\index{getOpponentUser:@{getOpponentUser:}!Games@{Games}}
+\subsubsection[{getOpponentUser:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) getOpponentUser: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{move}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a47becd0c290f96ce3fd635a1d3c17af8}
+指定された手数から、対戦相手のユーザIDを取得する \hypertarget{interface_games_a0478be8859388476b846e6840b5abf26}{
+\index{Games@{Games}!getRecordUserId:@{getRecordUserId:}}
+\index{getRecordUserId:@{getRecordUserId:}!Games@{Games}}
+\subsubsection[{getRecordUserId:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) getRecordUserId: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a0478be8859388476b846e6840b5abf26}
+指定された碁石を打ったユーザのユーザIDを取得する \hypertarget{interface_games_aec8599f725ed45a79fea1a19a919f5dd}{
+\index{Games@{Games}!getStoneArrayXY:y:@{getStoneArrayXY:y:}}
+\index{getStoneArrayXY:y:@{getStoneArrayXY:y:}!Games@{Games}}
+\subsubsection[{getStoneArrayXY:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) getStoneArrayXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aec8599f725ed45a79fea1a19a919f5dd}
+指定の座標に存在する棋譜を返す 
+\begin{DoxyParams}{Parameters}
+{\em x} & x座標 \\
+\hline
+{\em y} & y座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+指定された座標の棋譜。存在しない場合はNilを返す。 
+\end{DoxyReturn}
+\hypertarget{interface_games_a01dfe628966c04670fedf35e02c33371}{
+\index{Games@{Games}!initGames@{initGames}}
+\index{initGames@{initGames}!Games@{Games}}
+\subsubsection[{initGames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initGames 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a01dfe628966c04670fedf35e02c33371}
+コンストラクタ \begin{DoxyReturn}{Returns}
+インスタンス 
+\end{DoxyReturn}
+\hypertarget{interface_games_a430dea682d0d84b969200dd97dd2be98}{
+\index{Games@{Games}!initGamesWithBoardSize:ySize:@{initGamesWithBoardSize:ySize:}}
+\index{initGamesWithBoardSize:ySize:@{initGamesWithBoardSize:ySize:}!Games@{Games}}
+\subsubsection[{initGamesWithBoardSize:ySize:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initGamesWithBoardSize: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{xSize}
+\item[{ySize:(int)}]{ySize}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a430dea682d0d84b969200dd97dd2be98}
+コンストラクタ 盤面のサイズを指定する 
+\begin{DoxyParams}{Parameters}
+{\em xSize} & 盤面のx幅 \\
+\hline
+{\em ySize} & 盤面のy幅 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+インスタンス 
+\end{DoxyReturn}
+\hypertarget{interface_games_a2bcadbacf50a9d7e7e45e1372de6ac97}{
+\index{Games@{Games}!moveToNextRecord@{moveToNextRecord}}
+\index{moveToNextRecord@{moveToNextRecord}!Games@{Games}}
+\subsubsection[{moveToNextRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) moveToNextRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a2bcadbacf50a9d7e7e45e1372de6ac97}
+現在の棋譜を一手先に進める 影響：Current\_\-recordが変更される \begin{DoxyReturn}{Returns}
+一手先の棋譜。存在しない場合はNilを返す。
+\end{DoxyReturn}
+現在のレコードの一手次のレコードに進める \begin{DoxyReturn}{Returns}
+: 次のレコードのmove.-\/1の場合は、次の手が存在しないことを示す 
+\end{DoxyReturn}
+\hypertarget{interface_games_a620301ed77395102fdb427c8a0d060cf}{
+\index{Games@{Games}!moveToPrevRecord@{moveToPrevRecord}}
+\index{moveToPrevRecord@{moveToPrevRecord}!Games@{Games}}
+\subsubsection[{moveToPrevRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) moveToPrevRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a620301ed77395102fdb427c8a0d060cf}
+現在の棋譜を一手前に戻す 影響：Current\_\-recordが変更される \begin{DoxyReturn}{Returns}
+一手前の棋譜。存在しない場合はNilを返す。
+\end{DoxyReturn}
+現在のレコードの一手前のレコードに戻る \begin{DoxyReturn}{Returns}
+: 前のレコードのmove. -\/1の場合は、次の手が存在しないことを示す。 
+\end{DoxyReturn}
+\hypertarget{interface_games_a882c82102ab5be113a0f7a2c7c782ca9}{
+\index{Games@{Games}!popStackToMoveCyclic:@{popStackToMoveCyclic:}}
+\index{popStackToMoveCyclic:@{popStackToMoveCyclic:}!Games@{Games}}
+\subsubsection[{popStackToMoveCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) popStackToMoveCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSNumber$\ast$)}]{move}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a882c82102ab5be113a0f7a2c7c782ca9}
+指定された手番以降の棋譜を棋譜スタックから取り除く。 
+\begin{DoxyParams}{Parameters}
+{\em move} & 取り除く起点となる手番\\
+\hline
+\end{DoxyParams}
+指定されたレコードの手番迄スタックをpopする \hypertarget{interface_games_aad47ae4e9af60c4288ba8a0b61e604d3}{
+\index{Games@{Games}!pushRecordToStackCyclic:@{pushRecordToStackCyclic:}}
+\index{pushRecordToStackCyclic:@{pushRecordToStackCyclic:}!Games@{Games}}
+\subsubsection[{pushRecordToStackCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) pushRecordToStackCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aad47ae4e9af60c4288ba8a0b61e604d3}
+指定された棋譜以降の棋譜全てをRecordスタックに順に追加する。 但し、同じ階層の棋譜のみを追加し、分岐の棋譜は追加しない 
+\begin{DoxyParams}{Parameters}
+{\em record} & 追加の起点となる棋譜\\
+\hline
+\end{DoxyParams}
+指定されたレコードのNextGameRecordが存在しなくなる迄、再帰的にレコードをスタックに挿入する \hypertarget{interface_games_a221f3c724f98ffa3f870d6f597750557}{
+\index{Games@{Games}!removeGame\_\-records:@{removeGame\_\-records:}}
+\index{removeGame\_\-records:@{removeGame\_\-records:}!Games@{Games}}
+\subsubsection[{removeGame\_\-records:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeGame\_\-records: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSSet $\ast$)}]{value}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a221f3c724f98ffa3f870d6f597750557}
+指定された碁石配列を削除する \hypertarget{interface_games_ac747f01b9449eac068cd3f400c75f4da}{
+\index{Games@{Games}!removeGame\_\-recordsObject:@{removeGame\_\-recordsObject:}}
+\index{removeGame\_\-recordsObject:@{removeGame\_\-recordsObject:}!Games@{Games}}
+\subsubsection[{removeGame\_\-recordsObject:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeGame\_\-recordsObject: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{value}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ac747f01b9449eac068cd3f400c75f4da}
+指定された碁石を削除する \hypertarget{interface_games_aca0584d71aeaf9cb5d3f0ee24e69fe24}{
+\index{Games@{Games}!reset@{reset}}
+\index{reset@{reset}!Games@{Games}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) reset 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aca0584d71aeaf9cb5d3f0ee24e69fe24}
+ゲームを初期状態に戻す \begin{DoxyReturn}{Returns}
+初期状態への変更が成功した場合YES
+\end{DoxyReturn}
+ゲームを保存せず、初期化する \hypertarget{interface_games_a4c5e2dc4e111e48f56ecb8e94fb3cac1}{
+\index{Games@{Games}!restore@{restore}}
+\index{restore@{restore}!Games@{Games}}
+\subsubsection[{restore}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) restore 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a4c5e2dc4e111e48f56ecb8e94fb3cac1}
+ゲームをリストアする 
+
+全ての棋譜に対応するGoStoneViewを作成し、棋譜に関連付ける。 又、手番順にRecordスタックに格納し、最も手番が大きい棋譜をCurrent\_\-recordに設定する。 
+
+ゲームの初期化を行う。GameRecords, GameRecordsからGoStoneViewを作成し、CurrentRecordを設定する \hypertarget{interface_games_ae1b6c93bf7add9a10162247a20065ae8}{
+\index{Games@{Games}!save@{save}}
+\index{save@{save}!Games@{Games}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) save 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ae1b6c93bf7add9a10162247a20065ae8}
+ゲームを保存する \begin{DoxyReturn}{Returns}
+保存が成功した場合YES
+\end{DoxyReturn}
+ゲームをセーブする \hypertarget{interface_games_a97f53c5367df474c90fb9ff869627bfb}{
+\index{Games@{Games}!setCheckBoardXY:y:checked:@{setCheckBoardXY:y:checked:}}
+\index{setCheckBoardXY:y:checked:@{setCheckBoardXY:y:checked:}!Games@{Games}}
+\subsubsection[{setCheckBoardXY:y:checked:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setCheckBoardXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{checked:(BOOL)}]{checked}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a97f53c5367df474c90fb9ff869627bfb}
+チェック用基板の指定された場所にチェックする \hypertarget{interface_games_aed3a13eb47643d1cd4b5b25f0b9582f0}{
+\index{Games@{Games}!setNewCurrentRecord:@{setNewCurrentRecord:}}
+\index{setNewCurrentRecord:@{setNewCurrentRecord:}!Games@{Games}}
+\subsubsection[{setNewCurrentRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setNewCurrentRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{newRecord}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aed3a13eb47643d1cd4b5b25f0b9582f0}
+指定されたGameRecordをCurrent\_\-recordに設定する \hypertarget{interface_games_a18c5e32f0ce44370f981950e8f4121e4}{
+\index{Games@{Games}!setStackToXYArray@{setStackToXYArray}}
+\index{setStackToXYArray@{setStackToXYArray}!Games@{Games}}
+\subsubsection[{setStackToXYArray}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setStackToXYArray 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a18c5e32f0ce44370f981950e8f4121e4}
+Recordスタック内の棋譜全てを盤面上に配置する \hypertarget{interface_games_aa388a32904aa9d1545fc045b0abc149f}{
+\index{Games@{Games}!setStoneArrayXY:y:stone:@{setStoneArrayXY:y:stone:}}
+\index{setStoneArrayXY:y:stone:@{setStoneArrayXY:y:stone:}!Games@{Games}}
+\subsubsection[{setStoneArrayXY:y:stone:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setStoneArrayXY: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{stone:({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_aa388a32904aa9d1545fc045b0abc149f}
+指定された座標の盤面に指定された棋譜を配置する 
+\begin{DoxyParams}{Parameters}
+{\em x} & 盤面のX座標 \\
+\hline
+{\em y} & 盤面のY座標 \\
+\hline
+{\em record} & 盤面に配置する棋譜 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_games_a585c2b097394ef607f29d2a36a113c1a}{
+\index{Games@{Games}!showStackLog@{showStackLog}}
+\index{showStackLog@{showStackLog}!Games@{Games}}
+\subsubsection[{showStackLog}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showStackLog 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_a585c2b097394ef607f29d2a36a113c1a}
+Recordスタック内の棋譜全てをログに出力する \hypertarget{interface_games_ad6eacd14dcf954b902b66b445b1a5c6c}{
+\index{Games@{Games}!showStonesXYLog@{showStonesXYLog}}
+\index{showStonesXYLog@{showStonesXYLog}!Games@{Games}}
+\subsubsection[{showStonesXYLog}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showStonesXYLog 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_games_ad6eacd14dcf954b902b66b445b1a5c6c}
+盤面上の棋譜全てをログに出力する 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/Games.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/Games.m\end{DoxyCompactItemize}

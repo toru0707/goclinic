@@ -10,7 +10,6 @@
 #import "Global.h"
 
 @implementation Users 
-@synthesize isCurrent = _isCurrent;
 @dynamic user_id;
 @dynamic name;
 @dynamic games;

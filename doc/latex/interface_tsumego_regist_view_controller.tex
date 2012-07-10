@@ -1,0 +1,108 @@
+\hypertarget{interface_tsumego_regist_view_controller}{
+\section{TsumegoRegistViewController Class Reference}
+\label{interface_tsumego_regist_view_controller}\index{TsumegoRegistViewController@{TsumegoRegistViewController}}
+}
+
+
+{\ttfamily \#import $<$TsumegoRegistViewController.h$>$}
+
+Inheritance diagram for TsumegoRegistViewController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.790123cm]{interface_tsumego_regist_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(IBAction) -\/ \hyperlink{interface_tsumego_regist_view_controller_a0fb30c57c5fc322ce12324e540e34b05}{touchRegistQuestionStatementButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_tsumego_regist_view_controller_a7ce4b83cc166f8846ab8412a4072c0b8}{touchRegistAnswerButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_tsumego_regist_view_controller_a1f40816e28988f32491959408490fa68}{touchChangeStoneColorSegmentedControl:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_tsumego_regist_view_controller_a8818ed1e51e7a58634428b12c629903f}{
+IBOutlet UISegmentedControl $\ast$ \hyperlink{interface_tsumego_regist_view_controller_a8818ed1e51e7a58634428b12c629903f}{\_\-userSegmentedControl}}
+\label{interface_tsumego_regist_view_controller_a8818ed1e51e7a58634428b12c629903f}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_regist_view_controller_a7f5838a4ea792f976fdf51e1de95b0ba}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_tsumego_regist_view_controller_a7f5838a4ea792f976fdf51e1de95b0ba}{\_\-registAnswerButton}}
+\label{interface_tsumego_regist_view_controller_a7f5838a4ea792f976fdf51e1de95b0ba}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_regist_view_controller_ad8f5643e96dfa2cf9ecbeeb74328d5eb}{
+\hyperlink{interface_tsumego_game_state}{TsumegoGameState} $\ast$ \hyperlink{interface_tsumego_regist_view_controller_ad8f5643e96dfa2cf9ecbeeb74328d5eb}{\_\-state}}
+\label{interface_tsumego_regist_view_controller_ad8f5643e96dfa2cf9ecbeeb74328d5eb}
+
+\begin{DoxyCompactList}\small\item\em 状態オブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_tsumego_regist_view_controller_a86b814388cf64187acdf79b660355eac}{
+UISegmentedControl $\ast$ \hyperlink{interface_tsumego_regist_view_controller_a86b814388cf64187acdf79b660355eac}{userSegmentedControl}}
+\label{interface_tsumego_regist_view_controller_a86b814388cf64187acdf79b660355eac}
+
+\begin{DoxyCompactList}\small\item\em ユーザ切り替え用セグ面テッドコントロールのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_regist_view_controller_a32049bfdb1d736429a731e86de7b844c}{
+UIButton $\ast$ \hyperlink{interface_tsumego_regist_view_controller_a32049bfdb1d736429a731e86de7b844c}{registAnswerButton}}
+\label{interface_tsumego_regist_view_controller_a32049bfdb1d736429a731e86de7b844c}
+
+\begin{DoxyCompactList}\small\item\em 解答登録ボタンのアウトレットオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+詰碁登録画面のViewController  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_tsumego_regist_view_controller_a1f40816e28988f32491959408490fa68}{
+\index{TsumegoRegistViewController@{TsumegoRegistViewController}!touchChangeStoneColorSegmentedControl:@{touchChangeStoneColorSegmentedControl:}}
+\index{touchChangeStoneColorSegmentedControl:@{touchChangeStoneColorSegmentedControl:}!TsumegoRegistViewController@{TsumegoRegistViewController}}
+\subsubsection[{touchChangeStoneColorSegmentedControl:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchChangeStoneColorSegmentedControl: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_regist_view_controller_a1f40816e28988f32491959408490fa68}
+黒白切り替えスイッチがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 黒白切り替えスイッチオブジェクト\\
+\hline
+\end{DoxyParams}
+ユーザを切り替えるボタンのデリゲートメソッド \hypertarget{interface_tsumego_regist_view_controller_a7ce4b83cc166f8846ab8412a4072c0b8}{
+\index{TsumegoRegistViewController@{TsumegoRegistViewController}!touchRegistAnswerButton:@{touchRegistAnswerButton:}}
+\index{touchRegistAnswerButton:@{touchRegistAnswerButton:}!TsumegoRegistViewController@{TsumegoRegistViewController}}
+\subsubsection[{touchRegistAnswerButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchRegistAnswerButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_regist_view_controller_a7ce4b83cc166f8846ab8412a4072c0b8}
+解答登録ボタンがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 解答登録ボタンオブジェクト\\
+\hline
+\end{DoxyParams}
+回答登録ボタンが押された場合 \hypertarget{interface_tsumego_regist_view_controller_a0fb30c57c5fc322ce12324e540e34b05}{
+\index{TsumegoRegistViewController@{TsumegoRegistViewController}!touchRegistQuestionStatementButton:@{touchRegistQuestionStatementButton:}}
+\index{touchRegistQuestionStatementButton:@{touchRegistQuestionStatementButton:}!TsumegoRegistViewController@{TsumegoRegistViewController}}
+\subsubsection[{touchRegistQuestionStatementButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchRegistQuestionStatementButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_regist_view_controller_a0fb30c57c5fc322ce12324e540e34b05}
+問題登録ボタンがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 問題登録ボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/TsumegoRegistViewController.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/TsumegoRegistViewController.m\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{interface_comment_add_view_cell_controller}{
+\section{CommentAddViewCellController Class Reference}
+\label{interface_comment_add_view_cell_controller}\index{CommentAddViewCellController@{CommentAddViewCellController}}
+}
+
+
+{\ttfamily \#import $<$CommentAddViewCellController.h$>$}
+
+Inheritance diagram for CommentAddViewCellController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.978799cm]{interface_comment_add_view_cell_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(IBAction) -\/ \hyperlink{interface_comment_add_view_cell_controller_afe532e3d7df727964275d2ac91060ccb}{touchAddButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_comment_add_view_cell_controller_a513ed5171ca3b8ff13b6fff41d16882c}{touchPointTextField:}
+\item 
+(IBAction) -\/ \hyperlink{interface_comment_add_view_cell_controller_a9e404058ea5227904b4289b616dfe307}{touchCategoryTextField:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_comment_add_view_cell_controller_a3e6da360df77b6f0d4b9985623472391}{
+id$<$ \hyperlink{protocol_comment_add_view_cell_controller_delegate-p}{CommentAddViewCellControllerDelegate} $>$ \hyperlink{interface_comment_add_view_cell_controller_a3e6da360df77b6f0d4b9985623472391}{\_\-delegate}}
+\label{interface_comment_add_view_cell_controller_a3e6da360df77b6f0d4b9985623472391}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_comment_add_view_cell_controller_aea5e16eb45eda0dc4c40f0bb1d28bf21}{
+IBOutlet \hyperlink{interface_comment_add_view_cell}{CommentAddViewCell} $\ast$ \hyperlink{interface_comment_add_view_cell_controller_aea5e16eb45eda0dc4c40f0bb1d28bf21}{\_\-cell}}
+\label{interface_comment_add_view_cell_controller_aea5e16eb45eda0dc4c40f0bb1d28bf21}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_comment_add_view_cell_controller_afca103f5e89b63e6c52a3646e3b07508}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_comment_add_view_cell_controller_afca103f5e89b63e6c52a3646e3b07508}{\_\-categories}}
+\label{interface_comment_add_view_cell_controller_afca103f5e89b63e6c52a3646e3b07508}
+
+\begin{DoxyCompactList}\small\item\em カテゴリを格納する配列 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_comment_add_view_cell_controller_ae12f749b163024ff5ea15e23aaaf5a3a}{
+id$<$ \hyperlink{protocol_comment_add_view_cell_controller_delegate-p}{CommentAddViewCellControllerDelegate} $>$ \hyperlink{interface_comment_add_view_cell_controller_ae12f749b163024ff5ea15e23aaaf5a3a}{delegate}}
+\label{interface_comment_add_view_cell_controller_ae12f749b163024ff5ea15e23aaaf5a3a}
+
+\begin{DoxyCompactList}\small\item\em デリゲートオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_comment_add_view_cell_controller_a7e720ff244ee58abe88d45e9cd7612af}{
+\hyperlink{interface_comment_add_view_cell}{CommentAddViewCell} $\ast$ \hyperlink{interface_comment_add_view_cell_controller_a7e720ff244ee58abe88d45e9cd7612af}{cell}}
+\label{interface_comment_add_view_cell_controller_a7e720ff244ee58abe88d45e9cd7612af}
+
+\begin{DoxyCompactList}\small\item\em TableViewCellのアウトレットオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+コメント登録用のViewCellController  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_comment_add_view_cell_controller_afe532e3d7df727964275d2ac91060ccb}{
+\index{CommentAddViewCellController@{CommentAddViewCellController}!touchAddButton:@{touchAddButton:}}
+\index{touchAddButton:@{touchAddButton:}!CommentAddViewCellController@{CommentAddViewCellController}}
+\subsubsection[{touchAddButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchAddButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_comment_add_view_cell_controller_afe532e3d7df727964275d2ac91060ccb}
+追加ボタンをタッチした 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 追加ボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_comment_add_view_cell_controller_a9e404058ea5227904b4289b616dfe307}{
+\index{CommentAddViewCellController@{CommentAddViewCellController}!touchCategoryTextField:@{touchCategoryTextField:}}
+\index{touchCategoryTextField:@{touchCategoryTextField:}!CommentAddViewCellController@{CommentAddViewCellController}}
+\subsubsection[{touchCategoryTextField:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchCategoryTextField: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_comment_add_view_cell_controller_a9e404058ea5227904b4289b616dfe307}
+カテゴリテキストフィールドをタッチした 
+\begin{DoxyParams}{Parameters}
+{\em sender} & カテゴリテキストフィールドオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_comment_add_view_cell_controller_a513ed5171ca3b8ff13b6fff41d16882c}{
+\index{CommentAddViewCellController@{CommentAddViewCellController}!touchPointTextField:@{touchPointTextField:}}
+\index{touchPointTextField:@{touchPointTextField:}!CommentAddViewCellController@{CommentAddViewCellController}}
+\subsubsection[{touchPointTextField:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchPointTextField: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_comment_add_view_cell_controller_a513ed5171ca3b8ff13b6fff41d16882c}
+点数テキストフィールドをタッチした 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 点数テキストフィールドオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/CommentAddViewCellController.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/CommentAddViewCellController.m\end{DoxyCompactItemize}

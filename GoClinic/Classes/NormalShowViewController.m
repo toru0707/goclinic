@@ -9,7 +9,7 @@
 #import "NormalShowViewController.h"
 #import "TsumegoShowViewController.h"
 #import "GoClinicAppDelegate.h"
-#import "Util.h"
+#import "StringUtil.h"
 #import "GamesPickerAlertViewController.h"
 #import "NormalGames.h"
 
@@ -25,7 +25,7 @@
     [super viewDidLoad];
 
 	//ゲームの日付を表示
-	_dateLabel.text = [Util convertDateToString:_currentGame.save_date];
+	_dateLabel.text = [StringUtil convertDateToString:_currentGame.save_date];
 	//一手打つためのフラグを立てる
 	_isStonePut = NO;
 }

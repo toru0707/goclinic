@@ -28,7 +28,7 @@
 #import "TextAlertView.h"
 #import "GoStoneView.h"
 #import "Global.h"
-#import "Util.h"
+#import "StringUtil.h"
 #import "SaveGameAlertViewController.h"
 
 @implementation RecordRegistViewController
@@ -83,9 +83,11 @@
 
 -(void)initGameInfoControl{
 	[super initGameInfoControl];
-	_dateTextField.text = [Util convertDateToString:_currentGame.save_date];
+	_dateTextField.text = [StringUtil convertDateToString:_currentGame.save_date];
 }
 
+- (void)checkCurrentNextRecordPuttable:(int)x y:(int)y{}
+- (void)showGoStoneViewAfterPutGoStone:(GameRecords*)record{}
 
 /***************************************************************************************
  コンテキストメニュー 関連：
@@ -729,7 +731,7 @@
  ***************************************************************************************/
 -(void)selectDate:(id)sender selectedDate:(NSDate*)date{
 	_currentGame.save_date = date;
-	_dateTextField.text = [Util convertDateToString:date];
+	_dateTextField.text = [StringUtil convertDateToString:date];
 }
 
 

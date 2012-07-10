@@ -10,29 +10,70 @@
 #import "Global.h"
 #import "GameRecordStack.h"
 
-@interface Games (CoreDataGeneratedAccessors)
--(void)addGame_recordsObject:(GameRecords *)value;
--(void)removeGame_recordsObject:(GameRecords *)value;
--(void)addGame_records:(NSSet *)value;
--(void)removeGame_records:(NSSet *)value;
-@end
-
-
 @interface Games (private)
+/**
+ * 自動セーブカウントをひとつ進め、設定された値に到達していたらセーブする
+ */
 -(void)checkAutoSave;
+
+/**
+ * 抜き石チェック時のチェック用の碁盤をクリア                                   
+ */
 -(void)clearCheckBoard;
+
+/**
+ ゲーム初期化時に、レコードに対応するGoStoneViewを再帰的に生成する
+ */
 -(void)createGoStoneViewCyclic:(GameRecords*)record;
+
+/**
+ *現在の碁石の次の手数を取得する
+ */
 -(NSNumber*)getCurrentNextRecodeMove;
+
+/**
+ * 碁石Stackから、指定された手数以後に抜き石された碁石集合を取得する
+ */
 -(NSMutableArray*)getEnclosedStonesFromStackWithStack:(int)fromMove stack:(NSMutableArray*)stack;
+
+/**
+ * 指定された手数から、対戦相手のユーザIDを取得する
+ */
 -(int)getOpponentUser:(int)move;
+
+/**
+ *指定された碁石を打ったユーザのユーザIDを取得する
+ */
 -(int)getRecordUserId:(GameRecords*)record;
 
-//抜き石関連
+/**
+ * 指定された碁石が自殺手かどうかチェックする
+ */
 -(BOOL)checkSuicide:(GameRecords*)stone x:(int)x y:(int)y;
+
+/**
+ * 指定された碁石が自殺手かどうかチェックし、自殺手の場合、囲んでいる碁石集合を取得する
+ */
 -(NSMutableArray*)checkSuicideAndReturnStones:(GameRecords*)stone x:(int)x y:(int)y;
+
+/**
+ * 指定された場所に碁石を置いた場合、抜き石が存在するかチェックする
+ */
 -(BOOL)doCheckRemoveStone:(int)opponent x:(int)x y:(int)y;
+
+/**
+ * 指定された場所に碁石を置いた場合、抜き石が存在するかチェックし、抜き石が存在する場合、抜き石集合を取得する
+ */
 -(BOOL)doCheckRemoveStoneAndReturnStones:(int)opponent x:(int)x y:(int)y enclosed:(NSMutableArray*)enclosed enclosedBy:(NSMutableSet*)enclosedBy;
+
+/**
+ * チェック用基板の指定された場所にチェックする
+ */
 -(void)setCheckBoardXY:(int)x y:(int)y checked:(BOOL)checked;
+
+/**
+ * チェック用基板の指定された場所がチェックされているかどか取得する
+ */
 -(BOOL)getCheckBoardXY:(int)x y:(int)y;
 
 @end
@@ -855,6 +896,9 @@
 	}
 }
 
+-(GameRecords*)createOkiishiRecord:(int)x y:(int)y goStoneView:(GoStoneView*)view{
+    return nil;
+}
 
 /**
  現在のレコードの次の手のレコードを作成する

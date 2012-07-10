@@ -1,0 +1,170 @@
+\hypertarget{interface_record_regist_view_controller}{
+\section{RecordRegistViewController Class Reference}
+\label{interface_record_regist_view_controller}\index{RecordRegistViewController@{RecordRegistViewController}}
+}
+
+
+{\ttfamily \#import $<$RecordRegistViewController.h$>$}
+
+Inheritance diagram for RecordRegistViewController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.870241cm]{interface_record_regist_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_record_regist_view_controller_ab472300710aa7420fc624539419b26e2}{checkCurrentNextRecordPuttable:y:}
+\item 
+(void) -\/ \hyperlink{interface_record_regist_view_controller_a01283e6c99094505960ae8726f8edf3c}{showGoStoneViewAfterPutGoStone:}
+\item 
+(void) -\/ \hyperlink{interface_record_regist_view_controller_aebf533cc12a3238acd6f17cb7077a746}{showShowViewWithGame:}
+\item 
+(void) -\/ \hyperlink{interface_record_regist_view_controller_ad3da886fc450bea0353dff9e60d283a0}{showFacesView:}
+\item 
+(void) -\/ \hyperlink{interface_record_regist_view_controller_affdb7b97169def5c86a402e0a5095ee7}{hideFacesView:}
+\item 
+(void) -\/ \hyperlink{interface_record_regist_view_controller_a5ed62024840b229b56b06808ec8eb5ef}{saveCurrentGameWithSaveAlertView:}
+\item 
+(IBAction) -\/ \hyperlink{interface_record_regist_view_controller_ae0208bd22a30f70c0dc02a068cc8359e}{touchDateTextField:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_record_regist_view_controller_a780cd2f3bc45e96bee12fbdae7dda4c2}{
+IBOutlet \hyperlink{interface_faces_view}{FacesView} $\ast$ \hyperlink{interface_record_regist_view_controller_a780cd2f3bc45e96bee12fbdae7dda4c2}{\_\-facesView}}
+\label{interface_record_regist_view_controller_a780cd2f3bc45e96bee12fbdae7dda4c2}
+
+\begin{DoxyCompactList}\small\item\em BOB顔View. \end{DoxyCompactList}\item 
+\hypertarget{interface_record_regist_view_controller_a0d5bc2038e6bd996b7bf2c0ed6f2ed30}{
+IBOutlet UITextField $\ast$ \hyperlink{interface_record_regist_view_controller_a0d5bc2038e6bd996b7bf2c0ed6f2ed30}{\_\-dateTextField}}
+\label{interface_record_regist_view_controller_a0d5bc2038e6bd996b7bf2c0ed6f2ed30}
+
+\begin{DoxyCompactList}\small\item\em 日付入力TextField \end{DoxyCompactList}\item 
+\hypertarget{interface_record_regist_view_controller_a5704c9a7f85c90d9c4b000d33b67473b}{
+int \hyperlink{interface_record_regist_view_controller_a5704c9a7f85c90d9c4b000d33b67473b}{\_\-prevAlertViewTag}}
+\label{interface_record_regist_view_controller_a5704c9a7f85c90d9c4b000d33b67473b}
+
+\begin{DoxyCompactList}\small\item\em 直前に表示されていたAlertViewのViewタグ \end{DoxyCompactList}\item 
+\hypertarget{interface_record_regist_view_controller_acfe4fd11557d50797f8a974484d4b7b4}{
+int \hyperlink{interface_record_regist_view_controller_acfe4fd11557d50797f8a974484d4b7b4}{\_\-okiishiNum}}
+\label{interface_record_regist_view_controller_acfe4fd11557d50797f8a974484d4b7b4}
+
+\begin{DoxyCompactList}\small\item\em 置石の数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+碁石登録用ViewControllerの基底となる抽象クラス  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_record_regist_view_controller_ab472300710aa7420fc624539419b26e2}{
+\index{RecordRegistViewController@{RecordRegistViewController}!checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}}
+\index{checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{checkCurrentNextRecordPuttable:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkCurrentNextRecordPuttable: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_ab472300710aa7420fc624539419b26e2}
+次の一手を置くことが出来るか評価する 次の一手とは、\_\-current\_\-game::current\_\-recordの次手とする 
+\begin{DoxyParams}{Parameters}
+{\em x} & 次の一手のX座標 \\
+\hline
+{\em y} & 次の一手のY座標 \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}{AbstractRecordViewController}.
+
+\hypertarget{interface_record_regist_view_controller_affdb7b97169def5c86a402e0a5095ee7}{
+\index{RecordRegistViewController@{RecordRegistViewController}!hideFacesView:@{hideFacesView:}}
+\index{hideFacesView:@{hideFacesView:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{hideFacesView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) hideFacesView: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{animated}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_affdb7b97169def5c86a402e0a5095ee7}
+顔登録用サイドビューを非表示にする 
+\begin{DoxyParams}{Parameters}
+{\em animated} & アニメーションする場合YES \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_record_regist_view_controller_a5ed62024840b229b56b06808ec8eb5ef}{
+\index{RecordRegistViewController@{RecordRegistViewController}!saveCurrentGameWithSaveAlertView:@{saveCurrentGameWithSaveAlertView:}}
+\index{saveCurrentGameWithSaveAlertView:@{saveCurrentGameWithSaveAlertView:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{saveCurrentGameWithSaveAlertView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) saveCurrentGameWithSaveAlertView: 
+\begin{DoxyParamCaption}
+\item[{dummy(UIViewController$\ast$)}]{controller}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_a5ed62024840b229b56b06808ec8eb5ef}
+現在のゲームが更新されているなら、セーブ用のAlertViewを表示する \hypertarget{interface_record_regist_view_controller_ad3da886fc450bea0353dff9e60d283a0}{
+\index{RecordRegistViewController@{RecordRegistViewController}!showFacesView:@{showFacesView:}}
+\index{showFacesView:@{showFacesView:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{showFacesView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showFacesView: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{animated}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_ad3da886fc450bea0353dff9e60d283a0}
+顔登録用サイドビューを表示する 
+\begin{DoxyParams}{Parameters}
+{\em animated} & アニメーションする場合YES \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_record_regist_view_controller_a01283e6c99094505960ae8726f8edf3c}{
+\index{RecordRegistViewController@{RecordRegistViewController}!showGoStoneViewAfterPutGoStone:@{showGoStoneViewAfterPutGoStone:}}
+\index{showGoStoneViewAfterPutGoStone:@{showGoStoneViewAfterPutGoStone:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{showGoStoneViewAfterPutGoStone:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showGoStoneViewAfterPutGoStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords} $\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_a01283e6c99094505960ae8726f8edf3c}
+手を打った後に、石を表示する 
+\begin{DoxyParams}{Parameters}
+{\em record} & 打った石 \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{interface_abstract_record_view_controller_a43260aab3d69a602122591e38ccec220}{AbstractRecordViewController}.
+
+\hypertarget{interface_record_regist_view_controller_aebf533cc12a3238acd6f17cb7077a746}{
+\index{RecordRegistViewController@{RecordRegistViewController}!showShowViewWithGame:@{showShowViewWithGame:}}
+\index{showShowViewWithGame:@{showShowViewWithGame:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{showShowViewWithGame:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showShowViewWithGame: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf Games}$\ast$)}]{game}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_aebf533cc12a3238acd6f17cb7077a746}
+指定したGameを設定し、表示画面を表示する 表示画面は、本クラスを実装した画面の表示画面の事である（棋譜登録、詰碁登録等） 
+\begin{DoxyParams}{Parameters}
+{\em game} & 現在のGame \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_record_regist_view_controller_ae0208bd22a30f70c0dc02a068cc8359e}{
+\index{RecordRegistViewController@{RecordRegistViewController}!touchDateTextField:@{touchDateTextField:}}
+\index{touchDateTextField:@{touchDateTextField:}!RecordRegistViewController@{RecordRegistViewController}}
+\subsubsection[{touchDateTextField:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchDateTextField: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_record_regist_view_controller_ae0208bd22a30f70c0dc02a068cc8359e}
+日付TextFieldがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 日付TextFieldオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/RecordRegistViewController.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/RecordRegistViewController.m\end{DoxyCompactItemize}

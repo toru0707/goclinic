@@ -1,0 +1,61 @@
+\hypertarget{interface_question_game_state}{
+\section{QuestionGameState Class Reference}
+\label{interface_question_game_state}\index{QuestionGameState@{QuestionGameState}}
+}
+
+
+{\ttfamily \#import $<$QuestionGameState.h$>$}
+
+Inheritance diagram for QuestionGameState:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_question_game_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_question_game_state_a2694ab39f75d3a8d9847ce3d1efb8629}{initWithGames:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_question_game_state_a1fea34013604cbfd6985631c4edb10cc}{createNewRecord:y:goStoneView:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_question_game_state_a14d128e56dd2e072271b4636c5063049}{
+\hyperlink{interface_question_games}{QuestionGames} $\ast$ \hyperlink{interface_question_game_state_a14d128e56dd2e072271b4636c5063049}{\_\-game}}
+\label{interface_question_game_state_a14d128e56dd2e072271b4636c5063049}
+
+\begin{DoxyCompactList}\small\item\em 現在のゲームオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+問題モード用ViewControllerに共通した処理を提供するStateクラス  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_question_game_state_a1fea34013604cbfd6985631c4edb10cc}{
+\index{QuestionGameState@{QuestionGameState}!createNewRecord:y:goStoneView:@{createNewRecord:y:goStoneView:}}
+\index{createNewRecord:y:goStoneView:@{createNewRecord:y:goStoneView:}!QuestionGameState@{QuestionGameState}}
+\subsubsection[{createNewRecord:y:goStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) createNewRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\item[{goStoneView:({\bf GoStoneView}$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_game_state_a1fea34013604cbfd6985631c4edb10cc}
+指定されたXY座標で碁石を作成する \hypertarget{interface_question_game_state_a2694ab39f75d3a8d9847ce3d1efb8629}{
+\index{QuestionGameState@{QuestionGameState}!initWithGames:@{initWithGames:}}
+\index{initWithGames:@{initWithGames:}!QuestionGameState@{QuestionGameState}}
+\subsubsection[{initWithGames:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithGames: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf Games}$\ast$)}]{game}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_game_state_a2694ab39f75d3a8d9847ce3d1efb8629}
+コンストラクタ 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/QuestionGameState.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/QuestionGameState.m\end{DoxyCompactItemize}

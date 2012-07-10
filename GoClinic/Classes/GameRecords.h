@@ -13,48 +13,47 @@
 @class Games;
 
 /**
- 棋譜のモデルクラス
+ 棋譜の手情報を格納クラス
  @auther inoko
  */
 @interface GameRecords :  NSManagedObject  
 {
-	GoStoneView* _view;
-	NSNumber* _prevX;
-	NSNumber* _prevY;
-	//抜き石になったかどうか
-	BOOL _isRemoved;
+	GoStoneView* _view; ///< プロパティ受け渡し用変数
+	NSNumber* _prevX; ///< プロパティ受け渡し用変数
+	NSNumber* _prevY; ///< プロパティ受け渡し用変数
+  BOOL _isRemoved; ///< プロパティ受け渡し用変数
 }
-@property BOOL isRemoved;
-@property (nonatomic, retain) GoStoneView* view;
-@property (nonatomic, retain) NSNumber * prevX;
-@property (nonatomic, retain) NSNumber * prevY;
+@property BOOL isRemoved; ///< 抜き石になったかどうか
+@property (nonatomic, retain) GoStoneView* view; ///<碁石を表現するView
+@property (nonatomic, retain) NSNumber* prevX; ///<直前のX座標
+@property (nonatomic, retain) NSNumber* prevY; ///<直前のY座標
+@property (nonatomic, retain) NSNumber* depth; ///<分岐の階層
+@property (nonatomic, retain) NSNumber* is_bad; ///<悪手か否か
+@property (nonatomic, retain) NSNumber* face_id; ///<BOB顔ID
+@property (nonatomic, retain) NSNumber* point; ///<手の評価
+@property (nonatomic, retain) NSNumber* is_good; ///<良手か否か
+@property (nonatomic, retain) NSNumber* is_shown_state; ///<碁石が表示されているか否か
+@property (nonatomic, retain) NSNumber* move; ///<手数
+@property (nonatomic, retain) NSNumber* removed_move; ///<この碁石が取られた手数
+@property (nonatomic, retain) NSNumber* answer_move; ///<この碁石が取られた手数
 
-@property (nonatomic, retain) NSNumber * depth;
-@property (nonatomic, retain) NSNumber * is_bad;
-@property (nonatomic, retain) NSNumber * face_id;
-@property (nonatomic, retain) NSNumber * point;
-@property (nonatomic, retain) NSNumber * is_good;
-@property (nonatomic, retain) NSNumber * is_shown_state;
-@property (nonatomic, retain) NSNumber * move;
-@property (nonatomic, retain) NSNumber * removed_move;
-@property (nonatomic, retain) NSNumber * answer_move;
-@property (nonatomic, retain) NSNumber * move_on_face_registered;
-@property (nonatomic, retain) NSNumber * user_id;
-@property (nonatomic, retain) NSSet* comments;
-@property (nonatomic, retain) GameRecords * next_game_records;
-@property (nonatomic, retain) GameRecords * branch_records;
-@property (nonatomic, retain) Games* games;
-@property (nonatomic, retain) GameRecords * root_record;
-@property (nonatomic, retain) GameRecords * prev_game_records;
-@property (nonatomic, retain) NSNumber * is_answer;
-@property (nonatomic, retain) NSNumber * is_okiishi;
-@property (nonatomic, retain) NSMutableSet * removed_by;
-@property (nonatomic, retain) NSNumber * x;
-@property (nonatomic, retain) NSNumber * y;
-@property (nonatomic, retain) NSNumber * real_x;
-@property (nonatomic, retain) NSNumber * real_y;
-@property (nonatomic, retain) NSNumber * width;
-@property (nonatomic, retain) NSNumber * height;
+@property (nonatomic, retain) NSMutableSet * removed_by; ///< この碁石を抜き石する碁石の集合
+@property (nonatomic, retain) NSNumber* move_on_face_registered; ///<この碁石に対するBOB顔が表示される手数
+@property (nonatomic, retain) NSNumber* user_id; ///<この碁石を置いたユーザのID
+@property (nonatomic, retain) NSSet* comments; ///<碁石に対するコメント配列
+@property (nonatomic, retain) GameRecords* next_game_records; ///<この碁石の次の碁石
+@property (nonatomic, retain) GameRecords* branch_records; ///<この碁石の分岐碁石
+@property (nonatomic, retain) Games* games; ///<この碁石が使用されているGame
+@property (nonatomic, retain) GameRecords* root_record; ///<一番初めの手数の碁石。分岐している場合は分岐元の碁石。
+@property (nonatomic, retain) GameRecords* prev_game_records; ///<一手前の碁石
+@property (nonatomic, retain) NSNumber* is_answer; ///<解答用の碁石か否か
+@property (nonatomic, retain) NSNumber* is_okiishi; ///<置き石か否か
+@property (nonatomic, retain) NSNumber* x; ///<現在のX座標
+@property (nonatomic, retain) NSNumber* y; ///<現在のY座標
+@property (nonatomic, retain) NSNumber* real_x; ///<現在のX座標(pixel)
+@property (nonatomic, retain) NSNumber* real_y; ///<現在のY座標(pixel)
+@property (nonatomic, retain) NSNumber* width; ///<碁石の幅
+@property (nonatomic, retain) NSNumber* height; ///<碁石の高さ
 
 
 /**
@@ -82,6 +81,9 @@
  */
 - (id)initNewRecord:(Games *)game move:(int)move prev:(GameRecords*)prev next:(GameRecords*)next;
 
+/**
+ *指定されたパラメータで碁石を初期化する
+ */
 -(void)initParams:(Games*)game move:(int)move prev:(GameRecords*)prev next:(GameRecords*)next;
 
 /**
@@ -99,12 +101,25 @@
 @end
 
 
+/**
+ 以下のメソッドの実装は、ManagedObjectによって動的に生成される
+ */
 @interface GameRecords (CoreDataGeneratedAccessors)
+/**
+ 指定されたコメントを保存する
+ */
 - (void)addCommentsObject:(Comments *)value;
+/**
+ 指定されたコメントを削除する
+ */
 - (void)removeCommentsObject:(Comments *)value;
+/**
+ 指定された複数のコメントを保存する
+ */
 - (void)addComments:(NSSet *)value;
+/**
+ 指定された複数のコメントを削除する
+ */
 - (void)removeComments:(NSSet *)value;
-
-
 @end
 

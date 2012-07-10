@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "QuestionViewControllerState.h"
 
+/**
+ 問題表示画面のViewControllerのStateクラス
+ 
+ @auther inoko
+ */
 @interface QuestionNormalViewControllerState : QuestionViewControllerState {
     
 }

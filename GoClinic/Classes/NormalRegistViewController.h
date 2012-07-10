@@ -21,13 +21,12 @@
  @auther inoko
  */
 @interface NormalRegistViewController : RecordRegistViewController <OkiishiPickerAlertViewControllerDelegate>{
-    
-    IBOutlet UITextField* _okiishiTextField;
-	IBOutlet UITextField* _firstPlayerTextField;
-	IBOutlet UITextField* _secondPlayerTextField;
-	IBOutlet UILabel* _dateLabel;
-    
-    NSMutableArray* _okiishiArray;
+  IBOutlet UITextField* _okiishiTextField; ///<置き石TextFieldのアウトレットオブジェクト
+  IBOutlet UITextField* _firstPlayerTextField; ///<先手ユーザTextFieldのアウトレットオブジェクト
+  IBOutlet UITextField* _secondPlayerTextField; ///<後手ユーザのTextFieldのアウトレットオブジェクト
+  IBOutlet UITextField* _dateLabel; ///<日付ラベルのアウトレットオブジェクト
+  NSMutableArray* _okiishiArray; ///<置き石が格納される配列
+  
 }
 
 

@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "FacesViewCellController.h"
 
-#define FACES_VIEW_CONTROLLER_TAG 500
+#define FACES_VIEW_CONTROLLER_TAG 500 ///< ViewControllerを識別するためのタグ
 
 @protocol FacesViewControllerDelegate
+/**
+ * TableViewCellをタッチしたときに呼び出されるメソッド
+ */
 -(void)touchFacesTableViewCell:(id)sender faceNumber:(int)faceId comment:(NSString*)comment;
 @end
 
@@ -20,16 +23,15 @@
  @auther inoko
  */
 @interface FacesViewController : UITableViewController {
-	id<FacesViewControllerDelegate> _delegate;
-	FacesViewCellController* _facesViewCellController;
-	//0:黒, 1:白
-	int _buttonColorFlag;
-	NSMutableArray* _blackButtonImgs;
-	NSMutableArray* _whiteButtonImgs;
-	NSMutableArray* _commentArray;
+	id<FacesViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
+	FacesViewCellController* _facesViewCellController; ///< プロパティ受け渡し用変数
+	int _buttonColorFlag; ///< プロパティ受け渡し用変数
+	NSMutableArray* _blackButtonImgs;  ///< プロパティ受け渡し用変数
+	NSMutableArray* _whiteButtonImgs; ///< 白石用のBOB顔配列
+	NSMutableArray* _commentArray; ///< コメント配列
 }
-@property(nonatomic, assign) id<FacesViewControllerDelegate> delegate;
-@property(nonatomic, retain) FacesViewCellController* facesViewCellController;
-@property int buttonColorFlag;
-@property(nonatomic, retain) NSMutableArray* blackButtonImgs;
+@property(nonatomic, assign) id<FacesViewControllerDelegate> delegate; ///< デリゲートオブジェクト
+@property(nonatomic, retain) FacesViewCellController* facesViewCellController; ///< BOB顔TableViewCellController
+@property int buttonColorFlag; ///< ボタンの色のフラグ。0:黒, 1:白
+@property(nonatomic, retain) NSMutableArray* blackButtonImgs; ///< 黒石用のBOB顔配列
 @end

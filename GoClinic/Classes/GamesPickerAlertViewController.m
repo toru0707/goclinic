@@ -31,7 +31,7 @@
         while((game = (Games*)[e nextObject]) != nil){
             NSLog(@"cur move is %d", [game.current_move intValue]);
             if(game.title != nil){
-                NSLog(@"%@", game.title);
+                NSLog(@"game title is %@", game.title);
                 [titleList addObject:game.title];
             }
         }
@@ -53,7 +53,7 @@
         while((game = (Games*)[e nextObject]) != nil){
             NSLog(@"cur move is %d", [game.current_move intValue]);
             if(game.title != nil){
-            NSLog(@"%@", game.title);
+            NSLog(@"game title is %@", game.title);
             [titleList addObject:game.title];
             }
         }

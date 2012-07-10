@@ -15,8 +15,7 @@
  @auther inoko
  */
 @interface FacesView : AnimationTableView{
-	IBOutlet FacesViewCell* _cell;
+	IBOutlet FacesViewCell* _cell; ///< プロパティ受け渡し用変数
 }
-@property(nonatomic, retain) FacesViewCell* cell;
-
+@property(nonatomic, retain) FacesViewCell* cell; ///< TableViewCellのアウトレットオブジェクト
 @end

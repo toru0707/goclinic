@@ -9,6 +9,11 @@
 #import <CoreData/CoreData.h>
 #import "GameRecords.h"
 
+/**
+ 問題モードで使用する解答用棋譜の手クラス
+ 
+ @auther inoko
+ */
 @interface QuestionAnswerRecords : GameRecords {
     
 }

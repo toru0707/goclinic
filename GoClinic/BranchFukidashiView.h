@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ 碁石のクリニック数を表示するための吹出しView
+ 
+ @auther inoko
+ */
 @interface BranchFukidashiView : UIView {
-    int _branchNum;
+    int _branchNum; ///< 分岐の数
 }
 
+/**
+ コンストラクタ
+ */
 - (id)initWithBranchNum:(CGRect)frame branchNum:(int)move;
 @end

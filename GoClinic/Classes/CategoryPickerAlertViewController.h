@@ -10,6 +10,9 @@
 #import "BaseLabelPickerAlertViewController.h"
 
 @protocol CategoryPickerAlertViewControllerDelegate
+/**
+ Rowが選択されたときに呼び出されるメソッド
+ */
 -(void)selectCategory:(id)sender selectedIndex:(int)selectedIndex category:(NSString*)category;
 @end
 
@@ -20,6 +23,6 @@
 @interface CategoryPickerAlertViewController : BaseLabelPickerAlertViewController  {
     id<CategoryPickerAlertViewControllerDelegate> _delegate;
 }
-@property (nonatomic, assign)id<CategoryPickerAlertViewControllerDelegate> delegate;
+@property (nonatomic, assign)id<CategoryPickerAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
 
 @end

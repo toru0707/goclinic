@@ -1,0 +1,121 @@
+\hypertarget{protocol_board_view_delegate-p}{
+\section{$<$BoardViewDelegate$>$ Protocol Reference}
+\label{protocol_board_view_delegate-p}\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}}
+}
+Inheritance diagram for $<$BoardViewDelegate$>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.430556cm]{protocol_board_view_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_ad0d33bf44affc3968942b067298b27e1}{putGoStone:x:y:}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_ae27882adf09c3c45fca26507c2ebbf61}{touchBoard:withView:}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_a75390bd4c876b71554b923a5535bf92d}{touchBeganBoardWithStone:withEvent:withGoStoneView:}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_a0f4b2f994e74394a65b54bd69c21c5be}{touchEndedBoardWithStone:withEvent:withGoStoneView:}
+\item 
+(int) -\/ \hyperlink{protocol_board_view_delegate-p_aa6d7749ac3e452a0efadd556d8cbea08}{checkPutGoStone:withEvent:withGoStoneView:}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_ab54d6613216df24e372a5f76dd8ee381}{moveGoStone:toRect:}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_a6f9e2096e1d19ff722211568411bccd0}{touchForMenuWithStone:withEvent:withGoStoneView:}
+\item 
+(void) -\/ \hyperlink{protocol_board_view_delegate-p_aadc288eb1b4da3347ffce2a655c2eb21}{touchForMenuCancelWithStone:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_board_view_delegate-p_aa6d7749ac3e452a0efadd556d8cbea08}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!checkPutGoStone:withEvent:withGoStoneView:@{checkPutGoStone:withEvent:withGoStoneView:}}
+\index{checkPutGoStone:withEvent:withGoStoneView:@{checkPutGoStone:withEvent:withGoStoneView:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{checkPutGoStone:withEvent:withGoStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) checkPutGoStone: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSSet $\ast$)}]{theTouch}
+\item[{withEvent:(UIEvent $\ast$)}]{event}
+\item[{withGoStoneView:({\bf GoStoneView} $\ast$)}]{stoneView}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_aa6d7749ac3e452a0efadd556d8cbea08}
+指定した場所に碁石が配置可能か判定した後に呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_ab54d6613216df24e372a5f76dd8ee381}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!moveGoStone:toRect:@{moveGoStone:toRect:}}
+\index{moveGoStone:toRect:@{moveGoStone:toRect:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{moveGoStone:toRect:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) moveGoStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView} $\ast$)}]{stoneView}
+\item[{toRect:(CGRect)}]{toRect}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_ab54d6613216df24e372a5f76dd8ee381}
+碁石を移動させた後に呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_ad0d33bf44affc3968942b067298b27e1}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!putGoStone:x:y:@{putGoStone:x:y:}}
+\index{putGoStone:x:y:@{putGoStone:x:y:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{putGoStone:x:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) putGoStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView} $\ast$)}]{stoneView}
+\item[{x:(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_ad0d33bf44affc3968942b067298b27e1}
+指定された座標に碁石を配置したときに呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_a75390bd4c876b71554b923a5535bf92d}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!touchBeganBoardWithStone:withEvent:withGoStoneView:@{touchBeganBoardWithStone:withEvent:withGoStoneView:}}
+\index{touchBeganBoardWithStone:withEvent:withGoStoneView:@{touchBeganBoardWithStone:withEvent:withGoStoneView:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{touchBeganBoardWithStone:withEvent:withGoStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touchBeganBoardWithStone: 
+\begin{DoxyParamCaption}
+\item[{dummy(UITouch $\ast$)}]{theTouch}
+\item[{withEvent:(UIEvent $\ast$)}]{event}
+\item[{withGoStoneView:({\bf GoStoneView} $\ast$)}]{stoneView}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_a75390bd4c876b71554b923a5535bf92d}
+碁石をタッチした後に呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_ae27882adf09c3c45fca26507c2ebbf61}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!touchBoard:withView:@{touchBoard:withView:}}
+\index{touchBoard:withView:@{touchBoard:withView:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{touchBoard:withView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touchBoard: 
+\begin{DoxyParamCaption}
+\item[{dummy(UITouch $\ast$)}]{theTouch}
+\item[{withView:(UIView $\ast$)}]{view}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_ae27882adf09c3c45fca26507c2ebbf61}
+盤面をタッチしたときに呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_a0f4b2f994e74394a65b54bd69c21c5be}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!touchEndedBoardWithStone:withEvent:withGoStoneView:@{touchEndedBoardWithStone:withEvent:withGoStoneView:}}
+\index{touchEndedBoardWithStone:withEvent:withGoStoneView:@{touchEndedBoardWithStone:withEvent:withGoStoneView:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{touchEndedBoardWithStone:withEvent:withGoStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touchEndedBoardWithStone: 
+\begin{DoxyParamCaption}
+\item[{dummy(UITouch $\ast$)}]{theTouch}
+\item[{withEvent:(UIEvent $\ast$)}]{event}
+\item[{withGoStoneView:({\bf GoStoneView} $\ast$)}]{stoneView}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_a0f4b2f994e74394a65b54bd69c21c5be}
+碁石をタッチした後に指を離した時に呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_aadc288eb1b4da3347ffce2a655c2eb21}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!touchForMenuCancelWithStone:@{touchForMenuCancelWithStone:}}
+\index{touchForMenuCancelWithStone:@{touchForMenuCancelWithStone:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{touchForMenuCancelWithStone:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touchForMenuCancelWithStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView} $\ast$)}]{stoneView}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_aadc288eb1b4da3347ffce2a655c2eb21}
+碁石のコンテキストメニューのタッチをキャンセルされたときに呼び出されるメソッド \hypertarget{protocol_board_view_delegate-p_a6f9e2096e1d19ff722211568411bccd0}{
+\index{BoardViewDelegate-\/p@{BoardViewDelegate-\/p}!touchForMenuWithStone:withEvent:withGoStoneView:@{touchForMenuWithStone:withEvent:withGoStoneView:}}
+\index{touchForMenuWithStone:withEvent:withGoStoneView:@{touchForMenuWithStone:withEvent:withGoStoneView:}!BoardViewDelegate-p@{BoardViewDelegate-\/p}}
+\subsubsection[{touchForMenuWithStone:withEvent:withGoStoneView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) touchForMenuWithStone: 
+\begin{DoxyParamCaption}
+\item[{dummy(UITouch $\ast$)}]{theTouch}
+\item[{withEvent:(UIEvent $\ast$)}]{event}
+\item[{withGoStoneView:({\bf GoStoneView} $\ast$)}]{stoneView}
+\end{DoxyParamCaption}
+}}
+\label{protocol_board_view_delegate-p_a6f9e2096e1d19ff722211568411bccd0}
+碁石のコンテキストメニューをタッチしたときに呼び出されるメソッド 
+
+The documentation for this protocol was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/BoardView.h\end{DoxyCompactItemize}

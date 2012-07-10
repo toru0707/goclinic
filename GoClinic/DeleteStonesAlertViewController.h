@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ 碁石削除時に表示されるAlertViewController
+ 
+ @auther inoko
+ */
 @interface DeleteStonesAlertViewController : UIViewController {
     
 }

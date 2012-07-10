@@ -14,10 +14,11 @@
  @auther inoko
  */
 @interface NormalShowViewController : RecordShowViewController{
-    id<GamePickerAlertViewControllerDelegate> _delegate;
-	IBOutlet UITextField* _firstPlayerTextField;
-	IBOutlet UITextField* _secondPlayerTextField;
-	IBOutlet UILabel* _dateLabel;
+  id<GamePickerAlertViewControllerDelegate> _delegate; ///< デリゲートオブジェクト
+
+  IBOutlet UITextField* _firstPlayerTextField; ///<先手ユーザのTextFieldのアウトレットオブジェクト
+  IBOutlet UITextField* _secondPlayerTextField; ///<後手ユーザのTextFieldのアウトレットオブジェクト
+  IBOutlet UILabel* _dateLabel; ///<日付ラベルのアウトレットオブジェクト
 }
 
 @end

@@ -13,7 +13,7 @@
 @implementation QuestionMessageRecords
 
 -(id)initNewRecord:(Games*)game move:(int)move prev:(GameRecords*)prev next:(GameRecords*)next{
-	if((self = [[Games alloc] initWithEntity:[NSEntityDescription entityForName:@"QuestionMessageRecords" inManagedObjectContext:managedObjectContextGlobal] 
+	if((self = [[QuestionMessageRecords alloc] initWithEntity:[NSEntityDescription entityForName:@"QuestionMessageRecords" inManagedObjectContext:managedObjectContextGlobal] 
               insertIntoManagedObjectContext:managedObjectContextGlobal])){
         [self initParams:game move:move prev:prev next:next];
 	}

@@ -22,13 +22,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "GoClinic/Classes/Games.m"
-         timestampString = "354000892.859848"
+         filePath = "GoClinic/Classes/GamesPickerAlertViewController.m"
+         timestampString = "357324169.733947"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "190"
-         endingLineNumber = "190"
-         landmarkName = "-createNewRecord:y:goStoneView:"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
+         landmarkName = "-initWithTitle:message:cancelButtonTitle:okButtonTitle:pickerList:viewController:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -36,13 +36,69 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "GoClinic/Classes/Games.m"
-         timestampString = "354001067.604847"
+         filePath = "GoClinic/Classes/GamesPickerAlertViewController.m"
+         timestampString = "357324701.954192"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "192"
-         endingLineNumber = "192"
-         landmarkName = "-createNewRecord:y:goStoneView:"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
+         landmarkName = "-initWithTitle:message:cancelButtonTitle:okButtonTitle:pickerList:viewController:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "GoClinic/Classes/QuestionShowViewController.m"
+         timestampString = "357325033.81708"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "132"
+         endingLineNumber = "132"
+         landmarkName = "-touchNavRightButton:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "GoClinic/Classes/QuestionShowViewController.m"
+         timestampString = "357325225.443817"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
+         landmarkName = "-showSelectExsistedGamesAlertView"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "GoClinic/Classes/NormalRegistViewController.m"
+         timestampString = "357350131.666464"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "298"
+         endingLineNumber = "298"
+         landmarkName = "-putOkiishi:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "GoClinic/Classes/RecordRegistViewController.m"
+         timestampString = "363608428.235623"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "521"
+         endingLineNumber = "521"
+         landmarkName = "-touchAddButton:comment:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -1,0 +1,107 @@
+\hypertarget{interface_question_regist_view_controller}{
+\section{QuestionRegistViewController Class Reference}
+\label{interface_question_regist_view_controller}\index{QuestionRegistViewController@{QuestionRegistViewController}}
+}
+
+
+{\ttfamily \#import $<$QuestionRegistViewController.h$>$}
+
+Inheritance diagram for QuestionRegistViewController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.790123cm]{interface_question_regist_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_question_regist_view_controller_a00a004ba559a1f74f35b39c7f9235e2a}{changeState:}
+\item 
+(IBAction) -\/ \hyperlink{interface_question_regist_view_controller_a3e148ea6d1a9c5e5415d5413d82e59fa}{touchRegistQuestionStatementButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_question_regist_view_controller_a236261e70ca21480e12774649f236fb8}{touchRegistAnswerButton:}
+\item 
+(void) -\/ \hyperlink{interface_question_regist_view_controller_a46cd4724677ae7a6751551b24b6390a9}{changeToNormalState}
+\item 
+(void) -\/ \hyperlink{interface_question_regist_view_controller_a5711291ba785d799fa2c2ef5345b88d5}{changeToAnswerState}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_question_regist_view_controller_a2fe809dd2e719ac628a44dc86e834fa1}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_question_regist_view_controller_a2fe809dd2e719ac628a44dc86e834fa1}{\_\-registAnswerButton}}
+\label{interface_question_regist_view_controller_a2fe809dd2e719ac628a44dc86e834fa1}
+
+\begin{DoxyCompactList}\small\item\em 解答登録ボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_question_regist_view_controller_ad023a868e7e6e999c490ebe805ab6ed6}{
+\hyperlink{interface_question_view_controller_state}{QuestionViewControllerState} $\ast$ \hyperlink{interface_question_regist_view_controller_ad023a868e7e6e999c490ebe805ab6ed6}{\_\-state}}
+\label{interface_question_regist_view_controller_ad023a868e7e6e999c490ebe805ab6ed6}
+
+\begin{DoxyCompactList}\small\item\em 状態オブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+問題登録画面のViewController  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_question_regist_view_controller_a00a004ba559a1f74f35b39c7f9235e2a}{
+\index{QuestionRegistViewController@{QuestionRegistViewController}!changeState:@{changeState:}}
+\index{changeState:@{changeState:}!QuestionRegistViewController@{QuestionRegistViewController}}
+\subsubsection[{changeState:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeState: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf QuestionViewControllerState}$\ast$)}]{state}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_regist_view_controller_a00a004ba559a1f74f35b39c7f9235e2a}
+指定されたオブジェクトに状態を変更する \hypertarget{interface_question_regist_view_controller_a5711291ba785d799fa2c2ef5345b88d5}{
+\index{QuestionRegistViewController@{QuestionRegistViewController}!changeToAnswerState@{changeToAnswerState}}
+\index{changeToAnswerState@{changeToAnswerState}!QuestionRegistViewController@{QuestionRegistViewController}}
+\subsubsection[{changeToAnswerState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeToAnswerState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_regist_view_controller_a5711291ba785d799fa2c2ef5345b88d5}
+問題モードへ変更する \hypertarget{interface_question_regist_view_controller_a46cd4724677ae7a6751551b24b6390a9}{
+\index{QuestionRegistViewController@{QuestionRegistViewController}!changeToNormalState@{changeToNormalState}}
+\index{changeToNormalState@{changeToNormalState}!QuestionRegistViewController@{QuestionRegistViewController}}
+\subsubsection[{changeToNormalState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeToNormalState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_regist_view_controller_a46cd4724677ae7a6751551b24b6390a9}
+碁石登録モードへ変更する \hypertarget{interface_question_regist_view_controller_a236261e70ca21480e12774649f236fb8}{
+\index{QuestionRegistViewController@{QuestionRegistViewController}!touchRegistAnswerButton:@{touchRegistAnswerButton:}}
+\index{touchRegistAnswerButton:@{touchRegistAnswerButton:}!QuestionRegistViewController@{QuestionRegistViewController}}
+\subsubsection[{touchRegistAnswerButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchRegistAnswerButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_regist_view_controller_a236261e70ca21480e12774649f236fb8}
+解答登録ボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 解答登録ボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_question_regist_view_controller_a3e148ea6d1a9c5e5415d5413d82e59fa}{
+\index{QuestionRegistViewController@{QuestionRegistViewController}!touchRegistQuestionStatementButton:@{touchRegistQuestionStatementButton:}}
+\index{touchRegistQuestionStatementButton:@{touchRegistQuestionStatementButton:}!QuestionRegistViewController@{QuestionRegistViewController}}
+\subsubsection[{touchRegistQuestionStatementButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchRegistQuestionStatementButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_question_regist_view_controller_a3e148ea6d1a9c5e5415d5413d82e59fa}
+問題登録ボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 問題登録ボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/QuestionRegistViewController.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/QuestionRegistViewController.m\end{DoxyCompactItemize}

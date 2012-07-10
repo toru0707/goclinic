@@ -14,10 +14,8 @@
  @auther inoko
  */
 @interface RecordShowViewController : AbstractRecordViewController<BoardViewDelegate>{
-	//表示画面で一手おいたかどうか
-	BOOL _isStonePut;
-	//クリニックボタンが押下され、顔が表示しているか否かを示す
-	BOOL _isFaceShownByClinic;
+	BOOL _isStonePut; ///< 表示画面で一手おいたかどうか
+	BOOL _isFaceShownByClinic; ///< クリニックボタンが押下され、顔が表示しているか否かを示す
 }
 
 /**

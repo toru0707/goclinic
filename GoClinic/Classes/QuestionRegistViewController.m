@@ -22,7 +22,13 @@
 #import "QuestionAnswerViewControllerState.h"
 
 @interface QuestionRegistViewController(private)
+  /**
+   * 碁石登録モードへ変更する
+   */
 -(void)changeToNormalState;
+  /**
+   * 問題モードへ変更する
+   */
 -(void)changeToAnswerState;
 @end
 

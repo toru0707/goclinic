@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "BaseLabelPickerAlertViewController.h"
 
-#define DEFAULT_POINT_DISTANCE 5
-#define DEFAULT_POINT_MAX 100
+#define DEFAULT_POINT_DISTANCE 5 ///< デフォルトのポイント間隔
+#define DEFAULT_POINT_MAX 100 ///< デフォルトのポイント最大値
 
 @protocol PointPickerAlertViewControllerDelegate
+/**
+Rowを選択したときに呼び出されるメソッド
+*/
 -(void)selectPoint:(id)sender selectedIndex:(int)selectedIndex point:(int)point;
 @end
 
@@ -21,8 +24,8 @@
  @auther inoko
  */
 @interface PointPickerAlertViewController :  BaseLabelPickerAlertViewController {
-    id<PointPickerAlertViewControllerDelegate> _delegate;
+    id<PointPickerAlertViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
 }
-@property (nonatomic, assign)id<PointPickerAlertViewControllerDelegate> delegate;
+@property (nonatomic, assign)id<PointPickerAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
 
 @end

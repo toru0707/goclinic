@@ -1,0 +1,169 @@
+\hypertarget{interface_tsumego_games}{
+\section{TsumegoGames Class Reference}
+\label{interface_tsumego_games}\index{TsumegoGames@{TsumegoGames}}
+}
+
+
+{\ttfamily \#import $<$TsumegoGames.h$>$}
+
+Inheritance diagram for TsumegoGames:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_tsumego_games}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_tsumego_games_a52cfdea8f34f87b777e75607603af4a7}{changeState:}
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_tsumego_games_a1214302231045c2a8d9325db7ab69083}{getEnclosedStonesFromAnswerStack:}
+\item 
+(\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$) -\/ \hyperlink{interface_tsumego_games_a1f08210c0c6886c19c1459d924f57c5c}{getEnclosedStonesFromChallengeStack:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_tsumego_games_a708f1a303d6bf3c3119cf0dc1a064cf3}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_tsumego_games_a708f1a303d6bf3c3119cf0dc1a064cf3}{\_\-answerStack}}
+\label{interface_tsumego_games_a708f1a303d6bf3c3119cf0dc1a064cf3}
+
+\begin{DoxyCompactList}\small\item\em 解答登録モードの碁石が格納されるスタック。抜き石は削除される。手数でソートされている。 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_a10f9ca0718f781a64c83cf12b3f2e43a}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_tsumego_games_a10f9ca0718f781a64c83cf12b3f2e43a}{\_\-challengeStack}}
+\label{interface_tsumego_games_a10f9ca0718f781a64c83cf12b3f2e43a}
+
+\begin{DoxyCompactList}\small\item\em 問題チャレンジモード用の碁石が格納されるスタック。抜き石は削除される。手数でソートされている。 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_a7bb7466a652e1f1d691f5c031367ff72}{
+\hyperlink{class_n_s_mutable_array}{NSMutableArray} $\ast$ \hyperlink{interface_tsumego_games_a7bb7466a652e1f1d691f5c031367ff72}{\_\-tsumegoStones}}
+\label{interface_tsumego_games_a7bb7466a652e1f1d691f5c031367ff72}
+
+\begin{DoxyCompactList}\small\item\em 詰碁置き石モードの全碁石が格納される配列。 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_ad99d8683a35ed1a8fdd0f0692719dc5e}{
+BOOL \hyperlink{interface_tsumego_games_ad99d8683a35ed1a8fdd0f0692719dc5e}{\_\-isAnswerRegistMode}}
+\label{interface_tsumego_games_ad99d8683a35ed1a8fdd0f0692719dc5e}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_a8059053c1ff4394f8bceb8a707d5daf6}{
+BOOL \hyperlink{interface_tsumego_games_a8059053c1ff4394f8bceb8a707d5daf6}{\_\-isChallengeRegistMode}}
+\label{interface_tsumego_games_a8059053c1ff4394f8bceb8a707d5daf6}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_a4e5c07abf04d46035d8cc91974ff45cb}{
+BOOL \hyperlink{interface_tsumego_games_a4e5c07abf04d46035d8cc91974ff45cb}{\_\-isOkisihiMode}}
+\label{interface_tsumego_games_a4e5c07abf04d46035d8cc91974ff45cb}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_ad7ccaaf28ab8f89cbeabb1ad2d02c02f}{
+int \hyperlink{interface_tsumego_games_ad7ccaaf28ab8f89cbeabb1ad2d02c02f}{\_\-okiishiUserId}}
+\label{interface_tsumego_games_ad7ccaaf28ab8f89cbeabb1ad2d02c02f}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_ada026e3402c97c199a081e2aeba245a0}{
+int \hyperlink{interface_tsumego_games_ada026e3402c97c199a081e2aeba245a0}{\_\-answerMove}}
+\label{interface_tsumego_games_ada026e3402c97c199a081e2aeba245a0}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_ae16820deb1ec13b3eede1b2620f5b174}{
+NSString $\ast$ \hyperlink{interface_tsumego_games_ae16820deb1ec13b3eede1b2620f5b174}{\_\-questionCategory}}
+\label{interface_tsumego_games_ae16820deb1ec13b3eede1b2620f5b174}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_af71831bb9f317d1c7af51b8d5c3a42d6}{
+\hyperlink{interface_tsumego_game_state}{TsumegoGameState} $\ast$ \hyperlink{interface_tsumego_games_af71831bb9f317d1c7af51b8d5c3a42d6}{\_\-state}}
+\label{interface_tsumego_games_af71831bb9f317d1c7af51b8d5c3a42d6}
+
+\begin{DoxyCompactList}\small\item\em ゲーム状態オブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_tsumego_games_aefa9d02ce652c338affce12cffe6774d}{
+BOOL \hyperlink{interface_tsumego_games_aefa9d02ce652c338affce12cffe6774d}{isChallengeRegistMode}}
+\label{interface_tsumego_games_aefa9d02ce652c338affce12cffe6774d}
+
+\begin{DoxyCompactList}\small\item\em 問題チャレンジモードか \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_a31a72ea3ac4740dcb97dc28d8683610d}{
+BOOL \hyperlink{interface_tsumego_games_a31a72ea3ac4740dcb97dc28d8683610d}{isOkiishiMode}}
+\label{interface_tsumego_games_a31a72ea3ac4740dcb97dc28d8683610d}
+
+\begin{DoxyCompactList}\small\item\em 詰碁置き石モードか \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_a97c121892a434b48bcac817f7ddd7005}{
+BOOL \hyperlink{interface_tsumego_games_a97c121892a434b48bcac817f7ddd7005}{isAnswerRegisterMode}}
+\label{interface_tsumego_games_a97c121892a434b48bcac817f7ddd7005}
+
+\begin{DoxyCompactList}\small\item\em 解答登録モードか \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_ad144851ee8786da63195f0cff5a9e786}{
+int \hyperlink{interface_tsumego_games_ad144851ee8786da63195f0cff5a9e786}{answerMove}}
+\label{interface_tsumego_games_ad144851ee8786da63195f0cff5a9e786}
+
+\begin{DoxyCompactList}\small\item\em 解答登録碁石の手数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_ada756bdfee17714f35eebafc91dd679a}{
+int \hyperlink{interface_tsumego_games_ada756bdfee17714f35eebafc91dd679a}{okiishiUserId}}
+\label{interface_tsumego_games_ada756bdfee17714f35eebafc91dd679a}
+
+\begin{DoxyCompactList}\small\item\em 置き石のユーザID \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_af42640758d6ef9a9cdb894ee0f0262e1}{
+NSNumber $\ast$ \hyperlink{interface_tsumego_games_af42640758d6ef9a9cdb894ee0f0262e1}{answer\_\-move}}
+\label{interface_tsumego_games_af42640758d6ef9a9cdb894ee0f0262e1}
+
+\begin{DoxyCompactList}\small\item\em 解答登録碁石の手数 \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_games_afee34c738156cf3d24ad43164b2318d2}{
+NSString $\ast$ \hyperlink{interface_tsumego_games_afee34c738156cf3d24ad43164b2318d2}{questionCategory}}
+\label{interface_tsumego_games_afee34c738156cf3d24ad43164b2318d2}
+
+\begin{DoxyCompactList}\small\item\em 問題のカテゴリ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+詰碁モード用のGameクラス  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_tsumego_games_a52cfdea8f34f87b777e75607603af4a7}{
+\index{TsumegoGames@{TsumegoGames}!changeState:@{changeState:}}
+\index{changeState:@{changeState:}!TsumegoGames@{TsumegoGames}}
+\subsubsection[{changeState:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeState: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf TsumegoGameState}$\ast$)}]{state}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_games_a52cfdea8f34f87b777e75607603af4a7}
+指定された状態オブジェクトへ状態を変更する \hypertarget{interface_tsumego_games_a1214302231045c2a8d9325db7ab69083}{
+\index{TsumegoGames@{TsumegoGames}!getEnclosedStonesFromAnswerStack:@{getEnclosedStonesFromAnswerStack:}}
+\index{getEnclosedStonesFromAnswerStack:@{getEnclosedStonesFromAnswerStack:}!TsumegoGames@{TsumegoGames}}
+\subsubsection[{getEnclosedStonesFromAnswerStack:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray} $\ast$) getEnclosedStonesFromAnswerStack: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{fromMove}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_games_a1214302231045c2a8d9325db7ab69083}
+解答棋譜スタックから指定された手番以降の抜き石棋譜配列を取得する 
+\begin{DoxyParams}{Parameters}
+{\em fromMove} & 指定された起点となる手番 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+抜き石棋譜配列 
+\end{DoxyReturn}
+\hypertarget{interface_tsumego_games_a1f08210c0c6886c19c1459d924f57c5c}{
+\index{TsumegoGames@{TsumegoGames}!getEnclosedStonesFromChallengeStack:@{getEnclosedStonesFromChallengeStack:}}
+\index{getEnclosedStonesFromChallengeStack:@{getEnclosedStonesFromChallengeStack:}!TsumegoGames@{TsumegoGames}}
+\subsubsection[{getEnclosedStonesFromChallengeStack:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf NSMutableArray} $\ast$) getEnclosedStonesFromChallengeStack: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{fromMove}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_games_a1f08210c0c6886c19c1459d924f57c5c}
+チャレンジ棋譜スタックから指定された手番以降の抜き石棋譜配列を取得する 
+\begin{DoxyParams}{Parameters}
+{\em fromMove} & 指定された起点となる手番 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+抜き石棋譜配列 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/TsumegoGames.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/TsumegoGames.m\end{DoxyCompactItemize}

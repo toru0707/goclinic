@@ -17,11 +17,12 @@
  @auther inoko
  */
 @interface QuestionRegistViewController : RecordRegistViewController <FacesWithNoLabelViewControllerDelegate, QuestionRegistPickerAlertViewControllerDelegate>{
-    IBOutlet UIButton* _registAnswerButton;
-    QuestionViewControllerState* _state;
+  IBOutlet UIButton* _registAnswerButton; ///< 解答登録ボタンのアウトレットオブジェクト
+  QuestionViewControllerState* _state; ///< 状態オブジェクト
 }
-
-
+/**
+指定されたオブジェクトに状態を変更する
+*/
 -(void)changeState:(QuestionViewControllerState*)state;
 
 /**

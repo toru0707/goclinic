@@ -196,7 +196,8 @@
     NSMutableArray* questionCategory = [[NSMutableArray alloc] initWithObjects:@"黒先",@"黒先死",@"黒先生き",@"黒先コウ",@"白先",@"白先死",@"白先生き",@"白先コウ", nil];
     
 	QuestionRegistPickerAlertViewController *controller;
-	controller = [[QuestionRegistPickerAlertViewController alloc] initWithTitle:@"情報" message:@"問題文を選択してください" cancelButtonTitle:@"キャンセル" okButtonTitle:@"OK" pickerList:questionCategory];
+	controller = [[QuestionRegistPickerAlertViewController alloc] initWithTitle:@"情報" message:@"" cancelButtonTitle:@"キャンセル" okButtonTitle:@"OK" facesList:nil facesCategoriesList:questionCategory];
+                                                                    
 	controller.delegate = self;
     [controller showAlertView];
     

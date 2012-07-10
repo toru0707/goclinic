@@ -22,12 +22,10 @@
  @auther inoko
  */
 @interface RecordRegistViewController : AbstractRecordViewController <BoardViewDelegate, CommentViewControllerDelegate, FacesViewControllerDelegate,UIAlertViewDelegate, DatePickerAlertViewControllerDelegate,  UITextFieldDelegate, InputGameNameAlertViewControllerDelegate, RegistGameAlertViewControllerDelegate>{
-	IBOutlet FacesView* _facesView;
-	IBOutlet UITextField* _dateTextField;
-	
-	int _prevAlertViewTag;
-    //置石の数
-    int _okiishiNum;
+	IBOutlet FacesView* _facesView; ///<BOB顔View
+  IBOutlet UITextField* _dateTextField; ///<日付入力TextField
+  int _prevAlertViewTag; ///< 直前に表示されていたAlertViewのViewタグ
+  int _okiishiNum; ///<置石の数
 }
 /**
  次の一手を置くことが出来るか評価する

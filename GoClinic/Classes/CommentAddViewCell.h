@@ -9,22 +9,19 @@
 #import <UIKit/UIKit.h>
 
 /**
- コメント追加用のVieCell
+ コメント追加用のViewCell
  @auther inoko
  */
 @interface CommentAddViewCell : UITableViewCell{
-	IBOutlet UITextField* categoryTextField;
-	IBOutlet UITextField* pointTextField;
-	IBOutlet UITextView* commentTextView;
-	IBOutlet UIButton* addButton;
+  IBOutlet UITextField* categoryTextField;  ///< プロパティ受け渡し用変数
+  IBOutlet UITextField* pointTextField; ///< プロパティ受け渡し用変数
+  IBOutlet UITextView* commentTextView;  ///< プロパティ受け渡し用変数
+  IBOutlet UIButton* addButton; ///< プロパティ受け渡し用変数
 }
-
-@property(nonatomic, retain) UITextField* categoryTextField;
-@property(nonatomic, retain) UITextField* pointTextField;
-@property(nonatomic, retain) UITextView* commentTextView;
-@property(nonatomic, retain) UIButton* addButton;
-
-
+@property(nonatomic, retain) UITextField* categoryTextField; ///<カテゴリ入力用TextFieldのアウトレットオブジェクト
+@property(nonatomic, retain) UITextField* pointTextField; ///<ポイント入力用TextFieldのアウトレットオブジェクト
+@property(nonatomic, retain) UITextView* commentTextView; ///<コメント入力用TextFieldのアウトレットオブジェクト
+@property(nonatomic, retain) UIButton* addButton; ///<追加ボタンのアウトレットオブジェクト
 @end
 
 

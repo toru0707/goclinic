@@ -14,8 +14,7 @@
  @auther inoko
  */
 @interface CommentViewCellController : UIViewController {
-	IBOutlet CommentViewCell* cell;
+	IBOutlet CommentViewCell* cell; ///< プロパティ受け渡し用変数
 }
-@property(nonatomic, retain) CommentViewCell* cell;
-
+@property(nonatomic, retain) CommentViewCell* cell; ///< TableViewCellのアウトレットオブジェクト
 @end

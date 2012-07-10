@@ -10,7 +10,7 @@
 #import "Games.h"
 
 /**
- クリニックモード用ゲームクラス
+ クリニックモード用Gameクラス
  @auther inoko
  */
 @interface NormalGames :  Games  

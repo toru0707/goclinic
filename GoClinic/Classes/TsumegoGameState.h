@@ -10,11 +10,11 @@
 #import "AbstractRecordViewController.h"
 
 /**
- 詰碁モード用ViewControllerに共通した処理を提供するクラス
+ 詰碁モード用ViewControllerに共通した処理を提供するStateクラス
  @auther inoko
  */
 @interface TsumegoGameState : NSObject {
-    AbstractRecordViewController* _viewController;
+  AbstractRecordViewController* _viewController; ///< 画面のViewControllerクラス
 }
 
 /**

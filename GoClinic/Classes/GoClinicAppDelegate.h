@@ -19,18 +19,18 @@
  @auther inoko
  */
 @interface GoClinicAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-	NSManagedObjectModel *_managedObjectModel;
-	NSManagedObjectContext *_managedObjectContext;	
-	NSPersistentStoreCoordinator *_persistentStoreCoordinator;
-	Games* _game;
+  UIWindow *window; ///< プロパティ受け渡し用変数
+	NSManagedObjectModel *_managedObjectModel; ///< プロパティ受け渡し用変数
+	NSManagedObjectContext *_managedObjectContext;	 ///< プロパティ受け渡し用変数
+	NSPersistentStoreCoordinator *_persistentStoreCoordinator; ///< プロパティ受け渡し用変数
+	Games* _game; ///< プロパティ受け渡し用変数
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
-@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (nonatomic,retain)Games* game;
+@property (nonatomic, retain) IBOutlet UIWindow *window; ///< windowのアウトレットオブジェクト
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel; ///< オブジェクトモデル
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext; ///< オブジェクトコンテキスト
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator; ///< パーシステンスストアコーディネータ
+@property (nonatomic,retain)Games* game; ///< ゲーム情報
 
 /**
  DBから全てのゲームオブジェクトを取得する

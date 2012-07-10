@@ -12,7 +12,7 @@
 #import "QuestionRegistViewController.h"
 #import "NormalGames.h"
 #import "GoClinicAppDelegate.h"
-#import "Util.h"
+#import "StringUtil.h"
 
 @interface NormalRegistViewController(private)
 /**
@@ -39,7 +39,7 @@
     [self selectStone:_currentGame.first_record];
 
     //ゲームの日付を表示
-    _dateLabel.text = [Util convertDateToString:_currentGame.save_date];
+    _dateLabel.text = [StringUtil convertDateToString:_currentGame.save_date];
 }
  
 
@@ -301,7 +301,7 @@
 	
 	if (_currentGame != nil) {
         //盤面、及びStackの最初に追加
-        GameRecords* newRecord = [_currentGame createOkiishiRecord:[record.x intValue] y:[record.y intValue] record:record];
+        GameRecords* newRecord = [_currentGame createOkiishiRecord:[record.x intValue] y:[record.y intValue] goStoneView:record.view];
         
         //recordのViewの設定
         newRecord.view.showFace = _currentGame.isShowFaceMode;

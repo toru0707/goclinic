@@ -1,0 +1,1106 @@
+\hypertarget{interface_abstract_record_view_controller}{
+\section{AbstractRecordViewController Class Reference}
+\label{interface_abstract_record_view_controller}\index{AbstractRecordViewController@{AbstractRecordViewController}}
+}
+
+
+{\ttfamily \#import $<$AbstractRecordViewController.h$>$}
+
+Inheritance diagram for AbstractRecordViewController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.419518cm]{interface_abstract_record_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_abstract_record_view_controller_a1b7e23969bdfd31a40bcb96a3ace9db4}{initWithNibNameAndGame:bundle:game:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a439cd9960b3b729fe932df6201d913a1}{initBoardView}
+\item 
+(BOOL) -\/ \hyperlink{interface_abstract_record_view_controller_a5c1ebc2a0be8d378f5c7f58552575896}{hideSubViews:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a160875d6c608a4c35496f671bf8cd8ec}{commentGoStoneMenu:}
+\item 
+(\hyperlink{interface_games}{Games} $\ast$) -\/ \hyperlink{interface_abstract_record_view_controller_aa813c99049d9925edc590cc79199da5e}{createGame}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a82e716f77a003cef242f02a887a5aff3}{showCommentView:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a407cf65034096ae1bb6bf44cefc9ca96}{hideCommentView:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_acd374d785ed58c9565c66d387e16f603}{clearBoard}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a056d70c4b20510d4e7a01afe8969085a}{showAllRecords:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_abc8815827d934556ad4b0345653b50e8}{showAllShownStateRecord:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{saveCurrentGame}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_abe8bb5ed1cfb1af0ca755e7702446ea2}{createClinic}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a1589a47a882f689e4c8f9976324e4da8}{startClinic}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_ad37011cf2b9be26303a0a9273df90046}{quitClinic}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a7333f8f2e63c9317f7506eac03cbdfcc}{selectStone:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a564c9cd96efeef4230c25e281956100a}{unSelectStone:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a23b80c32b7129ca1179a421f4b45a24e}{showRecordComments:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a2d7a681d978dd332edcbe7ee9a01e0a0}{setGoStoneViewDispSetting:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}{checkCurrentNextRecordPuttable:y:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a778850dccbf812d31aa9c0af085524b8}{checkButtonActivate}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_aa9e3322b6d0237359c2bb22952aab672}{checkBranchRecord}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a0bfed8687161c14e782505a08de09ef5}{checkComparable}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a97400ed3e78f1e33b83e32d0faaaae54}{checkPrevRecords}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a6b981a14f16bb0b25431714ec0678b73}{checkNextRecords}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_aeea6171adc78fdd4f32598d732c3d503}{insertGoStoneView:aboveView:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_abstract_record_view_controller_a6b332a9fa53a850166a12a5f5d6a99fe}{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a7e16eb8996e2d0b5d825374d564a533c}{removeGoStoneViewCyclic:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a5c2b862f989de9a75963fc9bb5dca7f7}{removeFukidashiView:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a67b4f0f87e9ed347378125b6a834cfdd}{startNewGame}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a3edda20fcfcbeb5c4f3a453aedbfc1e2}{initGameInfoControl}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a1c50772482cb391a0317ac01b8fbdc51}{showSelectExsistedGamesAlertView}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{saveCurrentGame}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a54bd7e7c604701e3d33f3813693e9847}{prepareExitGame:}
+\item 
+(\hyperlink{interface_game_records}{GameRecords} $\ast$) -\/ \hyperlink{interface_abstract_record_view_controller_a826af0d182748e78f8798d2fe5cc2b6d}{getLastShownGoStoneViewRecord:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a019625ec4026858785a1579676a1f69b}{changePractiveRecordTransparency}
+\item 
+(int) -\/ \hyperlink{interface_abstract_record_view_controller_a65bf13a50920e352d60dd6b8985fab9b}{getCurrentDispMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a40384d4a2a0528073f206b2f345532e0}{refreshAllGoStoneView}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a27a4c02c17337cece7bc250de2449f96}{showNormalShowMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a5709ef9f7c65e524822ec7765f8c4c4b}{showNormalRegistMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_ae0a771f6cbfe223a0b3d72fab37e12a8}{showTsumegoShowMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a3af87d17d486ae3ac03adb8c6bf76c14}{showTsumegoRegistMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a55f6add41b02e10e1e89a6fca71c18a5}{showQuestionShowMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a6405ef4502d057e9778a265fa63230f4}{showQuestionRegistMode}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a36ee966347c83a924feccd85aa6b2826}{showSaveAlertView:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_abf6f1c4329169c26f22e85091b790f3c}{showGameTitle}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a1a4c889e86c8c7bbb2ec7292b4c1d851}{showMenu:delegate:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_acfef3c389bc87c5501223a0340bb5d42}{putOffEnclosedStonesFromStack}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a365a47e75f13c7d8cd6fde2ca88f12f7}{setShownViewToShowView:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}{checkCurrentNextRecordPuttable:y:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a43260aab3d69a602122591e38ccec220}{showGoStoneViewAfterPutGoStone:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_a6117104a05041dc47753c5e918005b5e}{touchNavRightButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_a1bd01a686778e5e9f78f178275743d8e}{touchMenuButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_a96715e03545a334e6130b497c5c7a5ff}{touchFaceDispSwitch:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_addab1ecf92b8c94664a76e93a3744133}{touchMoveDispSwitch:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_ac75c7fabdaa79350a66fa780b9370154}{touchMoveToNextRecordButton}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_a0d8602c8641f0723f55f850e309d2f4d}{touchMoveToPrevRecordButton}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_abbf7fe8a46b086e5f5a1c1d816eeb0ce}{touchMoveToFirstRecordButton}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_aa8a3e0d475eafdfaf76cc971b7f9bb76}{touchMoveToLastRecordButton}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_a244fc7ff5da9673ecab53aa9020c4724}{touchReturnToAboveLevelButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_aecfc6bd891d5023408a112f650722707}{touchCompareClinicButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_abstract_record_view_controller_adccc7ca97972b19a575f96c85abe0015}{touchClinicButton:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a61cf4619df8c1c42a50f5b38309ebf81}{changeShowNumberMode:}
+\item 
+(void) -\/ \hyperlink{interface_abstract_record_view_controller_a5ba7f163218b658a28ab36e5c53fda57}{changeShowFaceMode:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a13dde1eb5f4219b5969cd4ee21f290c7}{
+IBOutlet UINavigationBar $\ast$ \hyperlink{interface_abstract_record_view_controller_a13dde1eb5f4219b5969cd4ee21f290c7}{\_\-navBar}}
+\label{interface_abstract_record_view_controller_a13dde1eb5f4219b5969cd4ee21f290c7}
+
+\begin{DoxyCompactList}\small\item\em ナビゲーションバーのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a21fc7774c20031d2e61e5641da05771a}{
+IBOutlet \hyperlink{interface_comment_view}{CommentView} $\ast$ \hyperlink{interface_abstract_record_view_controller_a21fc7774c20031d2e61e5641da05771a}{\_\-commentView}}
+\label{interface_abstract_record_view_controller_a21fc7774c20031d2e61e5641da05771a}
+
+\begin{DoxyCompactList}\small\item\em コメントViewのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a7561ef44a265422a44b80e4e06e6432d}{
+IBOutlet \hyperlink{interface_board_view}{BoardView} $\ast$ \hyperlink{interface_abstract_record_view_controller_a7561ef44a265422a44b80e4e06e6432d}{\_\-boardView}}
+\label{interface_abstract_record_view_controller_a7561ef44a265422a44b80e4e06e6432d}
+
+\begin{DoxyCompactList}\small\item\em 盤面Viewのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_aa5366410d1844c2b0635e914c09d2748}{
+IBOutlet UILabel $\ast$ \hyperlink{interface_abstract_record_view_controller_aa5366410d1844c2b0635e914c09d2748}{\_\-gameTitleLabel}}
+\label{interface_abstract_record_view_controller_aa5366410d1844c2b0635e914c09d2748}
+
+\begin{DoxyCompactList}\small\item\em ゲームのタイトルLabelのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a80f03fc22b3a42dbb18be8f35ac17792}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_abstract_record_view_controller_a80f03fc22b3a42dbb18be8f35ac17792}{\_\-returnToAboveLevelButton}}
+\label{interface_abstract_record_view_controller_a80f03fc22b3a42dbb18be8f35ac17792}
+
+\begin{DoxyCompactList}\small\item\em 上に戻るボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_ad9e9358af1d5b00add9326ad42445b28}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_abstract_record_view_controller_ad9e9358af1d5b00add9326ad42445b28}{\_\-changeToClinicButton}}
+\label{interface_abstract_record_view_controller_ad9e9358af1d5b00add9326ad42445b28}
+
+\begin{DoxyCompactList}\small\item\em クリニックボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a800aaf69a6d1ddc48e53713db3e6e82d}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_abstract_record_view_controller_a800aaf69a6d1ddc48e53713db3e6e82d}{\_\-compareClinicButton}}
+\label{interface_abstract_record_view_controller_a800aaf69a6d1ddc48e53713db3e6e82d}
+
+\begin{DoxyCompactList}\small\item\em 比較ボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a5eae56a73770a200995c407f60da2fe2}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_abstract_record_view_controller_a5eae56a73770a200995c407f60da2fe2}{\_\-moveToFirstRecordButton}}
+\label{interface_abstract_record_view_controller_a5eae56a73770a200995c407f60da2fe2}
+
+\begin{DoxyCompactList}\small\item\em 初めに戻るボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a1650b6eee98b02c083540cbd5bb4625e}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_abstract_record_view_controller_a1650b6eee98b02c083540cbd5bb4625e}{\_\-moveToLastRecordButton}}
+\label{interface_abstract_record_view_controller_a1650b6eee98b02c083540cbd5bb4625e}
+
+\begin{DoxyCompactList}\small\item\em 最後に進むボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a0420fc592460a6ae28de1fc7bef20cc6}{
+IBOutlet UIBarButtonItem $\ast$ \hyperlink{interface_abstract_record_view_controller_a0420fc592460a6ae28de1fc7bef20cc6}{\_\-moveToNextRecordButton}}
+\label{interface_abstract_record_view_controller_a0420fc592460a6ae28de1fc7bef20cc6}
+
+\begin{DoxyCompactList}\small\item\em 次へボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_aeacc6f8b5cc426aa4fe89e6109152b1f}{
+IBOutlet UIBarButtonItem $\ast$ \hyperlink{interface_abstract_record_view_controller_aeacc6f8b5cc426aa4fe89e6109152b1f}{\_\-moveToPrevRecordButton}}
+\label{interface_abstract_record_view_controller_aeacc6f8b5cc426aa4fe89e6109152b1f}
+
+\begin{DoxyCompactList}\small\item\em 前へボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a1fa14d365bf0622321d357f438d0f024}{
+IBOutlet UISwitch $\ast$ \hyperlink{interface_abstract_record_view_controller_a1fa14d365bf0622321d357f438d0f024}{\_\-stoneNumberSwitch}}
+\label{interface_abstract_record_view_controller_a1fa14d365bf0622321d357f438d0f024}
+
+\begin{DoxyCompactList}\small\item\em 手数を表示するボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a8f82b7b40c8e24c8650bb38c3dd2aca7}{
+IBOutlet UISwitch $\ast$ \hyperlink{interface_abstract_record_view_controller_a8f82b7b40c8e24c8650bb38c3dd2aca7}{\_\-stoneFaceSwitch}}
+\label{interface_abstract_record_view_controller_a8f82b7b40c8e24c8650bb38c3dd2aca7}
+
+\begin{DoxyCompactList}\small\item\em BOB顔を表示するボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a1c3a85a9d14dcb7b9aeb320cf950aa36}{
+IBOutlet UIImageView $\ast$ \hyperlink{interface_abstract_record_view_controller_a1c3a85a9d14dcb7b9aeb320cf950aa36}{\_\-bobFaceView}}
+\label{interface_abstract_record_view_controller_a1c3a85a9d14dcb7b9aeb320cf950aa36}
+
+\begin{DoxyCompactList}\small\item\em BOB顔Viewのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a41fd69fa81bc98a15f5d42e410ba3271}{
+IBOutlet UITextView $\ast$ \hyperlink{interface_abstract_record_view_controller_a41fd69fa81bc98a15f5d42e410ba3271}{\_\-commentTextView}}
+\label{interface_abstract_record_view_controller_a41fd69fa81bc98a15f5d42e410ba3271}
+
+\begin{DoxyCompactList}\small\item\em コメントViewのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a192865b1b2d15a7df8f8bc482937b603}{
+int \hyperlink{interface_abstract_record_view_controller_a192865b1b2d15a7df8f8bc482937b603}{\_\-stoneDispMode}}
+\label{interface_abstract_record_view_controller_a192865b1b2d15a7df8f8bc482937b603}
+
+\begin{DoxyCompactList}\small\item\em 石の表示モードを示す。0:手数を表示する, 1:顔を表示する, 2:何も表示しない \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a95974f12d7b77527290f08edbcbeed48}{
+BOOL \hyperlink{interface_abstract_record_view_controller_a95974f12d7b77527290f08edbcbeed48}{\_\-isPractiveRecordTransparent}}
+\label{interface_abstract_record_view_controller_a95974f12d7b77527290f08edbcbeed48}
+
+\begin{DoxyCompactList}\small\item\em 比較モード中に実戦譜が半透明かどうかを判定する \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_abed47fdca333426ec912c7f3ca670f95}{
+\hyperlink{interface_comment_view_controller}{CommentViewController} $\ast$ \hyperlink{interface_abstract_record_view_controller_abed47fdca333426ec912c7f3ca670f95}{\_\-commentViewController}}
+\label{interface_abstract_record_view_controller_abed47fdca333426ec912c7f3ca670f95}
+
+\begin{DoxyCompactList}\small\item\em コメントViewControlelr \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a83688601809e3c6d2bbb1fed20a6bb52}{
+\hyperlink{interface_games}{Games} $\ast$ \hyperlink{interface_abstract_record_view_controller_a83688601809e3c6d2bbb1fed20a6bb52}{\_\-currentGame}}
+\label{interface_abstract_record_view_controller_a83688601809e3c6d2bbb1fed20a6bb52}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_afd7973557d4a016cd6c0cca348664ea2}{
+UIPopoverController $\ast$ \hyperlink{interface_abstract_record_view_controller_afd7973557d4a016cd6c0cca348664ea2}{\_\-popoverView}}
+\label{interface_abstract_record_view_controller_afd7973557d4a016cd6c0cca348664ea2}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_abstract_record_view_controller_a73727ead0409dad02e0785f8e3fcac5e}{
+\hyperlink{interface_board_view}{BoardView} $\ast$ \hyperlink{interface_abstract_record_view_controller_a73727ead0409dad02e0785f8e3fcac5e}{boardView}}
+\label{interface_abstract_record_view_controller_a73727ead0409dad02e0785f8e3fcac5e}
+
+\begin{DoxyCompactList}\small\item\em 盤面View \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a340c4197ab534a13a4bfdc6681486092}{
+\hyperlink{interface_games}{Games} $\ast$ \hyperlink{interface_abstract_record_view_controller_a340c4197ab534a13a4bfdc6681486092}{currentGame}}
+\label{interface_abstract_record_view_controller_a340c4197ab534a13a4bfdc6681486092}
+
+\begin{DoxyCompactList}\small\item\em 現在のゲームオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_abstract_record_view_controller_a7e8eab3134a3d4178d9c95782314efe0}{
+UIPopoverController $\ast$ \hyperlink{interface_abstract_record_view_controller_a7e8eab3134a3d4178d9c95782314efe0}{popoverView}}
+\label{interface_abstract_record_view_controller_a7e8eab3134a3d4178d9c95782314efe0}
+
+\begin{DoxyCompactList}\small\item\em ポップアップView \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+全ての画面のViewControllerの基底となる抽象クラス  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_abstract_record_view_controller_a019625ec4026858785a1579676a1f69b}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!changePractiveRecordTransparency@{changePractiveRecordTransparency}}
+\index{changePractiveRecordTransparency@{changePractiveRecordTransparency}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{changePractiveRecordTransparency}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changePractiveRecordTransparency 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a019625ec4026858785a1579676a1f69b}
+比較時の実戦譜の石の透明度を切り替える \hypertarget{interface_abstract_record_view_controller_a5ba7f163218b658a28ab36e5c53fda57}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!changeShowFaceMode:@{changeShowFaceMode:}}
+\index{changeShowFaceMode:@{changeShowFaceMode:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{changeShowFaceMode:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeShowFaceMode: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{isShowFace}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a5ba7f163218b658a28ab36e5c53fda57}
+全てのGoStoneView, 及び、現在のゲームの顔表示モードを切り替える 
+\begin{DoxyParams}{Parameters}
+{\em isShowFace} & BOB顔表示モードにする場合YES \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a61cf4619df8c1c42a50f5b38309ebf81}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!changeShowNumberMode:@{changeShowNumberMode:}}
+\index{changeShowNumberMode:@{changeShowNumberMode:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{changeShowNumberMode:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) changeShowNumberMode: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{isShowNumber}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a61cf4619df8c1c42a50f5b38309ebf81}
+全てのGoStoneView, 及び、現在のゲームの手番表示モードを切り替える 
+\begin{DoxyParams}{Parameters}
+{\em isShowNumber} & 手番表示モードにする場合YES \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_aa9e3322b6d0237359c2bb22952aab672}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkBranchRecord@{checkBranchRecord}}
+\index{checkBranchRecord@{checkBranchRecord}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkBranchRecord}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkBranchRecord 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aa9e3322b6d0237359c2bb22952aab672}
+現在選択されている石のルート棋譜があるかチェックし、分岐点へ戻るボタンのON/OFFを切り替える
+
+現在のレコードに分岐レコードがあるかチェックし、存在する場合は分岐ボタンをアクティブにする 実戦譜以外の場合は、戻るボタンを有効にする \hypertarget{interface_abstract_record_view_controller_a778850dccbf812d31aa9c0af085524b8}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkButtonActivate@{checkButtonActivate}}
+\index{checkButtonActivate@{checkButtonActivate}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkButtonActivate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkButtonActivate 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a778850dccbf812d31aa9c0af085524b8}
+現在の状態から、各ボタンのON/OFFを切り替える
+
+現在のレコードに対し、各ボタンのOn/Offをチェックする。 デフォルトでは、\char`\"{}分岐”、\char`\"{}比較\char`\"{}、\char`\"{}次へ\char`\"{}、\char`\"{}前へ"ボタンをチェック \hypertarget{interface_abstract_record_view_controller_a0bfed8687161c14e782505a08de09ef5}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkComparable@{checkComparable}}
+\index{checkComparable@{checkComparable}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkComparable}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkComparable 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a0bfed8687161c14e782505a08de09ef5}
+現在の状態から、比較ボタンのON/OFFを切り替える
+
+比較可能かどうかをチェックし、可能な場合は比較ボタンをアクティブにする \hypertarget{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}}
+\index{checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkCurrentNextRecordPuttable:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkCurrentNextRecordPuttable: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}
+指定されたXY座標に碁石が配置可能かチェックする 
+
+Reimplemented in \hyperlink{interface_record_regist_view_controller_ab472300710aa7420fc624539419b26e2}{RecordRegistViewController}.
+
+\hypertarget{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}}
+\index{checkCurrentNextRecordPuttable:y:@{checkCurrentNextRecordPuttable:y:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkCurrentNextRecordPuttable:y:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkCurrentNextRecordPuttable: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{x}
+\item[{y:(int)}]{y}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a8c9a3720bbcb3ac55d0697c1372b0f8b}
+次の手が指定されたXY座標に配置可能か判断する 
+
+Reimplemented in \hyperlink{interface_record_regist_view_controller_ab472300710aa7420fc624539419b26e2}{RecordRegistViewController}.
+
+\hypertarget{interface_abstract_record_view_controller_a6b981a14f16bb0b25431714ec0678b73}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkNextRecords@{checkNextRecords}}
+\index{checkNextRecords@{checkNextRecords}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkNextRecords}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkNextRecords 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6b981a14f16bb0b25431714ec0678b73}
+現在の状態から、手順戻るボタンのON/OFFを切り替える \hypertarget{interface_abstract_record_view_controller_a97400ed3e78f1e33b83e32d0faaaae54}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!checkPrevRecords@{checkPrevRecords}}
+\index{checkPrevRecords@{checkPrevRecords}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{checkPrevRecords}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) checkPrevRecords 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a97400ed3e78f1e33b83e32d0faaaae54}
+現在の状態から、手順進むボタンのON/OFFを切り替える \hypertarget{interface_abstract_record_view_controller_acd374d785ed58c9565c66d387e16f603}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!clearBoard@{clearBoard}}
+\index{clearBoard@{clearBoard}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{clearBoard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clearBoard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_acd374d785ed58c9565c66d387e16f603}
+表示中の全ての石を非表示にする \hypertarget{interface_abstract_record_view_controller_a160875d6c608a4c35496f671bf8cd8ec}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!commentGoStoneMenu:@{commentGoStoneMenu:}}
+\index{commentGoStoneMenu:@{commentGoStoneMenu:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{commentGoStoneMenu:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) commentGoStoneMenu: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a160875d6c608a4c35496f671bf8cd8ec}
+石のメニューコンテキストの一つ。\char`\"{}コメント\char`\"{}がクリックされた際に呼び出される。 
+\begin{DoxyParams}{Parameters}
+{\em sender} & メニューを表示した石オブジェクト（GoStones） \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_abe8bb5ed1cfb1af0ca755e7702446ea2}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!createClinic@{createClinic}}
+\index{createClinic@{createClinic}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{createClinic}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) createClinic 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_abe8bb5ed1cfb1af0ca755e7702446ea2}
+クリニック(分岐)を新規に作成する。同じ石に対するクリニックが既に存在する場合、上書きされる 
+\begin{DoxyPre}
+ クリニックを開始に際し、以下の内容が実行される。
+ 1.クリニックする石以降の手の石を非表示にする
+ 2.現在のゲームのcurrent\_branch\_moveを変更
+ 3.同一の深さで、現在の手以降の棋譜を削除する。
+ 4.現在のゲームの深さ（currentDepth)を一つ増やす\end{DoxyPre}
+
+
+
+\begin{DoxyPre} ClinicModeを開始する
+ 既に分岐レコードがある場合は上書きする
+ (一階層分岐を掘る) 
+\end{DoxyPre}
+\hypertarget{interface_abstract_record_view_controller_aa813c99049d9925edc590cc79199da5e}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!createGame@{createGame}}
+\index{createGame@{createGame}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{createGame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Games} $\ast$) createGame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aa813c99049d9925edc590cc79199da5e}
+新規のゲームを作成するための抽象メソッド。 
+\begin{DoxyPre}
+ 本クラスを継承する実装クラスでは、本メソッドをOverrideし、
+ Gamesを継承する実装クラスを生成する必要がある。
+ \end{DoxyPre}
+ \begin{DoxyReturn}{Returns}
+\hyperlink{interface_games}{Games} Gamesを継承した実装クラスのインスタンス 
+\end{DoxyReturn}
+\hypertarget{interface_abstract_record_view_controller_a65bf13a50920e352d60dd6b8985fab9b}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!getCurrentDispMode@{getCurrentDispMode}}
+\index{getCurrentDispMode@{getCurrentDispMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{getCurrentDispMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) getCurrentDispMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a65bf13a50920e352d60dd6b8985fab9b}
+現在の石表示モードを取得する \begin{DoxyReturn}{Returns}
+現在の石表示モード。GOSTONE\_\-VIEW\_\-FACE\_\-DISPLAY\_\-MODE, GOSTONE\_\-VIEW\_\-MOVE\_\-DISPLAY\_\-MODE, GOSTONE\_\-VIEW\_\-NONE\_\-DISPLAY\_\-MODEの何れか。 
+\end{DoxyReturn}
+\hypertarget{interface_abstract_record_view_controller_a826af0d182748e78f8798d2fe5cc2b6d}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!getLastShownGoStoneViewRecord:@{getLastShownGoStoneViewRecord:}}
+\index{getLastShownGoStoneViewRecord:@{getLastShownGoStoneViewRecord:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{getLastShownGoStoneViewRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) getLastShownGoStoneViewRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{from}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a826af0d182748e78f8798d2fe5cc2b6d}
+指定された棋譜より前の棋譜で、現在表示されている棋譜を取得する \begin{DoxyReturn}{Returns}
+指定された棋譜より前の棋譜で、現在表示されている棋譜
+\end{DoxyReturn}
+Fromのレコードより前のレコードで、表示されているGoStoneViewを保持しているGameRecordの中で最も手番が多い物を返す \hypertarget{interface_abstract_record_view_controller_a407cf65034096ae1bb6bf44cefc9ca96}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!hideCommentView:@{hideCommentView:}}
+\index{hideCommentView:@{hideCommentView:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{hideCommentView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) hideCommentView: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{animated}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a407cf65034096ae1bb6bf44cefc9ca96}
+コメントViewを非表示にする 
+\begin{DoxyParams}{Parameters}
+{\em animated} & 表示する際にアニメーションさせる場合 YES \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a5c1ebc2a0be8d378f5c7f58552575896}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!hideSubViews:@{hideSubViews:}}
+\index{hideSubViews:@{hideSubViews:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{hideSubViews:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (BOOL) hideSubViews: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{animated}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a5c1ebc2a0be8d378f5c7f58552575896}
+BoardViewのSubViewを全て非表示にする 
+\begin{DoxyParams}{Parameters}
+{\em animated} & アニメーションしながら非表示にするかどうか \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+一つでもViewを非表示にした場合 YES, 非表示にするViewがない場合 NO 
+\end{DoxyReturn}
+\hypertarget{interface_abstract_record_view_controller_a439cd9960b3b729fe932df6201d913a1}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!initBoardView@{initBoardView}}
+\index{initBoardView@{initBoardView}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{initBoardView}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) initBoardView 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a439cd9960b3b729fe932df6201d913a1}
+View読み込み時に、BoardViewを初期化する \hypertarget{interface_abstract_record_view_controller_a3edda20fcfcbeb5c4f3a453aedbfc1e2}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!initGameInfoControl@{initGameInfoControl}}
+\index{initGameInfoControl@{initGameInfoControl}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{initGameInfoControl}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) initGameInfoControl 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a3edda20fcfcbeb5c4f3a453aedbfc1e2}
+画面コントロールの初期化を行う \hypertarget{interface_abstract_record_view_controller_a1b7e23969bdfd31a40bcb96a3ace9db4}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!initWithNibNameAndGame:bundle:game:@{initWithNibNameAndGame:bundle:game:}}
+\index{initWithNibNameAndGame:bundle:game:@{initWithNibNameAndGame:bundle:game:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{initWithNibNameAndGame:bundle:game:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithNibNameAndGame: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{nibNameOrNil}
+\item[{bundle:(NSBundle $\ast$)}]{nibBundleOrNil}
+\item[{game:({\bf Games}$\ast$)}]{game}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1b7e23969bdfd31a40bcb96a3ace9db4}
+コンストラクタ 
+\begin{DoxyParams}{Parameters}
+{\em nibNameOrNil} & Nibファイル名 \\
+\hline
+{\em nibBundleOrNil} & Bundle名 \\
+\hline
+{\em game} & ViewControllerに設定するGame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ViewControlelrのインスタンス 
+\end{DoxyReturn}
+\hypertarget{interface_abstract_record_view_controller_aeea6171adc78fdd4f32598d732c3d503}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!insertGoStoneView:aboveView:@{insertGoStoneView:aboveView:}}
+\index{insertGoStoneView:aboveView:@{insertGoStoneView:aboveView:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{insertGoStoneView:aboveView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insertGoStoneView: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView}$\ast$)}]{view}
+\item[{aboveView:(UIView$\ast$)}]{aboveView}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aeea6171adc78fdd4f32598d732c3d503}
+指定されたViewを盤面に表示する 
+\begin{DoxyParams}{Parameters}
+{\em view} & 碁石ビュー \\
+\hline
+{\em aboveView} & viewの下に位置するView\\
+\hline
+\end{DoxyParams}
+碁石を表示する \hypertarget{interface_abstract_record_view_controller_a6b332a9fa53a850166a12a5f5d6a99fe}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:@{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}}
+\index{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:@{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{insertGoStoneViewCyclick:toMove:opacity:isRemovedShow:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf GameRecords} $\ast$) insertGoStoneViewCyclick: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\item[{toMove:(int)}]{toMove}
+\item[{opacity:(float)}]{opacity}
+\item[{isRemovedShow:(BOOL)}]{isRemovedShow}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6b332a9fa53a850166a12a5f5d6a99fe}
+指定された棋譜の手数から、指定された手番までの石を盤面に表示する。 
+\begin{DoxyParams}{Parameters}
+{\em record} & 起点となる棋譜 \\
+\hline
+{\em toMove} & 終点となる手番 \\
+\hline
+{\em opacity} & 石の透明度 \\
+\hline
+{\em isRemovedShow} & 抜き石を表示する場合はYES \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+終点となる棋譜。最終手がtoMoveより小さい場合は、最終手を返す。
+\end{DoxyReturn}
+指定されたGoStoneから、指定された手数まで棋譜を再帰的に表示する 尚、最後のレコードを返す \hypertarget{interface_abstract_record_view_controller_a54bd7e7c604701e3d33f3813693e9847}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!prepareExitGame:@{prepareExitGame:}}
+\index{prepareExitGame:@{prepareExitGame:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{prepareExitGame:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) prepareExitGame: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{menuId}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a54bd7e7c604701e3d33f3813693e9847}
+既存のゲームを終了する準備をする。 もし、既存のゲームが変更されていたら、保存を促す。 
+\begin{DoxyParams}{Parameters}
+{\em menuId} & ゲームの終了後に実行されるメニューのID\\
+\hline
+\end{DoxyParams}
+新規のゲームを作成する準備をする。 もし、既存のゲームが存在したら、保存を促す。 \hypertarget{interface_abstract_record_view_controller_acfef3c389bc87c5501223a0340bb5d42}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!putOffEnclosedStonesFromStack@{putOffEnclosedStonesFromStack}}
+\index{putOffEnclosedStonesFromStack@{putOffEnclosedStonesFromStack}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{putOffEnclosedStonesFromStack}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) putOffEnclosedStonesFromStack 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_acfef3c389bc87c5501223a0340bb5d42}
+StoneStackから抜き石を削除する \hypertarget{interface_abstract_record_view_controller_ad37011cf2b9be26303a0a9273df90046}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!quitClinic@{quitClinic}}
+\index{quitClinic@{quitClinic}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{quitClinic}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) quitClinic 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_ad37011cf2b9be26303a0a9273df90046}
+クリニック（分岐）を一つ上の階層に戻る。 
+\begin{DoxyPre}
+ 1.現在の階層の石を盤面及びStackから取り除く
+ 2.現在のroot\_recordをcurrent\_recordに設定
+ 3.一階層上の石を盤面及びStackに設定する
+ \end{DoxyPre}
+
+
+ClinicMOdeを終了する (一階層分岐を戻る) \hypertarget{interface_abstract_record_view_controller_a40384d4a2a0528073f206b2f345532e0}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!refreshAllGoStoneView@{refreshAllGoStoneView}}
+\index{refreshAllGoStoneView@{refreshAllGoStoneView}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{refreshAllGoStoneView}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) refreshAllGoStoneView 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a40384d4a2a0528073f206b2f345532e0}
+表示中の全ての石の表示をリフレッシュする。 リフレッシュの際、数字表示スイッチ、顔表示スイッチの状態により、表示モードを変化させる \hypertarget{interface_abstract_record_view_controller_a5c2b862f989de9a75963fc9bb5dca7f7}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!removeFukidashiView:@{removeFukidashiView:}}
+\index{removeFukidashiView:@{removeFukidashiView:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{removeFukidashiView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeFukidashiView: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView}$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a5c2b862f989de9a75963fc9bb5dca7f7}
+GoStoneViewから分岐吹き出しViewを削除する 
+\begin{DoxyParams}{Parameters}
+{\em view} & \hyperlink{interface_go_stone_view}{GoStoneView} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a7e16eb8996e2d0b5d825374d564a533c}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!removeGoStoneViewCyclic:@{removeGoStoneViewCyclic:}}
+\index{removeGoStoneViewCyclic:@{removeGoStoneViewCyclic:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{removeGoStoneViewCyclic:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) removeGoStoneViewCyclic: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a7e16eb8996e2d0b5d825374d564a533c}
+指定された棋譜から、最終手までの棋譜の石を非表示にする 
+\begin{DoxyParams}{Parameters}
+{\em record} & 起点となる棋譜\\
+\hline
+\end{DoxyParams}
+次のGameRecordがNullになるまでGoStoneViewを取り除く \hypertarget{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!saveCurrentGame@{saveCurrentGame}}
+\index{saveCurrentGame@{saveCurrentGame}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{saveCurrentGame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) saveCurrentGame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}
+現在のゲームをセーブする。セーブするのは、新規作成/更新されたゲームのみ \hypertarget{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!saveCurrentGame@{saveCurrentGame}}
+\index{saveCurrentGame@{saveCurrentGame}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{saveCurrentGame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) saveCurrentGame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6ac797433b51ead28bcad34f1ca007b3}
+現在のゲームを保存する。 
+\begin{DoxyPre}
+ 保存される条件は、新規作成された場合か、更新された場合
+ \end{DoxyPre}
+
+
+現在のゲームを保存し、全てのフラグをリセットする。 \hypertarget{interface_abstract_record_view_controller_a7333f8f2e63c9317f7506eac03cbdfcc}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!selectStone:@{selectStone:}}
+\index{selectStone:@{selectStone:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{selectStone:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) selectStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a7333f8f2e63c9317f7506eac03cbdfcc}
+指定された棋譜をCurrent\_\-recordに設定し、ハイライトする。コメントや顔が設定されていれば表示する。 
+\begin{DoxyParams}{Parameters}
+{\em record} & 指定された棋譜 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a2d7a681d978dd332edcbe7ee9a01e0a0}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!setGoStoneViewDispSetting:@{setGoStoneViewDispSetting:}}
+\index{setGoStoneViewDispSetting:@{setGoStoneViewDispSetting:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{setGoStoneViewDispSetting:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setGoStoneViewDispSetting: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GoStoneView}$\ast$)}]{view}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a2d7a681d978dd332edcbe7ee9a01e0a0}
+指定されたViewに石の色、及び表示モードを設定する 
+\begin{DoxyParams}{Parameters}
+{\em view} & current\_\-recordに対応するView \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a365a47e75f13c7d8cd6fde2ca88f12f7}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!setShownViewToShowView:@{setShownViewToShowView:}}
+\index{setShownViewToShowView:@{setShownViewToShowView:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{setShownViewToShowView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setShownViewToShowView: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{isStateSaved}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a365a47e75f13c7d8cd6fde2ca88f12f7}
+全ての碁石を指定された表示モードにする 
+\begin{DoxyParams}{Parameters}
+{\em isStateSaved} & YES:表示する、NO:表示しない \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a056d70c4b20510d4e7a01afe8969085a}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showAllRecords:@{showAllRecords:}}
+\index{showAllRecords:@{showAllRecords:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showAllRecords:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showAllRecords: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{mode}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a056d70c4b20510d4e7a01afe8969085a}
+現在のゲームの棋譜の石をすべて表示する 
+\begin{DoxyParams}{Parameters}
+{\em mode} & 0:碁石に手数を表示する 1:碁石に顔を表示する\\
+\hline
+\end{DoxyParams}
+現在のゲームの碁石をすべて表示する(Origin) 
+\begin{DoxyParams}{Parameters}
+{\em mode,:} & 0:碁石に手数を表示する 1:碁石に顔を表示する \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_abc8815827d934556ad4b0345653b50e8}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showAllShownStateRecord:@{showAllShownStateRecord:}}
+\index{showAllShownStateRecord:@{showAllShownStateRecord:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showAllShownStateRecord:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showAllShownStateRecord: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{mode}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_abc8815827d934556ad4b0345653b50e8}
+現在のゲームの棋譜の石の中で、is\_\-shown\_\-stateがYESの物をすべて表示する 
+\begin{DoxyParams}{Parameters}
+{\em mode} & 0:碁石に手数を表示する 1:碁石に顔を表示する \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a82e716f77a003cef242f02a887a5aff3}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showCommentView:@{showCommentView:}}
+\index{showCommentView:@{showCommentView:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showCommentView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showCommentView: 
+\begin{DoxyParamCaption}
+\item[{dummy(BOOL)}]{animated}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a82e716f77a003cef242f02a887a5aff3}
+コメントViewを表示する 
+\begin{DoxyParams}{Parameters}
+{\em animated} & 表示する際にアニメーションさせる場合 YES \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_abf6f1c4329169c26f22e85091b790f3c}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showGameTitle@{showGameTitle}}
+\index{showGameTitle@{showGameTitle}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showGameTitle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showGameTitle 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_abf6f1c4329169c26f22e85091b790f3c}
+ゲームのタイトルを表示する \hypertarget{interface_abstract_record_view_controller_a43260aab3d69a602122591e38ccec220}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showGoStoneViewAfterPutGoStone:@{showGoStoneViewAfterPutGoStone:}}
+\index{showGoStoneViewAfterPutGoStone:@{showGoStoneViewAfterPutGoStone:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showGoStoneViewAfterPutGoStone:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showGoStoneViewAfterPutGoStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a43260aab3d69a602122591e38ccec220}
+碁石を配置した後に碁石Viewを表示する 
+
+Reimplemented in \hyperlink{interface_record_regist_view_controller_a01283e6c99094505960ae8726f8edf3c}{RecordRegistViewController}.
+
+\hypertarget{interface_abstract_record_view_controller_a1a4c889e86c8c7bbb2ec7292b4c1d851}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showMenu:delegate:@{showMenu:delegate:}}
+\index{showMenu:delegate:@{showMenu:delegate:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showMenu:delegate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showMenu: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\item[{delegate:(id)}]{delegate}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1a4c889e86c8c7bbb2ec7292b4c1d851}
+メニューを表示する 
+\begin{DoxyParams}{Parameters}
+{\em sender} & MenuButton \\
+\hline
+{\em delegate} & AbstractRecordViewControllerを実装したViewController \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a5709ef9f7c65e524822ec7765f8c4c4b}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showNormalRegistMode@{showNormalRegistMode}}
+\index{showNormalRegistMode@{showNormalRegistMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showNormalRegistMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showNormalRegistMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a5709ef9f7c65e524822ec7765f8c4c4b}
+棋譜登録画面を表示する
+
+棋譜表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a27a4c02c17337cece7bc250de2449f96}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showNormalShowMode@{showNormalShowMode}}
+\index{showNormalShowMode@{showNormalShowMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showNormalShowMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showNormalShowMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a27a4c02c17337cece7bc250de2449f96}
+棋譜表示画面を表示する
+
+棋譜表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a6405ef4502d057e9778a265fa63230f4}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showQuestionRegistMode@{showQuestionRegistMode}}
+\index{showQuestionRegistMode@{showQuestionRegistMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showQuestionRegistMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showQuestionRegistMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6405ef4502d057e9778a265fa63230f4}
+問題登録画面を表示する
+
+問題登録モードを開始する \hypertarget{interface_abstract_record_view_controller_a55f6add41b02e10e1e89a6fca71c18a5}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showQuestionShowMode@{showQuestionShowMode}}
+\index{showQuestionShowMode@{showQuestionShowMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showQuestionShowMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showQuestionShowMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a55f6add41b02e10e1e89a6fca71c18a5}
+問題表示画面を表示する
+
+問題表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a23b80c32b7129ca1179a421f4b45a24e}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showRecordComments:@{showRecordComments:}}
+\index{showRecordComments:@{showRecordComments:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showRecordComments:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showRecordComments: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a23b80c32b7129ca1179a421f4b45a24e}
+指定された棋譜のコメントをコメント表示エリアに表示する。 複数コメントが登録されている場合は、改行して表示する。 
+\begin{DoxyParams}{Parameters}
+{\em record} & コメントが登録されている棋譜 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a36ee966347c83a924feccd85aa6b2826}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showSaveAlertView:@{showSaveAlertView:}}
+\index{showSaveAlertView:@{showSaveAlertView:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showSaveAlertView:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showSaveAlertView: 
+\begin{DoxyParamCaption}
+\item[{dummy(int)}]{gameType}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a36ee966347c83a924feccd85aa6b2826}
+問題保存用のAlertViewを表示する 
+\begin{DoxyParams}{Parameters}
+{\em gameType} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a1c50772482cb391a0317ac01b8fbdc51}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showSelectExsistedGamesAlertView@{showSelectExsistedGamesAlertView}}
+\index{showSelectExsistedGamesAlertView@{showSelectExsistedGamesAlertView}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showSelectExsistedGamesAlertView}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showSelectExsistedGamesAlertView 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1c50772482cb391a0317ac01b8fbdc51}
+既存のゲーム選択用のAlertViewを表示する
+
+既存のゲームを開始する \hypertarget{interface_abstract_record_view_controller_a3af87d17d486ae3ac03adb8c6bf76c14}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showTsumegoRegistMode@{showTsumegoRegistMode}}
+\index{showTsumegoRegistMode@{showTsumegoRegistMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showTsumegoRegistMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showTsumegoRegistMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a3af87d17d486ae3ac03adb8c6bf76c14}
+詰碁登録画面を表示する
+
+詰碁表示モードを開始する \hypertarget{interface_abstract_record_view_controller_ae0a771f6cbfe223a0b3d72fab37e12a8}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!showTsumegoShowMode@{showTsumegoShowMode}}
+\index{showTsumegoShowMode@{showTsumegoShowMode}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{showTsumegoShowMode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) showTsumegoShowMode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_ae0a771f6cbfe223a0b3d72fab37e12a8}
+詰碁表示画面を表示する
+
+詰碁表示モードを開始する \hypertarget{interface_abstract_record_view_controller_a1589a47a882f689e4c8f9976324e4da8}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!startClinic@{startClinic}}
+\index{startClinic@{startClinic}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{startClinic}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) startClinic 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1589a47a882f689e4c8f9976324e4da8}
+既存のクリニック(分岐)を開始する。 
+\begin{DoxyPre}
+ クリニックを開始に際し、以下の内容が実行される。
+ 1.クリニックする石以降の手の石を非表示にする
+ 2.現在のゲームのcurrent\_branch\_moveを変更
+ 3.同一の深さで、現在の手以降の棋譜を削除する。
+ 4.現在のゲームの深さ（currentDepth)を一つ増やす
+ \end{DoxyPre}
+
+
+ClinicModeを開始する 既に分岐レコードがあっても上書きしない (一階層分岐を掘る) \hypertarget{interface_abstract_record_view_controller_a67b4f0f87e9ed347378125b6a834cfdd}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!startNewGame@{startNewGame}}
+\index{startNewGame@{startNewGame}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{startNewGame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) startNewGame 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a67b4f0f87e9ed347378125b6a834cfdd}
+新規にゲームを開始するコンポジットメソッド。 盤面の初期化、新規ゲームの作成、画面コントロールの初期化を行う。
+
+新規のゲームを開始する \hypertarget{interface_abstract_record_view_controller_adccc7ca97972b19a575f96c85abe0015}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchClinicButton:@{touchClinicButton:}}
+\index{touchClinicButton:@{touchClinicButton:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchClinicButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchClinicButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_adccc7ca97972b19a575f96c85abe0015}
+クリニックボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & クリニックボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_aecfc6bd891d5023408a112f650722707}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchCompareClinicButton:@{touchCompareClinicButton:}}
+\index{touchCompareClinicButton:@{touchCompareClinicButton:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchCompareClinicButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchCompareClinicButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aecfc6bd891d5023408a112f650722707}
+比較ボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 比較ボタンオブジェクト\\
+\hline
+\end{DoxyParams}
+現在の分岐レコードのルートレコードから、現在の手数迄のノーマルレコードを表示する(一階層上) \hypertarget{interface_abstract_record_view_controller_a96715e03545a334e6130b497c5c7a5ff}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchFaceDispSwitch:@{touchFaceDispSwitch:}}
+\index{touchFaceDispSwitch:@{touchFaceDispSwitch:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchFaceDispSwitch:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchFaceDispSwitch: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a96715e03545a334e6130b497c5c7a5ff}
+顔表示スイッチをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & UISwitchオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a1bd01a686778e5e9f78f178275743d8e}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchMenuButton:@{touchMenuButton:}}
+\index{touchMenuButton:@{touchMenuButton:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchMenuButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchMenuButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a1bd01a686778e5e9f78f178275743d8e}
+ナビゲーションバー左側のボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & NavBarButtonオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_addab1ecf92b8c94664a76e93a3744133}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchMoveDispSwitch:@{touchMoveDispSwitch:}}
+\index{touchMoveDispSwitch:@{touchMoveDispSwitch:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchMoveDispSwitch:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchMoveDispSwitch: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_addab1ecf92b8c94664a76e93a3744133}
+手数表示スイッチをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & UISwitchオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_abbf7fe8a46b086e5f5a1c1d816eeb0ce}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchMoveToFirstRecordButton@{touchMoveToFirstRecordButton}}
+\index{touchMoveToFirstRecordButton@{touchMoveToFirstRecordButton}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchMoveToFirstRecordButton}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchMoveToFirstRecordButton 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_abbf7fe8a46b086e5f5a1c1d816eeb0ce}
+最初まで戻るボタンをタッチする \hypertarget{interface_abstract_record_view_controller_aa8a3e0d475eafdfaf76cc971b7f9bb76}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchMoveToLastRecordButton@{touchMoveToLastRecordButton}}
+\index{touchMoveToLastRecordButton@{touchMoveToLastRecordButton}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchMoveToLastRecordButton}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchMoveToLastRecordButton 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_aa8a3e0d475eafdfaf76cc971b7f9bb76}
+最後まで進むボタンをタッチする \hypertarget{interface_abstract_record_view_controller_ac75c7fabdaa79350a66fa780b9370154}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchMoveToNextRecordButton@{touchMoveToNextRecordButton}}
+\index{touchMoveToNextRecordButton@{touchMoveToNextRecordButton}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchMoveToNextRecordButton}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchMoveToNextRecordButton 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_ac75c7fabdaa79350a66fa780b9370154}
+手順進めるボタンをタッチする \hypertarget{interface_abstract_record_view_controller_a0d8602c8641f0723f55f850e309d2f4d}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchMoveToPrevRecordButton@{touchMoveToPrevRecordButton}}
+\index{touchMoveToPrevRecordButton@{touchMoveToPrevRecordButton}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchMoveToPrevRecordButton}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchMoveToPrevRecordButton 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a0d8602c8641f0723f55f850e309d2f4d}
+手順戻るボタンをタッチする \hypertarget{interface_abstract_record_view_controller_a6117104a05041dc47753c5e918005b5e}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchNavRightButton:@{touchNavRightButton:}}
+\index{touchNavRightButton:@{touchNavRightButton:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchNavRightButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchNavRightButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a6117104a05041dc47753c5e918005b5e}
+ナビゲーションバー右側のボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & NavBarButtonオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a244fc7ff5da9673ecab53aa9020c4724}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!touchReturnToAboveLevelButton:@{touchReturnToAboveLevelButton:}}
+\index{touchReturnToAboveLevelButton:@{touchReturnToAboveLevelButton:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{touchReturnToAboveLevelButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchReturnToAboveLevelButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a244fc7ff5da9673ecab53aa9020c4724}
+戻るボタンをタッチする 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 戻るボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_abstract_record_view_controller_a564c9cd96efeef4230c25e281956100a}{
+\index{AbstractRecordViewController@{AbstractRecordViewController}!unSelectStone:@{unSelectStone:}}
+\index{unSelectStone:@{unSelectStone:}!AbstractRecordViewController@{AbstractRecordViewController}}
+\subsubsection[{unSelectStone:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) unSelectStone: 
+\begin{DoxyParamCaption}
+\item[{dummy({\bf GameRecords}$\ast$)}]{record}
+\end{DoxyParamCaption}
+}}
+\label{interface_abstract_record_view_controller_a564c9cd96efeef4230c25e281956100a}
+指定された棋譜のハイライトを取り除く。 
+\begin{DoxyParams}{Parameters}
+{\em record} & 指定された棋譜 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/AbstractRecordViewController.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/AbstractRecordViewController.m\end{DoxyCompactItemize}

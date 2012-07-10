@@ -10,17 +10,37 @@
 #import "TextAlertView.h"
 
 @protocol InputGameNameAlertViewControllerDelegate
+/**
+Saveボタンを押下した時に呼び出されるメソッド
+*/
 -(void)touchSaveOkButton:(UIViewController*)viewController fileName:(NSString*)fileName;
+
+/**
+キャンセルボタンを押下した時に呼び出されるメソッド
+*/
 -(void)touchCancelSaveButton:(UIViewController*)viewController;
 @end
 
+/**
+ Game保存時にGame名を入力するAlertViewController
+ 
+ @auther inoko
+ */
 @interface InputGameNameAlertViewController : UIViewController<UIAlertViewDelegate> {
-    id<InputGameNameAlertViewControllerDelegate> _delegate;
-    UIViewController* _viewController;
-    TextAlertView* _alertView;
+  UIViewController* _viewController; ///< ViewControllerオブジェクト
+  id<InputGameNameAlertViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
+  TextAlertView* _alertView; ///< プロパティ受け渡し用変数
 }
-@property(nonatomic, retain) TextAlertView* alertView;
-@property(nonatomic, assign) id<InputGameNameAlertViewControllerDelegate> delegate;
+@property(nonatomic, retain) TextAlertView* alertView; ///< AlertViewオブジェクト
+@property(nonatomic, assign) id<InputGameNameAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
+
+/**
+コンストラクタ
+*/
 - (id)initWithClass:(UIViewController*)viewController;
+
+/**
+alertビューを表示する
+*/
 -(void)showAlertView;
 @end

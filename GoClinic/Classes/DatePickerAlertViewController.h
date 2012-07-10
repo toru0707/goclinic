@@ -10,21 +10,25 @@
 #import "DatePickerAlertView.h"
 
 @protocol DatePickerAlertViewControllerDelegate
+/**
+Rowが選択されたときに呼び出されるメソッド
+*/
 -(void)selectDate:(id)sender selectedDate:(NSDate*)date;
 @end
 
 /**
- 日付選択用のPickerAlertViewController（ハイライト有り）
+ 日付選択用のAlertViewController（ハイライト有り）
+
  @auther inoko
  */
 @interface DatePickerAlertViewController : UIViewController <  UIAlertViewDelegate>{
-	id<DatePickerAlertViewControllerDelegate> _delegate;
-	DatePickerAlertView* _alertView;
-	UIView* _oldView;
-	UIView* _selectedView;
+	id<DatePickerAlertViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
+	DatePickerAlertView* _alertView; ///< プロパティ受け渡し用変数
+	UIView* _oldView; ///< 一つ前に選択されたRowのView
+	UIView* _selectedView; ///< 現在選択されているRowのVieｗ
 }
-@property (nonatomic, assign)id<DatePickerAlertViewControllerDelegate> delegate;
-@property (nonatomic, retain)DatePickerAlertView* alertView;
+@property (nonatomic, assign)id<DatePickerAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
+@property (nonatomic, retain)DatePickerAlertView* alertView; ///< アラートVieｗ
 
 /**
  コンストラクタ

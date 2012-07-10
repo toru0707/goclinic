@@ -13,7 +13,15 @@
 
 
 @interface GoClinicAppDelegate (private)
+  /**
+   * アプリケーションのドキュメントディレクトリへのパスを取得する
+   */
 - (NSString *)applicationDocumentsDirectory;
+
+  /**
+   * 指定したPredicateを使用し、DBからGamesオブジェクトを取得する
+   * @param Predicateオブジェクト
+   */
 - (NSArray*)getGamesWithPredicate:(NSPredicate*)condition;
 @end
 
@@ -79,7 +87,7 @@
 }
 
 - (NSArray*)getGamesWithPredicate:(NSPredicate*)condition{
-    NSEntityDescription *entity =
+  NSEntityDescription *entity =
 	[NSEntityDescription entityForName:@"Games"
 				inManagedObjectContext:managedObjectContextGlobal];
     
@@ -90,11 +98,11 @@
 		[fetchRequest setPredicate:condition];
 	}
 	
-    // 取得するエンティティとして設定する
-    [fetchRequest setEntity:entity];
-    
-    // 一度に取得するオブジェクトの個数の上限値を設定する
-    [fetchRequest setFetchBatchSize:100];
+  // 取得するエンティティとして設定する
+  [fetchRequest setEntity:entity];
+  
+  // 一度に取得するオブジェクトの個数の上限値を設定する
+  [fetchRequest setFetchBatchSize:100];
     
 	
 	NSError* error = nil;
@@ -108,7 +116,7 @@
     // 解放処理    
 	[fetchRequest release];
 	
-    return allGames;
+  return allGames;
 }
 
 
@@ -210,11 +218,11 @@
 
 
 - (void)dealloc {
-	[_managedObjectContext release];
+    [_managedObjectContext release];
 	[_managedObjectModel release]; 
 	[_persistentStoreCoordinator release];
-    [window release];
-    [super dealloc];
+  [window release];
+  [super dealloc];
 }
 
 @end

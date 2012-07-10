@@ -64,7 +64,7 @@
 }
 
 -(id)initNewRecord:(Games*)game move:(int)move prev:(GameRecords*)prev next:(GameRecords*)next{
-	if((self = [[Games alloc] initWithEntity:[NSEntityDescription entityForName:@"GameRecords" inManagedObjectContext:managedObjectContextGlobal] 
+	if((self = [[GameRecords alloc] initWithEntity:[NSEntityDescription entityForName:@"GameRecords" inManagedObjectContext:managedObjectContextGlobal] 
 			 insertIntoManagedObjectContext:managedObjectContextGlobal])){
         [self initParams:game move:move prev:prev next:next];
 	}

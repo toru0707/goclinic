@@ -15,19 +15,18 @@
  @auther inoko
  */
 @interface PickerAlertView : UIAlertView {
-	UIPickerView *_pickerView;
-	int tableHeight;
-	int tableExtHeight;
-	
-	Games* _selectedGame;
-    int _selectedIndex;
-	NSArray* _games;
-}
+	int tableHeight; ///<PickerViewの高さ
+  int tableExtHeight; ///<PickerViewの高さ調整
 
-@property (nonatomic, retain)Games* selectedGame;
-@property int selectedIndex;
-@property (nonatomic, retain)NSArray* games;
-@property (nonatomic, retain) UIPickerView *pickerView;
+	UIPickerView *_pickerView; ///< プロパティ受け渡し用変数
+	Games* _selectedGame; ///< プロパティ受け渡し用変数
+  int _selectedIndex; ///< プロパティ受け渡し用変数
+	NSArray* _games; ///< プロパティ受け渡し用変数
+}
+@property (nonatomic, retain) UIPickerView *pickerView;///<PickerViewオブジェクト 
+@property (nonatomic, retain)Games* selectedGame;///<PickerVieで選択されたGame
+@property int selectedIndex;///<PickerViewで選択されたRowIndex
+@property (nonatomic, retain)NSArray* games; ///<PickerViewに表示するGame配列
 
 /**
  コンストラクタ

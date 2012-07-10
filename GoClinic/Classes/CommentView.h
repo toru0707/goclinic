@@ -16,12 +16,12 @@
  @auther inoko
  */
 @interface CommentView : AnimationTableView {
-	IBOutlet CommentViewCell* commentViewCell;
-	IBOutlet CommentAddViewCell* commentAddViewCell;
+	IBOutlet CommentViewCell* commentViewCell; ///< プロパティ受け渡し用変数
+	IBOutlet CommentAddViewCell* commentAddViewCell; ///< プロパティ受け渡し用変数
 }
 
-@property(nonatomic, retain) CommentViewCell* commentViewCell;
-@property(nonatomic, retain) CommentAddViewCell* commentAddViewCell;
+@property(nonatomic, retain) CommentViewCell* commentViewCell; ///< コメントTableViewCellのアウトレットオブジェクト
+@property(nonatomic, retain) CommentAddViewCell* commentAddViewCell; ///< コメント追加TableViewCellのアウトレットオブジェクト
 
 
 @end

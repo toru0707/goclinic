@@ -1,0 +1,189 @@
+\hypertarget{interface_go_clinic_app_delegate}{
+\section{GoClinicAppDelegate Class Reference}
+\label{interface_go_clinic_app_delegate}\index{GoClinicAppDelegate@{GoClinicAppDelegate}}
+}
+
+
+{\ttfamily \#import $<$GoClinicAppDelegate.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_go_clinic_app_delegate_a21129e1491b4c7ef7eb9c1c7b5886698}{getAllGames}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_go_clinic_app_delegate_a5c34c97840fa37539b669ca41093622b}{getNormalGames}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_go_clinic_app_delegate_a85cd07d46b0f198b149181474e996e91}{getTsumegoGames}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_go_clinic_app_delegate_a65aa362611da5b0e2493fe686eac1de9}{getQuestionGames}
+\item 
+(NSString $\ast$) -\/ \hyperlink{interface_go_clinic_app_delegate_a087ecbf65e4aca2a528d81054640df81}{applicationDocumentsDirectory}
+\item 
+(NSArray $\ast$) -\/ \hyperlink{interface_go_clinic_app_delegate_a63108c99e4d0a18f7836468bf9708632}{getGamesWithPredicate:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_go_clinic_app_delegate_a2cf40ede716686ef1e7a2a7235a04e2b}{
+UIWindow $\ast$ \hyperlink{interface_go_clinic_app_delegate_a2cf40ede716686ef1e7a2a7235a04e2b}{window}}
+\label{interface_go_clinic_app_delegate_a2cf40ede716686ef1e7a2a7235a04e2b}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_go_clinic_app_delegate_aced71d74ab745c874711663fb50b093a}{
+NSManagedObjectModel $\ast$ \hyperlink{interface_go_clinic_app_delegate_aced71d74ab745c874711663fb50b093a}{\_\-managedObjectModel}}
+\label{interface_go_clinic_app_delegate_aced71d74ab745c874711663fb50b093a}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_go_clinic_app_delegate_a486afb5884da4c99713882ec58192985}{
+NSManagedObjectContext $\ast$ \hyperlink{interface_go_clinic_app_delegate_a486afb5884da4c99713882ec58192985}{\_\-managedObjectContext}}
+\label{interface_go_clinic_app_delegate_a486afb5884da4c99713882ec58192985}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_go_clinic_app_delegate_a356b9f708799fad8d71d4df33519f783}{
+NSPersistentStoreCoordinator $\ast$ \hyperlink{interface_go_clinic_app_delegate_a356b9f708799fad8d71d4df33519f783}{\_\-persistentStoreCoordinator}}
+\label{interface_go_clinic_app_delegate_a356b9f708799fad8d71d4df33519f783}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_go_clinic_app_delegate_a0c1b7bc380e29b5926cf54790d00ad47}{
+\hyperlink{interface_games}{Games} $\ast$ \hyperlink{interface_go_clinic_app_delegate_a0c1b7bc380e29b5926cf54790d00ad47}{\_\-game}}
+\label{interface_go_clinic_app_delegate_a0c1b7bc380e29b5926cf54790d00ad47}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_go_clinic_app_delegate_a5527da2631d02a15751dacfe76d61b4f}{
+IBOutlet UIWindow $\ast$ \hyperlink{interface_go_clinic_app_delegate_a5527da2631d02a15751dacfe76d61b4f}{window}}
+\label{interface_go_clinic_app_delegate_a5527da2631d02a15751dacfe76d61b4f}
+
+\begin{DoxyCompactList}\small\item\em windowのアウトレットオブジェクト \end{DoxyCompactList}\item 
+NSManagedObjectModel $\ast$ \hyperlink{interface_go_clinic_app_delegate_a83de9dbffc02726a241ab93c8a130ccf}{managedObjectModel}
+\begin{DoxyCompactList}\small\item\em オブジェクトモデル \end{DoxyCompactList}\item 
+NSManagedObjectContext $\ast$ \hyperlink{interface_go_clinic_app_delegate_a56340d41d4eb164878497e7b9ee3fcf6}{managedObjectContext}
+\begin{DoxyCompactList}\small\item\em オブジェクトコンテキスト \end{DoxyCompactList}\item 
+NSPersistentStoreCoordinator $\ast$ \hyperlink{interface_go_clinic_app_delegate_acec743b348a53b0628186921e68af000}{persistentStoreCoordinator}
+\begin{DoxyCompactList}\small\item\em パーシステンスストアコーディネータ \end{DoxyCompactList}\item 
+\hypertarget{interface_go_clinic_app_delegate_ad15d58435f683d3fbd740b82a60d6866}{
+\hyperlink{interface_games}{Games} $\ast$ \hyperlink{interface_go_clinic_app_delegate_ad15d58435f683d3fbd740b82a60d6866}{game}}
+\label{interface_go_clinic_app_delegate_ad15d58435f683d3fbd740b82a60d6866}
+
+\begin{DoxyCompactList}\small\item\em ゲーム情報 \end{DoxyCompactList}\item 
+\hypertarget{interface_go_clinic_app_delegate_aeef0b36666cba4be3bd15cfe1c1aacdb}{
+IBOutlet GoClinicViewController $\ast$ {\bfseries viewController}}
+\label{interface_go_clinic_app_delegate_aeef0b36666cba4be3bd15cfe1c1aacdb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ApplicationDelegateクラス ゲームのDaoを担当する  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_go_clinic_app_delegate_a087ecbf65e4aca2a528d81054640df81}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!applicationDocumentsDirectory@{applicationDocumentsDirectory}}
+\index{applicationDocumentsDirectory@{applicationDocumentsDirectory}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{applicationDocumentsDirectory}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSString $\ast$) applicationDocumentsDirectory 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_go_clinic_app_delegate_a087ecbf65e4aca2a528d81054640df81}
+アプリケーションのドキュメントディレクトリへのパスを取得する \hypertarget{interface_go_clinic_app_delegate_a21129e1491b4c7ef7eb9c1c7b5886698}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!getAllGames@{getAllGames}}
+\index{getAllGames@{getAllGames}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{getAllGames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) getAllGames 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_go_clinic_app_delegate_a21129e1491b4c7ef7eb9c1c7b5886698}
+DBから全てのゲームオブジェクトを取得する \begin{DoxyReturn}{Returns}
+全てのGamesオブジェクトが格納されたNSArray 
+\end{DoxyReturn}
+\hypertarget{interface_go_clinic_app_delegate_a63108c99e4d0a18f7836468bf9708632}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!getGamesWithPredicate:@{getGamesWithPredicate:}}
+\index{getGamesWithPredicate:@{getGamesWithPredicate:}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{getGamesWithPredicate:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray$\ast$) getGamesWithPredicate: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSPredicate $\ast$)}]{condition}
+\end{DoxyParamCaption}
+}}
+\label{interface_go_clinic_app_delegate_a63108c99e4d0a18f7836468bf9708632}
+指定したPredicateを使用し、DBからGamesオブジェクトを取得する 
+\begin{DoxyParams}{Parameters}
+{\em Predicateオブジェクト} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_go_clinic_app_delegate_a5c34c97840fa37539b669ca41093622b}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!getNormalGames@{getNormalGames}}
+\index{getNormalGames@{getNormalGames}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{getNormalGames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) getNormalGames 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_go_clinic_app_delegate_a5c34c97840fa37539b669ca41093622b}
+DBから全てのクリニックゲームオブジェクトを取得する \begin{DoxyReturn}{Returns}
+全てのNormalGamesオブジェクトが格納されたNSArray 
+\end{DoxyReturn}
+\hypertarget{interface_go_clinic_app_delegate_a65aa362611da5b0e2493fe686eac1de9}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!getQuestionGames@{getQuestionGames}}
+\index{getQuestionGames@{getQuestionGames}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{getQuestionGames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) getQuestionGames 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_go_clinic_app_delegate_a65aa362611da5b0e2493fe686eac1de9}
+DBから全ての問題ゲームオブジェクトを取得する \begin{DoxyReturn}{Returns}
+全てのQuestionGamesオブジェクトが格納されたNSArray 
+\end{DoxyReturn}
+\hypertarget{interface_go_clinic_app_delegate_a85cd07d46b0f198b149181474e996e91}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!getTsumegoGames@{getTsumegoGames}}
+\index{getTsumegoGames@{getTsumegoGames}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{getTsumegoGames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSArray $\ast$) getTsumegoGames 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_go_clinic_app_delegate_a85cd07d46b0f198b149181474e996e91}
+DBから全ての詰碁ゲームオブジェクトを取得する \begin{DoxyReturn}{Returns}
+全てのTsumegoGamesオブジェクトが格納されたNSArray 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_go_clinic_app_delegate_a56340d41d4eb164878497e7b9ee3fcf6}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!managedObjectContext@{managedObjectContext}}
+\index{managedObjectContext@{managedObjectContext}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{managedObjectContext}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSManagedObjectContext $\ast$) managedObjectContext\hspace{0.3cm}{\ttfamily  \mbox{[}read, retain\mbox{]}}}}
+\label{interface_go_clinic_app_delegate_a56340d41d4eb164878497e7b9ee3fcf6}
+
+
+オブジェクトコンテキスト 
+
+Returns the managed object context for the application. If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application. \hypertarget{interface_go_clinic_app_delegate_a83de9dbffc02726a241ab93c8a130ccf}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!managedObjectModel@{managedObjectModel}}
+\index{managedObjectModel@{managedObjectModel}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{managedObjectModel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSManagedObjectModel $\ast$) managedObjectModel\hspace{0.3cm}{\ttfamily  \mbox{[}read, retain\mbox{]}}}}
+\label{interface_go_clinic_app_delegate_a83de9dbffc02726a241ab93c8a130ccf}
+
+
+オブジェクトモデル 
+
+Returns the managed object model for the application. If the model doesn't already exist, it is created by merging all of the models found in the application bundle. \hypertarget{interface_go_clinic_app_delegate_acec743b348a53b0628186921e68af000}{
+\index{GoClinicAppDelegate@{GoClinicAppDelegate}!persistentStoreCoordinator@{persistentStoreCoordinator}}
+\index{persistentStoreCoordinator@{persistentStoreCoordinator}!GoClinicAppDelegate@{GoClinicAppDelegate}}
+\subsubsection[{persistentStoreCoordinator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (NSPersistentStoreCoordinator $\ast$) persistentStoreCoordinator\hspace{0.3cm}{\ttfamily  \mbox{[}read, retain\mbox{]}}}}
+\label{interface_go_clinic_app_delegate_acec743b348a53b0628186921e68af000}
+
+
+パーシステンスストアコーディネータ 
+
+Returns the persistent store coordinator for the application. If the coordinator doesn't already exist, it is created and the application's store added to it. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/GoClinicAppDelegate.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/GoClinicAppDelegate.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/GoClinicAppDelegate.m\end{DoxyCompactItemize}

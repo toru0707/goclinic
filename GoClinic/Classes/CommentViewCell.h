@@ -13,12 +13,12 @@
  @auther inoko
  */
 @interface CommentViewCell : UITableViewCell {
-	IBOutlet UITextView* _commentTextView;
-	IBOutlet UILabel* _pointLabel;
-	IBOutlet UILabel* _categoryLabel;
+	IBOutlet UITextView* _commentTextView; ///< プロパティ受け渡し用変数
+	IBOutlet UILabel* _pointLabel; ///< プロパティ受け渡し用変数
+	IBOutlet UILabel* _categoryLabel; ///< プロパティ受け渡し用変数
 }
 
-@property(nonatomic, retain) UITextView* commentTextView;
-@property(nonatomic, retain) UILabel* pointLabel;
-@property(nonatomic, retain) UILabel* categoryLabel;
+@property(nonatomic, retain) UITextView* commentTextView; ///< コメント表示Viewのアウトレットオブジェクト
+@property(nonatomic, retain) UILabel* pointLabel; ///< ポイントラベルのアウトレットオブジェクト
+@property(nonatomic, retain) UILabel* categoryLabel; ///< カテゴリラベルのアウトレットオブジェクト
 @end

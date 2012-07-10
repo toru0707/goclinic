@@ -1,0 +1,106 @@
+\hypertarget{interface_tsumego_show_view_controller}{
+\section{TsumegoShowViewController Class Reference}
+\label{interface_tsumego_show_view_controller}\index{TsumegoShowViewController@{TsumegoShowViewController}}
+}
+
+
+{\ttfamily \#import $<$TsumegoShowViewController.h$>$}
+
+Inheritance diagram for TsumegoShowViewController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.129278cm]{interface_tsumego_show_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(IBAction) -\/ \hyperlink{interface_tsumego_show_view_controller_a7c668d88ecb8960ee6745bf8c9feb60e}{touchShowAnswerButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_tsumego_show_view_controller_ac089534bb2c7c5bafdd8ee65b0f73fe4}{touchHintButton:}
+\item 
+(IBAction) -\/ \hyperlink{interface_tsumego_show_view_controller_adc9b53bd0ee2ebb1cf8ff5a7ac04d77c}{touchGiveUpButton:}
+\item 
+(void) -\/ \hyperlink{interface_tsumego_show_view_controller_ad39e05bdd259c1341f8b9f83c8655e4c}{quitTsumegoModeWithSaveState}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_tsumego_show_view_controller_a85b4635986bef0839198b33c8b073e54}{
+IBOutlet UIButton $\ast$ \hyperlink{interface_tsumego_show_view_controller_a85b4635986bef0839198b33c8b073e54}{\_\-showAnswerButton}}
+\label{interface_tsumego_show_view_controller_a85b4635986bef0839198b33c8b073e54}
+
+\begin{DoxyCompactList}\small\item\em 回答表示ボタンのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_show_view_controller_a65d53e8ff2038f00eeea1554c9b21b2f}{
+IBOutlet UILabel $\ast$ \hyperlink{interface_tsumego_show_view_controller_a65d53e8ff2038f00eeea1554c9b21b2f}{\_\-questionLabel}}
+\label{interface_tsumego_show_view_controller_a65d53e8ff2038f00eeea1554c9b21b2f}
+
+\begin{DoxyCompactList}\small\item\em 問題ラベルのアウトレットオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_tsumego_show_view_controller_a1e747e05b5a6d7a416269eceb341117e}{
+\hyperlink{interface_tsumego_game_state}{TsumegoGameState} $\ast$ \hyperlink{interface_tsumego_show_view_controller_a1e747e05b5a6d7a416269eceb341117e}{\_\-state}}
+\label{interface_tsumego_show_view_controller_a1e747e05b5a6d7a416269eceb341117e}
+
+\begin{DoxyCompactList}\small\item\em 状態オブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+詰碁表示画面のViewController  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_tsumego_show_view_controller_ad39e05bdd259c1341f8b9f83c8655e4c}{
+\index{TsumegoShowViewController@{TsumegoShowViewController}!quitTsumegoModeWithSaveState@{quitTsumegoModeWithSaveState}}
+\index{quitTsumegoModeWithSaveState@{quitTsumegoModeWithSaveState}!TsumegoShowViewController@{TsumegoShowViewController}}
+\subsubsection[{quitTsumegoModeWithSaveState}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) quitTsumegoModeWithSaveState 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_show_view_controller_ad39e05bdd259c1341f8b9f83c8655e4c}
+状態を保存し、詰碁モードを終了する \hypertarget{interface_tsumego_show_view_controller_adc9b53bd0ee2ebb1cf8ff5a7ac04d77c}{
+\index{TsumegoShowViewController@{TsumegoShowViewController}!touchGiveUpButton:@{touchGiveUpButton:}}
+\index{touchGiveUpButton:@{touchGiveUpButton:}!TsumegoShowViewController@{TsumegoShowViewController}}
+\subsubsection[{touchGiveUpButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchGiveUpButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_show_view_controller_adc9b53bd0ee2ebb1cf8ff5a7ac04d77c}
+ギブアップボタンがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & ギブアップボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_tsumego_show_view_controller_ac089534bb2c7c5bafdd8ee65b0f73fe4}{
+\index{TsumegoShowViewController@{TsumegoShowViewController}!touchHintButton:@{touchHintButton:}}
+\index{touchHintButton:@{touchHintButton:}!TsumegoShowViewController@{TsumegoShowViewController}}
+\subsubsection[{touchHintButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchHintButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_show_view_controller_ac089534bb2c7c5bafdd8ee65b0f73fe4}
+ヒントボタンがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & ヒントボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_tsumego_show_view_controller_a7c668d88ecb8960ee6745bf8c9feb60e}{
+\index{TsumegoShowViewController@{TsumegoShowViewController}!touchShowAnswerButton:@{touchShowAnswerButton:}}
+\index{touchShowAnswerButton:@{touchShowAnswerButton:}!TsumegoShowViewController@{TsumegoShowViewController}}
+\subsubsection[{touchShowAnswerButton:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (IBAction) touchShowAnswerButton: 
+\begin{DoxyParamCaption}
+\item[{dummy(id)}]{sender}
+\end{DoxyParamCaption}
+}}
+\label{interface_tsumego_show_view_controller_a7c668d88ecb8960ee6745bf8c9feb60e}
+解答表示ボタンがタッチされた 
+\begin{DoxyParams}{Parameters}
+{\em sender} & 解答表示ボタンオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/TsumegoShowViewController.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/TsumegoShowViewController.m\end{DoxyCompactItemize}

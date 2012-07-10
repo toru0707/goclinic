@@ -10,6 +10,9 @@
 #import "BaseLabelPickerAlertViewController.h"
 
 @protocol NormalLabelPickerAlertViewControllerDelegate
+/**
+Rowを選択したときに呼び出されるメソッド
+*/
 -(void)selectedLabelPickerIndex:(id)sender index:(int)index label:(NSString*)label;
 @end
 
@@ -18,9 +21,8 @@
  @auther inoko
  */
 @interface NormalLabelPickerAlertViewController : BaseLabelPickerAlertViewController {
-    id<NormalLabelPickerAlertViewControllerDelegate> _delegate;
-    
+  id<NormalLabelPickerAlertViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
 }
-@property (nonatomic, assign)id<NormalLabelPickerAlertViewControllerDelegate> delegate;
+@property (nonatomic, assign)id<NormalLabelPickerAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
 
 @end

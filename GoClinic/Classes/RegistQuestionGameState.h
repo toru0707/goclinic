@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "QuestionGameState.h"
 
+/**
+ 問題登録モード用ViewControllerに共通した処理を提供するStateクラス
+ @auther inoko
+ */
 @interface RegistQuestionGameState : QuestionGameState {
     
 }

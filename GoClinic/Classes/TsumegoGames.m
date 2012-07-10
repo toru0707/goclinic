@@ -12,7 +12,6 @@
 #import "Global.h"
 
 @implementation TsumegoGames 
-@synthesize isAnswerRegistMode = _isAnswerRegistMode;
 @synthesize isChallengeRegistMode = _isChallengeRegistMode;
 @synthesize isOkiishiMode = _isOkiishiMode; 
 @synthesize okiishiUserId = _okiishiUserId;
@@ -168,11 +167,11 @@
 
 
 -(NSMutableArray*)getEnclosedStonesFromAnswerStack:(int)fromMove{
-	return [self getEnclosedStonesFromStackWithStack:fromMove stack:_answerStack];		
+    return [self getEnclosedStonesFromAnswerStack:fromMove];	
 }
 
 -(NSMutableArray*)getEnclosedStonesFromChallengeStack:(int)fromMove{
-	return [self getEnclosedStonesFromStackWithStack:fromMove stack:_challengeStack];	
+    return [self getEnclosedStonesFromChallengeStack:fromMove];
 }
 
 

@@ -13,11 +13,10 @@
  @auther inoko
  */
 @interface FacesViewCell : UITableViewCell {
-	IBOutlet UIImageView* buttonImgView;
-	IBOutlet UITextView* buttonText;
+	IBOutlet UIImageView* buttonImgView; ///< プロパティ受け渡し用変数
+	IBOutlet UITextView* buttonText; ///< プロパティ受け渡し用変数
 }
 
-@property(nonatomic, retain) UIImageView* buttonImgView;
-@property(nonatomic, retain) UITextView* buttonText;
-
+@property(nonatomic, retain) UIImageView* buttonImgView; ///< BOB顔表示する部分のViewのアウトレットオブジェクト
+@property(nonatomic, retain) UITextView* buttonText; ///< テキスト部分のViewのアウトレットオブジェクト
 @end

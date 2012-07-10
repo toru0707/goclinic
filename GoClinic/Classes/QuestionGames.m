@@ -16,10 +16,6 @@
 #import "QuestionGameState.h"
 #import "GoStoneViewFactory.h"
 
-@interface Games (private)
--(void)changeState:(QuestionGameState*)state;
-@end
-
 @implementation QuestionGames
 @synthesize state = _state;
 @synthesize answerStack = _answerStack;

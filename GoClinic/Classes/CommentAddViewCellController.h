@@ -14,8 +14,19 @@
 @class Comments;
 
 @protocol CommentAddViewCellControllerDelegate
+/**
+ カテゴリ入力TextFieldをタッチしたときに呼び出されるメソッド
+*/
 -(void)touchCategoryTextField:(id)sender;
+
+/**
+ ポイントTextFieldをタッチしたときに呼び出されるメソッド
+*/
 -(void)touchPointTextField:(id)sender;
+
+/**
+ 追加ボタンを押下した時に呼び出されるメソッド
+*/
 -(void)touchAddButton:(id)sender comment:(Comments*)comment;
 @end
 
@@ -24,13 +35,13 @@
  @auther inoko
  */
 @interface CommentAddViewCellController : UIViewController <UITextFieldDelegate, PointPickerAlertViewControllerDelegate, CategoryPickerAlertViewControllerDelegate>{
-	id<CommentAddViewCellControllerDelegate> _delegate;
-	IBOutlet CommentAddViewCell* _cell;
+	id<CommentAddViewCellControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
+	IBOutlet CommentAddViewCell* _cell; ///< プロパティ受け渡し用変数
     
-	NSMutableArray* _categories;
+	NSMutableArray* _categories; ///< カテゴリを格納する配列
 }
-@property(nonatomic, assign) id<CommentAddViewCellControllerDelegate> delegate;
-@property(nonatomic, retain) CommentAddViewCell* cell;
+@property(nonatomic, assign) id<CommentAddViewCellControllerDelegate> delegate; ///< デリゲートオブジェクト
+@property(nonatomic, retain) CommentAddViewCell* cell; ///< TableViewCellのアウトレットオブジェクト
 
 /**
  追加ボタンをタッチした

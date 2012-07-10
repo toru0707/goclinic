@@ -352,7 +352,7 @@
 		UIMenuItem *clinicMenuItem = [[[UIMenuItem alloc] initWithTitle:@"クリニック" action:@selector(clinicGoStoneMenu:)] autorelease];
 		UIMenuItem *faceRegistMenuItem = [[[UIMenuItem alloc] initWithTitle:@"顔登録" action:@selector(faceRegistGoStoneMenu:)] autorelease];
 		UIMenuItem *deleteMenuItem = [[[UIMenuItem alloc] initWithTitle:@"削除" action:@selector(deleteGoStoneMenu:)] autorelease];
-        UIMenuItem *henkazuMenuItem = [[[UIMenuItem alloc] initWithTitle:@"変化図を登録" action:@selector(henkazuMenuItem:)] autorelease];
+        //UIMenuItem *henkazuMenuItem = [[[UIMenuItem alloc] initWithTitle:@"変化図を登録" action:@selector(henkazuMenuItem:)] autorelease];
         
 		theMenu.menuItems = [NSArray arrayWithObjects:commentMenuItem, clinicMenuItem, faceRegistMenuItem, deleteMenuItem, nil];
 		[theMenu setMenuVisible:YES animated:YES];

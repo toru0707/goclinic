@@ -12,40 +12,34 @@
 #import "TsumegoGameState.h"
 
 /**
- 詰碁モード用のゲームクラス
+ 詰碁モード用のGameクラス
  @auther inoko
  */
 @interface TsumegoGames :  Games  
 {
-	NSMutableArray* _answerStack;
-	NSMutableArray* _challengeStack;
-	NSMutableArray* _tsumegoStones;
-	//解答登録モード
-	BOOL _isAnswerRegistMode;
-	//問題チャレンジモード
-	BOOL _isChallengeRegistMode;
-    //詰碁置石モード
-    BOOL _isOkisihiMode;
-    
-    int _okiishiUserId;
-    
-    NSString* _questionCategory;
-    
-    //TsumegoGame
-    int _answerMove;
-    
-    TsumegoGameState* _state;
+	NSMutableArray* _answerStack; ///< 解答登録モードの碁石が格納されるスタック。抜き石は削除される。手数でソートされている。
+	NSMutableArray* _challengeStack; ///< 問題チャレンジモード用の碁石が格納されるスタック。抜き石は削除される。手数でソートされている。
+	NSMutableArray* _tsumegoStones; ///< 詰碁置き石モードの全碁石が格納される配列。
+	BOOL _isAnswerRegistMode; ///< プロパティ受け渡し用変数
+	BOOL _isChallengeRegistMode; ///< プロパティ受け渡し用変数
+  BOOL _isOkisihiMode; ///< プロパティ受け渡し用変数
+  
+  int _okiishiUserId; ///< プロパティ受け渡し用変数
+  int _answerMove; ///< プロパティ受け渡し用変数
+  NSString* _questionCategory; ///< プロパティ受け渡し用変数
+  TsumegoGameState* _state; ///< ゲーム状態オブジェクト
 }
+@property BOOL isChallengeRegistMode; ///<問題チャレンジモードか
+@property BOOL isOkiishiMode; ///<詰碁置き石モードか
+@property BOOL isAnswerRegisterMode; ///<解答登録モードか
+@property int answerMove; ///<解答登録碁石の手数
+@property int okiishiUserId; ///<置き石のユーザID
+@property (nonatomic, retain) NSNumber* answer_move; ///< 解答登録碁石の手数
+@property (nonatomic, retain) NSString* questionCategory; ///< 問題のカテゴリ
 
-@property BOOL isAnswerRegistMode;
-@property BOOL isChallengeRegistMode;
-@property BOOL isOkiishiMode;
-@property int answerMove;
-@property int okiishiUserId;
-@property BOOL isAnswerRegisterMode;
-@property (nonatomic, retain) NSNumber* answer_move;
-@property (nonatomic, retain) NSString* questionCategory;
-
+/**
+ 指定された状態オブジェクトへ状態を変更する
+*/
 -(void)changeState:(TsumegoGameState*)state;
 
 /**

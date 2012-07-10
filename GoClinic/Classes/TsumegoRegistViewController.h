@@ -16,13 +16,12 @@
  @auther inoko
  */
 @interface TsumegoRegistViewController : RecordRegistViewController <QuestionRegistPickerAlertViewControllerDelegate>{
-	IBOutlet UISegmentedControl* _userSegmentedControl;
-	IBOutlet UIButton* _registAnswerButton;
-    TsumegoGameState* _state;
+	IBOutlet UISegmentedControl* _userSegmentedControl; ///< プロパティ受け渡し用変数
+	IBOutlet UIButton* _registAnswerButton; ///< プロパティ受け渡し用変数
+  TsumegoGameState* _state; ///< 状態オブジェクト
 }
-
-@property (nonatomic, retain) UISegmentedControl* userSegmentedControl;
-@property (nonatomic, retain) UIButton* registAnswerButton;
+@property (nonatomic, retain) UISegmentedControl* userSegmentedControl; ///< ユーザ切り替え用セグ面テッドコントロールのアウトレットオブジェクト
+@property (nonatomic, retain) UIButton* registAnswerButton; ///< 解答登録ボタンのアウトレットオブジェクト
 
 /**
  問題登録ボタンがタッチされた

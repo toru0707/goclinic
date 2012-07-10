@@ -13,7 +13,7 @@
 
 -(id)initWithGames:(Games*)game{
     if((self = [super init])){
-        _game = [game retain];
+        _game = (QuestionGames*)[game retain];
     }
     return self;
 }

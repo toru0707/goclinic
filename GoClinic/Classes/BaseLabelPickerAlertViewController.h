@@ -15,8 +15,8 @@
  @auther inoko
  */
 @interface BaseLabelPickerAlertViewController : NormalPickerAlertViewController {
-    UIView* _oldView;
-	UIView* _selectedView;
+    UIView* _oldView; ///< 一つ前に選択されたRowのView
+	UIView* _selectedView; ///< 現在選択されているRowのView
 }
 
 @end

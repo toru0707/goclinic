@@ -9,18 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "PickerAlertView.h"
 
-#define PICKER_ALERT_VIEW_COMPONENT_NUM 1
+#define PICKER_ALERT_VIEW_COMPONENT_NUM 1 ///< PickerAlertView内のコンポーネント数
 
 /**
  文字列選択用のPickerAlertViewController
  @auther inoko
  */
 @interface NormalPickerAlertViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIAlertViewDelegate> {
-	PickerAlertView* _alertView;
-    int _selectedIndex;
-    NSMutableArray* _pickerList;
+	PickerAlertView* _alertView; ///< プロパティ受け渡し用変数
+  int _selectedIndex; ///< 選択されたRowのIndex
+  NSMutableArray* _pickerList; ///< PickerのRowのリスト
 }
-@property (nonatomic, retain)PickerAlertView* alertView;
+@property (nonatomic, retain)PickerAlertView* alertView; ///< AlertView
 
 /**
  コンストラクタ

@@ -15,9 +15,9 @@
  @auther inoko
  */
 @interface TsumegoShowViewController : RecordShowViewController {
-	IBOutlet UIButton* _showAnswerButton;
-    IBOutlet UILabel* _questionLabel;
-    TsumegoGameState* _state;
+	IBOutlet UIButton* _showAnswerButton; ///< 回答表示ボタンのアウトレットオブジェクト
+  IBOutlet UILabel* _questionLabel; ///< 問題ラベルのアウトレットオブジェクト
+  TsumegoGameState* _state; ///< 状態オブジェクト
 }
 
 

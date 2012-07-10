@@ -1,0 +1,113 @@
+\hypertarget{interface_picker_alert_view}{
+\section{PickerAlertView Class Reference}
+\label{interface_picker_alert_view}\index{PickerAlertView@{PickerAlertView}}
+}
+
+
+{\ttfamily \#import $<$PickerAlertView.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_picker_alert_view_aeab9bea3a278c79473d39f3629cb2086}{initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_picker_alert_view_af2caafc519c0336de1ac6de573d423de}{
+int \hyperlink{interface_picker_alert_view_af2caafc519c0336de1ac6de573d423de}{tableHeight}}
+\label{interface_picker_alert_view_af2caafc519c0336de1ac6de573d423de}
+
+\begin{DoxyCompactList}\small\item\em PickerViewの高さ \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_a0845fa121c597e715efb4e12f453ebf4}{
+int \hyperlink{interface_picker_alert_view_a0845fa121c597e715efb4e12f453ebf4}{tableExtHeight}}
+\label{interface_picker_alert_view_a0845fa121c597e715efb4e12f453ebf4}
+
+\begin{DoxyCompactList}\small\item\em PickerViewの高さ調整 \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_ac6ab5a8efa26a138210a589cf97cb100}{
+UIPickerView $\ast$ \hyperlink{interface_picker_alert_view_ac6ab5a8efa26a138210a589cf97cb100}{\_\-pickerView}}
+\label{interface_picker_alert_view_ac6ab5a8efa26a138210a589cf97cb100}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_aab39face826d7df8983d9aac6536902b}{
+\hyperlink{interface_games}{Games} $\ast$ \hyperlink{interface_picker_alert_view_aab39face826d7df8983d9aac6536902b}{\_\-selectedGame}}
+\label{interface_picker_alert_view_aab39face826d7df8983d9aac6536902b}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_ad5d635bc54b01c1d367c228b43f644c7}{
+int \hyperlink{interface_picker_alert_view_ad5d635bc54b01c1d367c228b43f644c7}{\_\-selectedIndex}}
+\label{interface_picker_alert_view_ad5d635bc54b01c1d367c228b43f644c7}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_aa9d7283bd9c6374ee63ac8017032c40d}{
+NSArray $\ast$ \hyperlink{interface_picker_alert_view_aa9d7283bd9c6374ee63ac8017032c40d}{\_\-games}}
+\label{interface_picker_alert_view_aa9d7283bd9c6374ee63ac8017032c40d}
+
+\begin{DoxyCompactList}\small\item\em プロパティ受け渡し用変数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_picker_alert_view_aa6097903071c8ebbd99c1735305f08c9}{
+UIPickerView $\ast$ \hyperlink{interface_picker_alert_view_aa6097903071c8ebbd99c1735305f08c9}{pickerView}}
+\label{interface_picker_alert_view_aa6097903071c8ebbd99c1735305f08c9}
+
+\begin{DoxyCompactList}\small\item\em PickerViewオブジェクト \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_a2cb1c29a88dded150a2bdc5fb2a19553}{
+\hyperlink{interface_games}{Games} $\ast$ \hyperlink{interface_picker_alert_view_a2cb1c29a88dded150a2bdc5fb2a19553}{selectedGame}}
+\label{interface_picker_alert_view_a2cb1c29a88dded150a2bdc5fb2a19553}
+
+\begin{DoxyCompactList}\small\item\em PickerVieで選択されたGame. \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_a766d2add07dbe438f43f8ca360ee91cc}{
+int \hyperlink{interface_picker_alert_view_a766d2add07dbe438f43f8ca360ee91cc}{selectedIndex}}
+\label{interface_picker_alert_view_a766d2add07dbe438f43f8ca360ee91cc}
+
+\begin{DoxyCompactList}\small\item\em PickerViewで選択されたRowIndex. \end{DoxyCompactList}\item 
+\hypertarget{interface_picker_alert_view_a96544b6ce55302d60a52388dd1b040bc}{
+NSArray $\ast$ \hyperlink{interface_picker_alert_view_a96544b6ce55302d60a52388dd1b040bc}{games}}
+\label{interface_picker_alert_view_a96544b6ce55302d60a52388dd1b040bc}
+
+\begin{DoxyCompactList}\small\item\em PickerViewに表示するGame配列 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+PickerViewが中に表示されているAlertView  inoko 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_picker_alert_view_aeab9bea3a278c79473d39f3629cb2086}{
+\index{PickerAlertView@{PickerAlertView}!initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:@{initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:}}
+\index{initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:@{initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:}!PickerAlertView@{PickerAlertView}}
+\subsubsection[{initWithTitle:message:delegate:dataSource:cancelButtonTitle:okButtonTitle:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) initWithTitle: 
+\begin{DoxyParamCaption}
+\item[{dummy(NSString $\ast$)}]{title}
+\item[{message:(NSString $\ast$)}]{message}
+\item[{delegate:(id)}]{delegate}
+\item[{dataSource:(id)}]{dataSource}
+\item[{cancelButtonTitle:(NSString $\ast$)}]{cancelButtonTitle}
+\item[{okButtonTitle:(NSString $\ast$)}]{okayButtonTitle}
+\end{DoxyParamCaption}
+}}
+\label{interface_picker_alert_view_aeab9bea3a278c79473d39f3629cb2086}
+コンストラクタ 
+\begin{DoxyParams}{Parameters}
+{\em title} & タイトル \\
+\hline
+{\em message} & メッサージ \\
+\hline
+{\em delegate} & デリゲート先 \\
+\hline
+{\em dataSource} & データソース先 \\
+\hline
+{\em cancelButtonTitle} & キャンセルボタンのタイトル \\
+\hline
+{\em okayButtonTitle} & OKボタンのタイトル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PickerAlertViewオブジェクト 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/PickerAlertView.h\item 
+/Users/toru0707/git/GoClinic\_\-no\_\-GoStones/GoClinic/Classes/PickerAlertView.m\end{DoxyCompactItemize}

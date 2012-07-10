@@ -11,6 +11,9 @@
 #import "Games.h"
 
 @protocol GamePickerAlertViewControllerDelegate
+/**
+ PickerのRowが選択された時に呼び出されるメソッド
+ */
 -(void)selectedGamePickerIndex:(id)sender index:(int)index game:(Games*)game viewController:(UIViewController*)viewController;
 @end
 
@@ -20,12 +23,15 @@
  @auther inoko
  */
 @interface GamesPickerAlertViewController : BaseLabelPickerAlertViewController {
-    id<GamePickerAlertViewControllerDelegate> _delegate;    
-    NSMutableArray* _games;
-    UIViewController* _viewController;
+    id<GamePickerAlertViewControllerDelegate> _delegate;     ///< プロパティ受け渡し用変数
+    NSMutableArray* _games; ///< 表示用のゲームオブジェクト配列
+    UIViewController* _viewController; ///< PickerのViewController
 }
-@property (nonatomic, assign)id<GamePickerAlertViewControllerDelegate> delegate;
+@property (nonatomic, assign)id<GamePickerAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
 
+/**
+ * コンストラクタ
+ */
 - (id)initWithTitle:(NSMutableArray *)pickerList viewController:(UIViewController*)viewController;
 
 @end

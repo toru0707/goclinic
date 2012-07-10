@@ -10,9 +10,12 @@
 #import "QuestionRegistAlertView.h"
 #import "QuestionRegistPickerAlertViewController.h"
 
-#define QUESTION_REGIST_PICKER_ALERT_VIEW_TAG 300
+#define QUESTION_REGIST_PICKER_ALERT_VIEW_TAG 300 ///< ViewControllerを識別するためのタグ
 
 @protocol QuestionRegistPickerAlertViewControllerDelegate
+/**
+PickerのRowが選択された時に呼び出されるメソッド
+*/
 -(void)selectedPickerIndex:(id)sender index:(int)index faceList:(NSMutableArray*)faceList facesCategoriesList:(NSMutableArray*)facesCategoriesList comment:(NSString*)comment;
 @end
 
@@ -22,18 +25,17 @@
  @auther inoko
  */
 @interface QuestionRegistPickerAlertViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIAlertViewDelegate>  {
-    id<QuestionRegistPickerAlertViewControllerDelegate> _delegate;
-	QuestionRegistAlertView* _alertView;
-    int _selectedIndex;
-    NSMutableArray* _facesList;
-    NSMutableArray* _facesCategoriesList;
-    
-    UIView* _oldView;
-	UIView* _selectedView;
+  id<QuestionRegistPickerAlertViewControllerDelegate> _delegate; ///< プロパティ受け渡し用変数
+	QuestionRegistAlertView* _alertView; ///< プロパティ受け渡し用変数
+  int _selectedIndex; ///<選択されたPickerのRowのIndex
+  NSMutableArray* _facesList; ///<BOB顔の配列
+  NSMutableArray* _facesCategoriesList; ///<BOB顔カテゴリの配列
+  UIView* _oldView; ///<Pickerの一つ前に選択されたRowのView
+  UIView* _selectedView; ///<Pickerの現在選択されているRowのView
 }
 
-@property (nonatomic, assign)id<QuestionRegistPickerAlertViewControllerDelegate> delegate;
-@property (nonatomic, retain)QuestionRegistAlertView* alertView;
+@property (nonatomic, assign)id<QuestionRegistPickerAlertViewControllerDelegate> delegate; ///< デリゲートオブジェクト
+@property (nonatomic, retain)QuestionRegistAlertView* alertView; ///< アラートView
 
 /**
  コンストラクタ
